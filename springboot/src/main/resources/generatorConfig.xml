@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE generatorConfiguration
+        PUBLIC "-//mybatis.org//DTD MyBatis Generator Configuration 1.0//EN"
+        "http://mybatis.org/dtd/mybatis-generator-config_1_0.dtd">
+
+<generatorConfiguration>
+
+  <context id="mysqlgenerator" targetRuntime="MyBatis3">
+
+    <!--支付pay 库-->
+<!--    <jdbcConnection connectionURL="jdbc:mysql://10.10.1.13:3306/pay_new?useUnicode=true&amp;characterEncoding=utf8"
+                    driverClass="com.mysql.jdbc.Driver"
+                    userId="upay"
+                    password="S76lI!xP8W"/>-->
+    <!--清结算sett 库-->
+  <!--  <jdbcConnection connectionURL="jdbc:mysql://10.10.1.13:3306/sett_new?useUnicode=true&amp;characterEncoding=utf8"
+                    driverClass="com.mysql.jdbc.Driver"
+                    userId="usett"
+                    password="NyN8x3e@2"/>-->
+    <!--商户后台 库-->
+    <jdbcConnection connectionURL="jdbc:mysql://47.95.117.211:3306/hello?useUnicode=true&amp;characterEncoding=utf8"
+                    driverClass="com.mysql.jdbc.Driver"
+                    userId="root"
+                    password="123456"/>
+
+    <javaModelGenerator targetPackage="com.bsworld.springboot.start.dao.entity"
+                        targetProject="src/main/java"/>
+
+
+    <sqlMapGenerator targetPackage="META-INF.mybatis.mapper" targetProject="src/main/resources"/>
+
+    <javaClientGenerator targetPackage="com.bsworld.springboot.start.dao.mapper"
+                         targetProject="src/main/java"
+                         type="XMLMAPPER"/>
+
+    <table tableName="t_user_role"/>
+
+  </context>
+
+</generatorConfiguration>
