@@ -18,7 +18,6 @@ public class AopServiceImpl implements AopService {
 
     private static List<User> list = null;
 
-
     static {
         list = new ArrayList<>();
         for (int i = 0; i < 10; i++) {
