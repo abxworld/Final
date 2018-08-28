@@ -15,6 +15,7 @@ import java.util.List;
 
 @Service
 public class AopServiceImpl implements AopService {
+
     private static List<User> list = null;
 
     static {
