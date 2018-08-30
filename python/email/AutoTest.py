@@ -13,7 +13,7 @@ def hello():
     time.sleep(3)
     browser.find_element_by_id("dologin").click()
     time.sleep(3)
-    browser.quit()
+    browser.quit();
 
 
 if __name__ == '__main__':

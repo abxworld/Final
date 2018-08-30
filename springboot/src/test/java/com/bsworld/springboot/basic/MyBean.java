@@ -11,8 +11,13 @@ import org.springframework.stereotype.Component;
 @Component
 public class MyBean {
     private String username = "100";
-
+    private Long age;
     public MyBean() {
+    }
+
+    public MyBean(String username, Long age) {
+        this.username = username;
+        this.age = age;
     }
 
     public MyBean(String username) {
@@ -27,5 +32,11 @@ public class MyBean {
         this.username = username;
     }
 
+    public Long getAge() {
+        return age;
+    }
 
+    public void setAge(Long age) {
+        this.age = age;
+    }
 }
