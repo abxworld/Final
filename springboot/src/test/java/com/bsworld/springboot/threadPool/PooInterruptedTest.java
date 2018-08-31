@@ -9,40 +9,32 @@ package com.bsworld.springboot.threadPool;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
+import java.io.IOException;
 import java.util.concurrent.ArrayBlockingQueue;
 
 public class PooInterruptedTest {
-     private static final Logger LOGGER = LoggerFactory.getLogger(PooInterruptedTest.class);
-    public static void main(String[] args) {
+    private static final Logger LOGGER = LoggerFactory.getLogger(PooInterruptedTest.class);
+    static Object obj = new Object();
+
+    public static void main(String[] args) throws IOException {
         Thread thread = new Thread(new RunObj());
-        thread.start();
-        System.out.println("main start");
-        try {
-            Thread.sleep(3000);
+        synchronized (obj) {
+            thread.start();
+            System.out.println("main start");
+            System.out.println("main end");
             thread.interrupt();
-            boolean interrupted = Thread.interrupted();
-            System.out.println(interrupted);
-        } catch (InterruptedException e) {
-            e.printStackTrace();
+            //thread.join();
         }
-        System.out.println(thread);
-        System.out.println("main end");
     }
 
     private static class RunObj implements Runnable {
         @Override
         public void run() {
             ArrayBlockingQueue<String> queue = new ArrayBlockingQueue<String>(16);
-           /* for (int i = 0; i <10 ; i++) {
-                queue.add("a");
-            }*/
-            try {
-                System.out.println("run start");
-                queue.take();
+            System.out.println("run start");
+            synchronized (obj) {
+                System.out.println("thread, interrupted: " + Thread.currentThread().isInterrupted());
                 System.out.println("run end");
-            } catch (InterruptedException e) {
-                e.printStackTrace();
-                System.out.println("interrupted:　" + Thread.currentThread().isInterrupted());
             }
         }
     }

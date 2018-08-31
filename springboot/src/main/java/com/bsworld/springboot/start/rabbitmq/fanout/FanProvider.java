@@ -1,17 +1,17 @@
 package com.bsworld.springboot.start.rabbitmq.fanout;
-/*
-*author: xieziyang
-*date: 2018/8/27
-*time: 13:46
-*description:
-*/
-
 import com.bsworld.springboot.start.rabbitmq.basic.ExchangeType;
 import com.bsworld.springboot.start.rabbitmq.basic.RabbitMqFactory;
 import com.rabbitmq.client.Channel;
 import com.rabbitmq.client.Connection;
 
 import java.io.IOException;
+
+/*
+*author: xieziyang
+*date: 2018/8/27
+*time: 13:46
+*description:
+*/
 
 public class FanProvider {
     public static void main(String[] args) throws IOException {
