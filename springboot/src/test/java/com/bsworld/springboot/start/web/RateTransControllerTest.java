@@ -17,4 +17,10 @@ public class RateTransControllerTest {
         String url = "http://localhost:8080/rate/insert";
         HttpUtil.sendPost(url, null, type);
     }
+    @Test
+    public void query() {
+        String type = MediaType.APPLICATION_JSON_VALUE;
+        String url = "http://localhost:8080/rate/query";
+        HttpUtil.sendPost(url, null, type);
+    }
 }

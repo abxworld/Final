@@ -64,6 +64,11 @@
             <artifactId>aspectjrt</artifactId>
             <version>1.6.10</version>
         </dependency>
+        <dependency>
+            <groupId>junit</groupId>
+            <artifactId>junit</artifactId>
+            <version>4.12</version>
+        </dependency>
         <!-- Spring使用Aspect依赖的jar包 end-->
 
 
