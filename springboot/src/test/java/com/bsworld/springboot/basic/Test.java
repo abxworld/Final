@@ -9,6 +9,7 @@ package com.bsworld.springboot.basic;
 import java.lang.reflect.Field;
 import java.lang.reflect.Modifier;
 import java.util.ArrayList;
+import java.util.LinkedList;
 import java.util.List;
 
 public class Test {
@@ -34,9 +35,17 @@ public class Test {
     }
 
     public static void main(String[] args) throws Exception {
-        for (String str : getStaticField()) {
+        LinkedList<String> list = new LinkedList();
+        list.add("a");
+       /* list.add("b");
+        list.add("c");
+        list.add("d");
+        list.add("e");
+        list.add("f");
+        list.add("g");*/
+     /*   for (String str : getStaticField()) {
             System.out.println(str);
-        }
+        }*/
 
     }
 }

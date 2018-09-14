@@ -45,6 +45,18 @@ public class UserController implements InitializingBean{
         System.out.println(JSON.toJSONString(tUsers));
     }
 
+
+    @PostMapping(value = "/get10")
+    public void insert() {
+        for (int i = 0; i < 100000; i++) {
+            
+        }
+        TUser tUser = new TUser();
+        tUser.setPassword("bsword");
+        tUser.setUsername("java refund");
+        tUserMapper.insertSelective(tUser);
+    }
+
     public TUser getUser() {
         TUser user = new TUser();
         user.setUsername("tom");

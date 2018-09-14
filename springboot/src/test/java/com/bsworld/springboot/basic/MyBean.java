@@ -39,4 +39,22 @@ public class MyBean {
     public void setAge(Long age) {
         this.age = age;
     }
+
+    @Override
+    public boolean equals(Object o) {
+        return true;
+    }
+
+    @Override
+    public int hashCode() {
+        int result = getUsername() != null ? getUsername().hashCode() : 0;
+        result = 31 * result + (getAge() != null ? getAge().hashCode() : 0);
+        return result;
+    }
+
+    public static void main(String[] args) {
+        MyBean myBean0 = new MyBean();
+        MyBean myBean1 = new MyBean();
+        System.out.println(myBean0.equals(myBean1) );
+    }
 }

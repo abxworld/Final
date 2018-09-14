@@ -1,7 +1,5 @@
 package com.bsworld.springboot.start.threadPool;
 
-import org.springframework.stereotype.Component;
-
 import javax.annotation.PostConstruct;
 import javax.annotation.PreDestroy;
 import java.lang.management.ManagementFactory;
@@ -15,7 +13,7 @@ import java.util.concurrent.TimeUnit;
 *time: 18:52
 *description:
 */
-@Component
+//@Component
 public class ThreadShut {
     ScheduledExecutorService schService = null;
 

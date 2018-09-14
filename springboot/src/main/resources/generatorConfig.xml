@@ -33,7 +33,7 @@
                          targetProject="src/main/java"
                          type="XMLMAPPER"/>
 
-    <table tableName="t_user_role"/>
+    <table tableName="t_rate_transform"/>
 
   </context>
 
