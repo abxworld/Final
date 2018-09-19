@@ -23,4 +23,12 @@ public class RateTransControllerTest {
         String url = "http://localhost:8080/rate/query";
         HttpUtil.sendPost(url, null, type);
     }
+
+    //threadquer
+    @Test
+    public void threadquery() {
+        String type = MediaType.APPLICATION_JSON_VALUE;
+        String url = "http://localhost:8080/rate/threadquery";
+        HttpUtil.sendPost(url, null, type);
+    }
 }

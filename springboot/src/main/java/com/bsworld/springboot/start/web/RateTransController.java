@@ -16,6 +16,9 @@ import org.springframework.web.bind.annotation.RequestMapping;
 
 import java.util.Date;
 import java.util.List;
+import java.util.PriorityQueue;
+import java.util.concurrent.ExecutorService;
+import java.util.concurrent.Executors;
 
 @RequestMapping("/rate")
 @Controller
@@ -40,6 +43,7 @@ public class RateTransController {
 
     @PostMapping("/query")
     public void query() {
+//        ExecutorService fixedThreadPool = Executors.newFixedThreadPool(10);
         TRateTransformExample example = new TRateTransformExample();
         long start = System.currentTimeMillis();
         System.out.println("start, time: " + start);
@@ -48,4 +52,36 @@ public class RateTransController {
         System.out.println("end, time:" + end);
         System.out.println("total time: " + (end - start) / 1000);
     }
+
+    @PostMapping("/threadquery")
+    public void queryThread() {
+        System.out.println("thread query!!!!!");
+        ExecutorService fixedThreadPool = Executors.newFixedThreadPool(10);
+        for (int i = 400; i < 130000; i = i + 10000) {
+            fixedThreadPool.execute(new Rate(i, i + 10000));
+        }
+    }
+
+    private class Rate implements Runnable {
+        private long min;
+        private long max;
+
+        public Rate(long min, long max) {
+            this.min = min;
+            this.max = max;
+        }
+
+        @Override
+        public void run() {
+            TRateTransformExample example = new TRateTransformExample();
+            example.createCriteria().andIdBetween(min, max);
+            long start = System.currentTimeMillis();
+            System.out.println("start, time: " + start);
+            List<TRateTransform> rateTransforms = tRateTransformMapper.selectByExample(example);
+            long end = System.currentTimeMillis();
+            System.out.println("end, time:" + end);
+            System.out.println("Thread,name:" + Thread.currentThread().getName() + ", total time: " + (end - start) / 1000);
+        }
+    }
+
 }
