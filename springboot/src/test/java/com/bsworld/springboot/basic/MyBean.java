@@ -11,12 +11,19 @@ import org.springframework.stereotype.Component;
 @Component
 public class MyBean {
     private String username = "100";
+    private String password = "100";
     private Long age;
     public MyBean() {
     }
 
     public MyBean(String username, Long age) {
         this.username = username;
+        this.age = age;
+    }
+
+    public MyBean(String username, String password, Long age) {
+        this.username = username;
+        this.password = password;
         this.age = age;
     }
 
@@ -56,5 +63,13 @@ public class MyBean {
         MyBean myBean0 = new MyBean();
         MyBean myBean1 = new MyBean();
         System.out.println(myBean0.equals(myBean1) );
+    }
+
+    public String getPassword() {
+        return password;
+    }
+
+    public void setPassword(String password) {
+        this.password = password;
     }
 }
