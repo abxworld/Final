@@ -6,14 +6,25 @@ package com.bsworld.springboot.start.jvm;
 *description:
 */
 
+import java.math.BigDecimal;
+import java.util.ArrayList;
+import java.util.List;
+
 public class MyHeap {
     public static void main(String[] args) {
-        int cal = cal();
-        System.out.println(cal);
+        BigDecimal b = new BigDecimal(0.0000000000000000);
+        boolean b1 = b.doubleValue() == 0;
+        System.out.println(b1);
+        System.out.println(b.doubleValue());
+
+//        List cal = cal();
+//        System.out.println(cal);
     }
 
-    private static int cal() {
-        int a = (int) 4664466446l;
-        return a;
+    private static List cal() {
+        while (true) {
+            List list = new ArrayList();
+             
+        }
     }
 }

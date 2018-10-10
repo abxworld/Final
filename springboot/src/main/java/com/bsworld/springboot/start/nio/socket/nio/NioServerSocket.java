@@ -25,19 +25,25 @@ public class NioServerSocket {
         Selector selector = Selector.open();
         channel.register(selector, SelectionKey.OP_ACCEPT);
         while (true) {
-            int count = selector.select(3000);
+            System.out.println("while start");
+            int count = selector.select();
+            System.out.println("while end, count: " + count);
             if (count == 0) {
                 continue;
             }
-            Set<SelectionKey> selectionKeys = selector.selectedKeys();
-            selectionKeys.stream().forEach(m -> {
+            Set<SelectionKey> keys = selector.selectedKeys();
+            keys.stream().forEach(m -> {
                 if (m.isAcceptable()) {
                     handleAccept(m);
                 }
                 if (m.isReadable()) {
                     handleRead(m);
                 }
+                if (m.isWritable() && m.isValid()) {
+                    handleWrite(m);
+                }
             });
+            keys.clear();
         }
     }
 
@@ -46,30 +52,56 @@ public class NioServerSocket {
             ServerSocketChannel serverSocketChannel = (ServerSocketChannel) selectionKey.channel();
             SocketChannel acceptSocketChannel = serverSocketChannel.accept();
             acceptSocketChannel.configureBlocking(false);
-            acceptSocketChannel.register(selectionKey.selector(), SelectionKey.OP_READ);
+            acceptSocketChannel.register(selectionKey.selector(), SelectionKey.OP_READ, ByteBuffer.allocate(1024));
         } catch (IOException e) {
             e.printStackTrace();
         }
     }
 
     private static void handleRead(SelectionKey selectionKey) {
-        ByteBuffer byteBuffer = ByteBuffer.allocateDirect(1024);
+
         SocketChannel socketChannel = (SocketChannel) selectionKey.channel();
+        ByteBuffer byteBuffer = (ByteBuffer) selectionKey.attachment();
         try {
             long read = socketChannel.read(byteBuffer);
             while (read > 0) {
                 byteBuffer.flip();
                 while (byteBuffer.hasRemaining()) {
                     char c = (char) byteBuffer.get();
-                    System.out.println(c);
+                    System.out.print(c);
                 }
                 byteBuffer.clear();
+               read =  socketChannel.read(byteBuffer);
             }
+            handleWrite(selectionKey);
             if (read == -1) {
                 socketChannel.close();
             }
         } catch (IOException e) {
             e.printStackTrace();
         }
+    }
+
+    private static void handleWrite(SelectionKey key) {
+        SocketChannel channel = (SocketChannel) key.channel();
+        if (channel.isConnected()) {
+            ByteBuffer byteBuffer = (ByteBuffer) key.attachment();
+            String message = "this is from server";
+            try {
+                byteBuffer.clear();
+                byteBuffer.put(message.getBytes());
+                byteBuffer.flip();
+                while (byteBuffer.hasRemaining()) {
+                    if (channel.isConnected()) {
+                        channel.write(byteBuffer);
+                    }
+                }
+            } catch (IOException e) {
+                e.printStackTrace();
+            }
+        } else {
+            System.out.println("client shut down");
+        }
+
     }
 }

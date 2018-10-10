@@ -2,8 +2,9 @@ package com.bsworld.springboot.start.dao.mapper;
 
 import com.bsworld.springboot.start.dao.entity.TUser;
 import com.bsworld.springboot.start.dao.entity.TUserExample;
-import java.util.List;
 import org.apache.ibatis.annotations.Param;
+
+import java.util.List;
 
 public interface TUserMapper {
     /**
@@ -12,6 +13,7 @@ public interface TUserMapper {
      *
      * @mbggenerated Mon Jul 30 17:54:36 CST 2018
      */
+
     int countByExample(TUserExample example);
 
     /**
