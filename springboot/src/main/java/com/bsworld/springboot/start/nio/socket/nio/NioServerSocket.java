@@ -18,12 +18,15 @@ import java.util.Set;
 public class NioServerSocket {
     private static final int PORT = 9999;
 
-    public static void main(String[] args) throws IOException {
+    public static void main(String[] args) throws IOException, InterruptedException {
         ServerSocketChannel channel = ServerSocketChannel.open();
         channel.configureBlocking(false);
         channel.bind(new InetSocketAddress(PORT));
         Selector selector = Selector.open();
         channel.register(selector, SelectionKey.OP_ACCEPT);
+        System.out.println("sleep start");
+        Thread.sleep(3000);
+        System.out.println("sleep end");
         while (true) {
             System.out.println("while start");
             int count = selector.select();
@@ -31,6 +34,7 @@ public class NioServerSocket {
             if (count == 0) {
                 continue;
             }
+            System.out.println("threadName: " + Thread.currentThread().getName());
             Set<SelectionKey> keys = selector.selectedKeys();
             keys.stream().forEach(m -> {
                 if (m.isAcceptable()) {

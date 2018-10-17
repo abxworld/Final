@@ -92,4 +92,28 @@ public class EqualsTest {
     }
 
 
+
+    @Test
+    public void run5() {
+        String accNo = "123456789";
+        String s = enSecAccNo(accNo);
+        System.out.println(s);
+    }
+
+    private String enSecAccNo(String accNo) {
+        String enAccNo = accNo;
+        System.out.println(enAccNo.length());
+        if (enAccNo != null) {
+            if (enAccNo.length() > 7) {
+                String substring0 = enAccNo.substring(0, 3);
+                String substring1 = enAccNo.substring(enAccNo.length() -4);
+                for (int i = 0; i < enAccNo.length() - 7; i++) {
+                    substring0 = substring0 + "*";
+                }
+                enAccNo = substring0 + substring1;
+            }
+        }
+        System.out.println(enAccNo.length());
+        return enAccNo;
+    }
 }
