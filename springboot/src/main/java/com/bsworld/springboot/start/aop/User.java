@@ -6,9 +6,13 @@ package com.bsworld.springboot.start.aop;
 *description:
 */
 
+import java.math.BigDecimal;
+
 public class User {
     private String name;
     private String pass;
+    private Short age;
+    private BigDecimal score;
 
     public String getName() {
         return name;
@@ -26,11 +30,30 @@ public class User {
         this.pass = pass;
     }
 
+    public Short getAge() {
+        return age;
+    }
+
+    public void setAge(Short age) {
+        this.age = age;
+    }
+
+    public BigDecimal getScore() {
+        return score;
+    }
+
+    public void setScore(BigDecimal score) {
+        this.score = score;
+    }
+
     @Override
     public String toString() {
-        return "User{" +
-                "name='" + name + '\'' +
-                ", pass='" + pass + '\'' +
-                '}';
+        final StringBuffer sb = new StringBuffer("User{");
+        sb.append("name='").append(name).append('\'');
+        sb.append(", pass='").append(pass).append('\'');
+        sb.append(", age=").append(age);
+        sb.append(", score=").append(score);
+        sb.append('}');
+        return sb.toString();
     }
 }

@@ -8,8 +8,8 @@ package com.bsworld.springboot.start.DataStruAlgorithm;
 
 public class BTest {
     public static void main(String[] args) {
-        TreeNode<Integer> node0 = ATest.cal();
-        TreeNode<Integer> node1 = ATest.cal();
+        TreeNode<Integer> node0 = Sort.cal();
+        TreeNode<Integer> node1 = Sort.cal();
         boolean sameTree = isSameTree(node0, node1);
         System.out.println(sameTree);
     }

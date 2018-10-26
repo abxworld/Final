@@ -9,7 +9,7 @@ package com.bsworld.springboot.start.DataStruAlgorithm;
 import java.util.ArrayList;
 import java.util.List;
 
-public class ATest {
+public class Sort {
 
     public static void main(String[] args) {
         cal();
