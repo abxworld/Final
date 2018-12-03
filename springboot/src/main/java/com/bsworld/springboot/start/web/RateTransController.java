@@ -1,14 +1,15 @@
 package com.bsworld.springboot.start.web;
 /*
-*author: xieziyang
-*date: 2018/9/14
-*time: 17:40
-*description:
-*/
+ *author: xieziyang
+ *date: 2018/9/14 
+ *time: 17:40
+ *description:
+ */
 
 import com.bsworld.springboot.start.dao.entity.TRateTransform;
 import com.bsworld.springboot.start.dao.entity.TRateTransformExample;
 import com.bsworld.springboot.start.dao.mapper.TRateTransformMapper;
+import org.springframework.beans.factory.InitializingBean;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.PostMapping;
@@ -16,15 +17,15 @@ import org.springframework.web.bind.annotation.RequestMapping;
 
 import java.util.Date;
 import java.util.List;
-import java.util.PriorityQueue;
 import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
 
 @RequestMapping("/rate")
 @Controller
-public class RateTransController {
+public class RateTransController implements Runnable {
     @Autowired
     TRateTransformMapper tRateTransformMapper;
+
 
     @PostMapping("/insert")
     public void insert() {
@@ -61,6 +62,13 @@ public class RateTransController {
             fixedThreadPool.execute(new Rate(i, i + 10000));
         }
     }
+
+    @Override
+    public void run() {
+
+    }
+
+
 
     private class Rate implements Runnable {
         private long min;

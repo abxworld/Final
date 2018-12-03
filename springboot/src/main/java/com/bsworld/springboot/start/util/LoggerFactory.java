@@ -15,7 +15,8 @@ public class LoggerFactory {
         Logger logger = LOGGERS.get(className);
         if (logger == null) {
             LOGGERS.putIfAbsent(className, new Logger(className));
-            logger = LOGGERS.get(className);
+            LOGGERS.putIfAbsent(className, new Logger(className));
+
         }
         return logger;
     }

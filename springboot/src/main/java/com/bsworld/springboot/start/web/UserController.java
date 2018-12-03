@@ -25,8 +25,9 @@ import java.util.List;
 @Controller
 public class UserController implements InitializingBean{
     @Autowired
+    List<Runnable> runnables;
+    @Autowired
     TUserMapper tUserMapper;
-
     @PostMapping(value = "/get")
     public void run() {
         TUser user = getUser();
@@ -77,6 +78,7 @@ public class UserController implements InitializingBean{
 
     @Override
     public void afterPropertiesSet() throws Exception {
-        System.out.println("start user controller");
+        System.out.println("**************************" + runnables);
+        System.out.println("**************************" + runnables.size());
     }
 }

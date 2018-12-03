@@ -28,7 +28,7 @@ import java.util.Optional;
 
 @RequestMapping("/")
 @RestController
-public class MySqlController {
+public class MySqlController implements Runnable{
     @Autowired
     TUserMapper userMapper;
 
@@ -90,5 +90,8 @@ public class MySqlController {
     }
 
 
+    @Override
+    public void run() {
 
+    }
 }
