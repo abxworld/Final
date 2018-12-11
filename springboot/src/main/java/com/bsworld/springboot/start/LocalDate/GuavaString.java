@@ -17,5 +17,6 @@ public class GuavaString {
         List<String> list = Arrays.asList("hello", "world");
         System.out.println("第二行");
         System.out.println("第三行");
+        System.out.println("master");
     }
 }
