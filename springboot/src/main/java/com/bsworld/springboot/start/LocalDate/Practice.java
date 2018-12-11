@@ -14,5 +14,6 @@ public class Practice {
         LocalDate localDate = LocalDate.now().plusDays(10);
         int i = localDate.compareTo(now);
         System.out.println(i);
+        System.out.println("增加一行");
     }
 }
