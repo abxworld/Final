@@ -1,7 +1,11 @@
 package com.bsworld.springboot.start.web;
 
+import com.alibaba.fastjson.JSON;
+import com.google.common.collect.Maps;
 import org.junit.Test;
 import org.springframework.http.MediaType;
+
+import java.util.Map;
 
 /*
 *author: xieziyang
@@ -15,6 +19,8 @@ public class UserControllerTest {
     public void rh(){
         String type = MediaType.APPLICATION_JSON_VALUE;
         String url = "http://localhost:8080/user/get";
-        HttpUtil.sendPost(url, null, type);
+        Map hashMap = Maps.newHashMap();
+        hashMap.put("page", 0);
+        HttpUtil.sendPost(url, JSON.toJSONString(hashMap), type);
     }
 }

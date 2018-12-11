@@ -59,4 +59,16 @@ public class JexlTest {
         System.out.println("start");
         JexlUtil.execute(expression, context);
     }
+
+    @Test
+    public void run5() {
+        Long a  =10l;
+        Long b = new Long(10l);
+        Long c = 10l;
+        System.out.println(a.equals(b));
+        System.out.println(a.equals(c));
+        System.out.println(a.equals(null));
+    }
+
+
 }

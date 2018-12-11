@@ -9,10 +9,9 @@ import org.apache.commons.jexl3.*;
 import org.springframework.beans.factory.InitializingBean;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.*;
 
+import java.util.HashMap;
 import java.util.List;
 
 /*
@@ -22,14 +21,15 @@ import java.util.List;
 *description:
 */
 @RequestMapping("/user")
-@Controller
+@RestController
 public class UserController implements InitializingBean{
     @Autowired
     List<Runnable> runnables;
     @Autowired
     TUserMapper tUserMapper;
     @PostMapping(value = "/get")
-    public void run() {
+    public void run(HashMap page) {
+        System.out.println("************:" + page);
         TUser user = getUser();
         TUserExample example = new TUserExample();
         TUserExample.Criteria criteria = example.createCriteria();
@@ -81,4 +81,6 @@ public class UserController implements InitializingBean{
         System.out.println("**************************" + runnables);
         System.out.println("**************************" + runnables.size());
     }
+
+
 }
