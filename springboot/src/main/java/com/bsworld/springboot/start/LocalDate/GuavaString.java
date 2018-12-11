@@ -16,5 +16,7 @@ public class GuavaString {
         System.out.println(hello);
         List<String> list = Arrays.asList("hello", "world");
         System.out.println("one");
+        System.out.println("two");
+        System.out.println("three");
     }
 }
