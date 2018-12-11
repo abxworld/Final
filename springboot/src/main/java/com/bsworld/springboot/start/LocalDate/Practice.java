@@ -15,5 +15,6 @@ public class Practice {
         int i = localDate.compareTo(now);
         System.out.println(i);
         System.out.println("增加一行");
+        System.out.println("再增加一行");
     }
 }
