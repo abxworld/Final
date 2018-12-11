@@ -15,8 +15,5 @@ public class GuavaString {
         Object hello = Optional.ofNullable(null).orElse("have none");
         System.out.println(hello);
         List<String> list = Arrays.asList("hello", "world");
-        System.out.println("1");
-        System.out.println("2");
-        System.out.println("3");
     }
 }
