@@ -9,6 +9,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.ResponseBody;
 import org.springframework.web.bind.annotation.RestController;
 
 import java.lang.reflect.Field;
@@ -26,14 +27,16 @@ import java.util.Optional;
  */
 
 
-@RequestMapping("/")
+@RequestMapping("/mysql")
 @RestController
 public class MySqlController implements Runnable{
     @Autowired
     TUserMapper userMapper;
 
-    @PostMapping(value = "/mysql")
-    public void test() {
+    @PostMapping(value = "/test")
+    @ResponseBody
+    public void test(MySqlTestBean bean) {
+        System.out.println("bean:" + JSON.toJSONString(bean));
         try {
             TUser tUser = getUser();
             Class<? extends TUser> aClass = tUser.getClass();

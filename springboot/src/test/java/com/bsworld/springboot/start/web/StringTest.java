@@ -162,6 +162,16 @@ public class StringTest {
         boolean b = canJumpTanXin(a);
         System.out.println(b);
     }
+
+    @Test
+    public void run10() {
+        String a ="abbb";
+        int length = a.getBytes().length;
+        System.out.println(length);
+    }
+
+
+
     public static boolean canJumpDP(int [] A) {
         if (A.length == 1) return true;
         int [] dp = new int[A.length];
@@ -202,4 +212,6 @@ public class StringTest {
         }
         return currMaxStep >= A.length-1;
     }
+
+
 }
