@@ -1,149 +1,811 @@
-19-01-03.19:32:30.024 [Thread-35       ] INFO  AnnotationConfigServletWebServerApplicationContext  - Closing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@7b7a8175: startup date [Sat Dec 29 18:06:01 CST 2018]; root of context hierarchy
-19-01-03.19:32:30.125 [Thread-35       ] INFO  AnnotationMBeanExporter  - Unregistering JMX-exposed beans on shutdown
-19-01-03.19:32:30.126 [Thread-35       ] INFO  AnnotationMBeanExporter  - Unregistering JMX-exposed beans
-19-01-03.19:32:30.129 [Thread-35       ] DEBUG LifecycleBeanPostProcessor  - Destroying bean [securityManager]...
-19-01-03.19:32:30.135 [Thread-35       ] DEBUG LifecycleBeanPostProcessor  - Destroying bean [getEhCacheManager]...
-19-01-03.19:32:30.981 [restartedMain   ] INFO  SpringbootApplication   - Starting SpringbootApplication on localhost with PID 12594 (/Users/uxin/IdeaProjects/Final/springboot/target/classes started by uxin in /Users/uxin/IdeaProjects/Final)
-19-01-03.19:32:30.981 [restartedMain   ] DEBUG SpringbootApplication   - Running with Spring Boot v2.0.3.RELEASE, Spring v5.0.7.RELEASE
-19-01-03.19:32:30.981 [restartedMain   ] INFO  SpringbootApplication   - The following profiles are active: mysql
-19-01-03.19:32:30.985 [restartedMain   ] INFO  AnnotationConfigServletWebServerApplicationContext  - Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@62b021fc: startup date [Thu Jan 03 19:32:30 CST 2019]; root of context hierarchy
-19-01-03.19:32:31.965 [restartedMain   ] DEBUG ClassPathMapperScanner  - Identified candidate component class: file [/Users/uxin/IdeaProjects/Final/springboot/target/classes/com/bsworld/springboot/start/dao/mapper/TPermissionMapper.class]
-19-01-03.19:32:31.967 [restartedMain   ] DEBUG ClassPathMapperScanner  - Identified candidate component class: file [/Users/uxin/IdeaProjects/Final/springboot/target/classes/com/bsworld/springboot/start/dao/mapper/TRateTransformMapper.class]
-19-01-03.19:32:31.968 [restartedMain   ] DEBUG ClassPathMapperScanner  - Identified candidate component class: file [/Users/uxin/IdeaProjects/Final/springboot/target/classes/com/bsworld/springboot/start/dao/mapper/TRoleMapper.class]
-19-01-03.19:32:31.969 [restartedMain   ] DEBUG ClassPathMapperScanner  - Identified candidate component class: file [/Users/uxin/IdeaProjects/Final/springboot/target/classes/com/bsworld/springboot/start/dao/mapper/TUserMapper.class]
-19-01-03.19:32:31.971 [restartedMain   ] DEBUG ClassPathMapperScanner  - Identified candidate component class: file [/Users/uxin/IdeaProjects/Final/springboot/target/classes/com/bsworld/springboot/start/dao/mapper/TUserRoleMapper.class]
-19-01-03.19:32:31.972 [restartedMain   ] DEBUG ClassPathMapperScanner  - Creating MapperFactoryBean with name 'TPermissionMapper' and 'com.bsworld.springboot.start.dao.mapper.TPermissionMapper' mapperInterface
-19-01-03.19:32:31.973 [restartedMain   ] DEBUG ClassPathMapperScanner  - Creating MapperFactoryBean with name 'TRateTransformMapper' and 'com.bsworld.springboot.start.dao.mapper.TRateTransformMapper' mapperInterface
-19-01-03.19:32:31.973 [restartedMain   ] DEBUG ClassPathMapperScanner  - Creating MapperFactoryBean with name 'TRoleMapper' and 'com.bsworld.springboot.start.dao.mapper.TRoleMapper' mapperInterface
-19-01-03.19:32:31.973 [restartedMain   ] DEBUG ClassPathMapperScanner  - Creating MapperFactoryBean with name 'TUserMapper' and 'com.bsworld.springboot.start.dao.mapper.TUserMapper' mapperInterface
-19-01-03.19:32:31.973 [restartedMain   ] DEBUG ClassPathMapperScanner  - Creating MapperFactoryBean with name 'TUserRoleMapper' and 'com.bsworld.springboot.start.dao.mapper.TUserRoleMapper' mapperInterface
-19-01-03.19:32:32.183 [restartedMain   ] INFO  PostProcessorRegistrationDelegate$BeanPostProcessorChecker  - Bean 'shiroConfig' of type [com.bsworld.springboot.start.config.shiro.ShiroConfig$$EnhancerBySpringCGLIB$$502f04db] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-19-01-03.19:32:32.199 [restartedMain   ] DEBUG LifecycleBeanPostProcessor  - Initializing bean [getEhCacheManager]...
-19-01-03.19:32:32.199 [restartedMain   ] DEBUG EhCacheManager          - cacheManager property not set.  Constructing CacheManager instance... 
-19-01-03.19:32:32.200 [restartedMain   ] DEBUG ResourceUtils           - Opening resource from class path [ehcache-shiro.xml]
-19-01-03.19:32:32.200 [restartedMain   ] DEBUG ConfigurationFactory    - Configuring ehcache from InputStream
-19-01-03.19:32:32.205 [restartedMain   ] DEBUG PropertyUtil            - propertiesString is null.
-19-01-03.19:32:32.205 [restartedMain   ] DEBUG CacheManager            - No disk store path defined. Skipping disk store path conflict test.
-19-01-03.19:32:32.205 [restartedMain   ] DEBUG ConfigurationHelper     - No CacheManagerEventListenerFactory class specified. Skipping...
-19-01-03.19:32:32.206 [restartedMain   ] DEBUG Cache                   - No BootstrapCacheLoaderFactory class specified. Skipping...
-19-01-03.19:32:32.206 [restartedMain   ] DEBUG Cache                   - CacheWriter factory not configured. Skipping...
-19-01-03.19:32:32.206 [restartedMain   ] DEBUG ConfigurationHelper     - No CacheExceptionHandlerFactory class specified. Skipping...
-19-01-03.19:32:32.207 [restartedMain   ] DEBUG EhCacheManager          - implicit cacheManager created successfully.
-19-01-03.19:32:32.207 [restartedMain   ] INFO  PostProcessorRegistrationDelegate$BeanPostProcessorChecker  - Bean 'getEhCacheManager' of type [org.apache.shiro.cache.ehcache.EhCacheManager] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-19-01-03.19:32:32.207 [restartedMain   ] DEBUG AuthorizingRealm        - No authorizationCache instance set.  Checking for a cacheManager...
-19-01-03.19:32:32.207 [restartedMain   ] DEBUG AuthorizingRealm        - CacheManager [org.apache.shiro.cache.ehcache.EhCacheManager@ebc5e03] has been configured.  Building authorization cache named [myRelam.authorizationCache]
-19-01-03.19:32:32.208 [restartedMain   ] INFO  EhCacheManager          - Cache with name 'myRelam.authorizationCache' does not yet exist.  Creating now.
-19-01-03.19:32:32.209 [restartedMain   ] DEBUG MemoryStore             - Initialized net.sf.ehcache.store.NotifyingMemoryStore for myRelam.authorizationCache
-19-01-03.19:32:32.209 [restartedMain   ] DEBUG Cache                   - Initialised cache: myRelam.authorizationCache
-19-01-03.19:32:32.210 [restartedMain   ] DEBUG ConfigurationHelper     - CacheDecoratorFactory not configured for defaultCache. Skipping for 'myRelam.authorizationCache'.
-19-01-03.19:32:32.210 [restartedMain   ] INFO  EhCacheManager          - Added EhCache named [myRelam.authorizationCache]
-19-01-03.19:32:32.331 [restartedMain   ] INFO  PostProcessorRegistrationDelegate$BeanPostProcessorChecker  - Bean 'mysqlConfig' of type [com.bsworld.springboot.start.config.mysql.MysqlConfig$$EnhancerBySpringCGLIB$$5509aa3d] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-19-01-03.19:32:32.354 [restartedMain   ] INFO  PostProcessorRegistrationDelegate$BeanPostProcessorChecker  - Bean 'org.springframework.boot.context.properties.ConversionServiceDeducer$Factory' of type [org.springframework.boot.context.properties.ConversionServiceDeducer$Factory] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-19-01-03.19:32:32.395 [restartedMain   ] INFO  PostProcessorRegistrationDelegate$BeanPostProcessorChecker  - Bean 'druidDateSource' of type [com.alibaba.druid.pool.DruidDataSource] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-19-01-03.19:32:32.485 [restartedMain   ] DEBUG SqlSessionFactoryBean   - Parsed configuration file: 'class path resource [META-INF/mybatis/mybatis-config.xml]'
-19-01-03.19:32:32.499 [restartedMain   ] DEBUG SqlSessionFactoryBean   - Parsed mapper file: 'file [/Users/uxin/IdeaProjects/Final/springboot/target/classes/META-INF/mybatis/mapper/TPermissionMapper.xml]'
-19-01-03.19:32:32.569 [restartedMain   ] DEBUG SqlSessionFactoryBean   - Parsed mapper file: 'file [/Users/uxin/IdeaProjects/Final/springboot/target/classes/META-INF/mybatis/mapper/TRateTransformMapper.xml]'
-19-01-03.19:32:32.586 [restartedMain   ] DEBUG SqlSessionFactoryBean   - Parsed mapper file: 'file [/Users/uxin/IdeaProjects/Final/springboot/target/classes/META-INF/mybatis/mapper/TRoleMapper.xml]'
-19-01-03.19:32:32.600 [restartedMain   ] DEBUG SqlSessionFactoryBean   - Parsed mapper file: 'file [/Users/uxin/IdeaProjects/Final/springboot/target/classes/META-INF/mybatis/mapper/TUserMapper.xml]'
-19-01-03.19:32:32.610 [restartedMain   ] DEBUG SqlSessionFactoryBean   - Parsed mapper file: 'file [/Users/uxin/IdeaProjects/Final/springboot/target/classes/META-INF/mybatis/mapper/TUserRoleMapper.xml]'
-19-01-03.19:32:32.662 [restartedMain   ] DEBUG SqlSessionFactoryBean   - Parsed mapper file: 'file [/Users/uxin/IdeaProjects/Final/springboot/target/classes/META-INF/mybatis/mapper/UserMapper.xml]'
-19-01-03.19:32:32.662 [restartedMain   ] INFO  PostProcessorRegistrationDelegate$BeanPostProcessorChecker  - Bean 'sqlSessionFactory' of type [org.apache.ibatis.session.defaults.DefaultSqlSessionFactory] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-19-01-03.19:32:32.664 [restartedMain   ] INFO  PostProcessorRegistrationDelegate$BeanPostProcessorChecker  - Bean 'TUserMapper' of type [org.mybatis.spring.mapper.MapperFactoryBean] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-19-01-03.19:32:32.665 [restartedMain   ] INFO  PostProcessorRegistrationDelegate$BeanPostProcessorChecker  - Bean 'TUserMapper' of type [com.sun.proxy.$Proxy102] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-19-01-03.19:32:32.665 [restartedMain   ] INFO  PostProcessorRegistrationDelegate$BeanPostProcessorChecker  - Bean 'TUserServiceImpl' of type [com.bsworld.springboot.start.service.impl.TUserServiceImpl] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-19-01-03.19:32:32.671 [restartedMain   ] INFO  PostProcessorRegistrationDelegate$BeanPostProcessorChecker  - Bean 'TUserRoleMapper' of type [org.mybatis.spring.mapper.MapperFactoryBean] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-19-01-03.19:32:32.672 [restartedMain   ] INFO  PostProcessorRegistrationDelegate$BeanPostProcessorChecker  - Bean 'TUserRoleMapper' of type [com.sun.proxy.$Proxy103] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-19-01-03.19:32:32.673 [restartedMain   ] INFO  PostProcessorRegistrationDelegate$BeanPostProcessorChecker  - Bean 'TUserRoleServiceImpl' of type [com.bsworld.springboot.start.service.impl.TUserRoleServiceImpl] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-19-01-03.19:32:32.724 [restartedMain   ] INFO  PostProcessorRegistrationDelegate$BeanPostProcessorChecker  - Bean 'TRoleMapper' of type [org.mybatis.spring.mapper.MapperFactoryBean] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-19-01-03.19:32:32.725 [restartedMain   ] INFO  PostProcessorRegistrationDelegate$BeanPostProcessorChecker  - Bean 'TRoleMapper' of type [com.sun.proxy.$Proxy104] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-19-01-03.19:32:32.725 [restartedMain   ] INFO  PostProcessorRegistrationDelegate$BeanPostProcessorChecker  - Bean 'TRoleServiceImpl' of type [com.bsworld.springboot.start.service.impl.TRoleServiceImpl] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-19-01-03.19:32:32.731 [restartedMain   ] INFO  PostProcessorRegistrationDelegate$BeanPostProcessorChecker  - Bean 'TPermissionMapper' of type [org.mybatis.spring.mapper.MapperFactoryBean] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-19-01-03.19:32:32.732 [restartedMain   ] INFO  PostProcessorRegistrationDelegate$BeanPostProcessorChecker  - Bean 'TPermissionMapper' of type [com.sun.proxy.$Proxy105] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-19-01-03.19:32:32.733 [restartedMain   ] INFO  PostProcessorRegistrationDelegate$BeanPostProcessorChecker  - Bean 'TPermissionServiceImpl' of type [com.bsworld.springboot.start.service.impl.TPermissionServiceImpl] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-19-01-03.19:32:32.733 [restartedMain   ] DEBUG LifecycleBeanPostProcessor  - Initializing bean [myShiroRealm]...
-19-01-03.19:32:32.734 [restartedMain   ] INFO  PostProcessorRegistrationDelegate$BeanPostProcessorChecker  - Bean 'myShiroRealm' of type [com.bsworld.springboot.start.shiro.MyShiroRealm] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-19-01-03.19:32:32.741 [restartedMain   ] DEBUG AuthorizingRealm        - No authorizationCache instance set.  Checking for a cacheManager...
-19-01-03.19:32:32.741 [restartedMain   ] DEBUG AuthorizingRealm        - CacheManager [org.apache.shiro.cache.ehcache.EhCacheManager@ebc5e03] has been configured.  Building authorization cache named [myRelam2.authorizationCache]
-19-01-03.19:32:32.742 [restartedMain   ] INFO  EhCacheManager          - Cache with name 'myRelam2.authorizationCache' does not yet exist.  Creating now.
-19-01-03.19:32:32.742 [restartedMain   ] DEBUG MemoryStore             - Initialized net.sf.ehcache.store.NotifyingMemoryStore for myRelam2.authorizationCache
-19-01-03.19:32:32.743 [restartedMain   ] DEBUG Cache                   - Initialised cache: myRelam2.authorizationCache
-19-01-03.19:32:32.743 [restartedMain   ] DEBUG ConfigurationHelper     - CacheDecoratorFactory not configured for defaultCache. Skipping for 'myRelam2.authorizationCache'.
-19-01-03.19:32:32.743 [restartedMain   ] INFO  EhCacheManager          - Added EhCache named [myRelam2.authorizationCache]
-19-01-03.19:32:32.798 [restartedMain   ] DEBUG LifecycleBeanPostProcessor  - Initializing bean [myShiroRealm2]...
-19-01-03.19:32:32.798 [restartedMain   ] INFO  PostProcessorRegistrationDelegate$BeanPostProcessorChecker  - Bean 'myShiroRealm2' of type [com.bsworld.springboot.start.shiro.MyShiroRealm2] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-19-01-03.19:32:32.802 [restartedMain   ] INFO  PostProcessorRegistrationDelegate$BeanPostProcessorChecker  - Bean 'securityManager' of type [org.apache.shiro.web.mgt.DefaultWebSecurityManager] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-19-01-03.19:32:32.867 [restartedMain   ] INFO  PostProcessorRegistrationDelegate$BeanPostProcessorChecker  - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$909ea06b] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-19-01-03.19:32:32.874 [restartedMain   ] INFO  PostProcessorRegistrationDelegate$BeanPostProcessorChecker  - Bean 'getAuthorizationAttributeSourceAdvisor' of type [org.apache.shiro.spring.security.interceptor.AuthorizationAttributeSourceAdvisor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-19-01-03.19:32:33.243 [restartedMain   ] INFO  TomcatWebServer         - Tomcat initialized with port(s): 8080 (http)
-19-01-03.19:32:33.244 [restartedMain   ] INFO  Http11NioProtocol       - Initializing ProtocolHandler ["http-nio-8080"]
-19-01-03.19:32:33.245 [restartedMain   ] INFO  StandardService         - Starting service [Tomcat]
-19-01-03.19:32:33.246 [restartedMain   ] INFO  StandardEngine          - Starting Servlet Engine: Apache Tomcat/8.5.31
-19-01-03.19:32:33.260 [localhost-startStop-1] INFO  [/]                     - Initializing Spring embedded WebApplicationContext
-19-01-03.19:32:33.261 [localhost-startStop-1] INFO  ContextLoader           - Root WebApplicationContext: initialization completed in 2276 ms
-19-01-03.19:32:33.336 [localhost-startStop-1] DEBUG DefaultFilterChainManager  - Creating chain [/user] from String definition [authc]
-19-01-03.19:32:33.336 [localhost-startStop-1] DEBUG DefaultFilterChainManager  - Attempting to apply path [/user] to filter [authc] with config [null]
-19-01-03.19:32:33.336 [localhost-startStop-1] DEBUG DefaultFilterChainManager  - Creating chain [/user/edit/**] from String definition [authc,perms[user:edit]]
-19-01-03.19:32:33.336 [localhost-startStop-1] DEBUG DefaultFilterChainManager  - Attempting to apply path [/user/edit/**] to filter [authc] with config [null]
-19-01-03.19:32:33.336 [localhost-startStop-1] DEBUG DefaultFilterChainManager  - Attempting to apply path [/user/edit/**] to filter [perms] with config [user:edit]
-19-01-03.19:32:33.337 [localhost-startStop-1] DEBUG DefaultFilterChainManager  - Creating chain [/login] from String definition [anon]
-19-01-03.19:32:33.337 [localhost-startStop-1] DEBUG DefaultFilterChainManager  - Attempting to apply path [/login] to filter [anon] with config [null]
-19-01-03.19:32:33.337 [localhost-startStop-1] DEBUG DefaultFilterChainManager  - Creating chain [/**] from String definition [anon]
-19-01-03.19:32:33.337 [localhost-startStop-1] DEBUG DefaultFilterChainManager  - Attempting to apply path [/**] to filter [anon] with config [null]
-19-01-03.19:32:33.344 [localhost-startStop-1] DEBUG ShiroFilterFactoryBean  - Found filter chain candidate filter 'requestContextFilter'
-19-01-03.19:32:33.353 [localhost-startStop-1] DEBUG ShiroFilterFactoryBean  - Found filter chain candidate filter 'hiddenHttpMethodFilter'
-19-01-03.19:32:33.362 [localhost-startStop-1] DEBUG ShiroFilterFactoryBean  - Found filter chain candidate filter 'httpPutFormContentFilter'
-19-01-03.19:32:33.366 [localhost-startStop-1] DEBUG ShiroFilterFactoryBean  - Found filter chain candidate filter 'characterEncodingFilter'
-19-01-03.19:32:33.411 [localhost-startStop-1] INFO  ServletRegistrationBean  - Servlet dispatcherServlet mapped to [/]
-19-01-03.19:32:33.412 [localhost-startStop-1] INFO  FilterRegistrationBean  - Mapping filter: 'characterEncodingFilter' to: [/*]
-19-01-03.19:32:33.412 [localhost-startStop-1] INFO  FilterRegistrationBean  - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
-19-01-03.19:32:33.412 [localhost-startStop-1] INFO  FilterRegistrationBean  - Mapping filter: 'httpPutFormContentFilter' to: [/*]
-19-01-03.19:32:33.412 [localhost-startStop-1] INFO  FilterRegistrationBean  - Mapping filter: 'requestContextFilter' to: [/*]
-19-01-03.19:32:33.412 [localhost-startStop-1] INFO  FilterRegistrationBean  - Mapping filter: 'shiroFilter' to: [/*]
-19-01-03.19:32:34.008 [restartedMain   ] DEBUG TraversableResolvers    - Cannot find javax.persistence.Persistence on classpath. Assuming non JPA 2 environment. All properties will per default be traversable.
-19-01-03.19:32:34.009 [restartedMain   ] DEBUG ResourceBundleMessageInterpolator  - Loaded expression factory via original TCCL
-19-01-03.19:32:34.011 [restartedMain   ] DEBUG TraversableResolvers    - Cannot find javax.persistence.Persistence on classpath. Assuming non JPA 2 environment. All properties will per default be traversable.
-19-01-03.19:32:34.012 [restartedMain   ] DEBUG ConfigurationImpl       - Setting custom MessageInterpolator of type org.springframework.validation.beanvalidation.LocaleContextMessageInterpolator
-19-01-03.19:32:34.012 [restartedMain   ] DEBUG ConfigurationImpl       - Setting custom ConstraintValidatorFactory of type org.springframework.validation.beanvalidation.SpringConstraintValidatorFactory
-19-01-03.19:32:34.012 [restartedMain   ] DEBUG ConfigurationImpl       - Setting custom ParameterNameProvider of type org.springframework.validation.beanvalidation.LocalValidatorFactoryBean$1
-19-01-03.19:32:34.013 [restartedMain   ] DEBUG ValidationXmlParser     - Trying to load META-INF/validation.xml for XML based Validator configuration.
-19-01-03.19:32:34.013 [restartedMain   ] DEBUG ResourceLoaderHelper    - Trying to load META-INF/validation.xml via user class loader
-19-01-03.19:32:34.014 [restartedMain   ] DEBUG ResourceLoaderHelper    - Trying to load META-INF/validation.xml via TCCL
-19-01-03.19:32:34.014 [restartedMain   ] DEBUG ResourceLoaderHelper    - Trying to load META-INF/validation.xml via Hibernate Validator's class loader
-19-01-03.19:32:34.014 [restartedMain   ] DEBUG ValidationXmlParser     - No META-INF/validation.xml found. Using annotation based configuration only.
-19-01-03.19:32:34.021 [restartedMain   ] DEBUG ValidatorFactoryImpl    - HV000234: Using org.springframework.validation.beanvalidation.LocaleContextMessageInterpolator as ValidatorFactory-scoped message interpolator.
-19-01-03.19:32:34.021 [restartedMain   ] DEBUG ValidatorFactoryImpl    - HV000234: Using org.hibernate.validator.internal.engine.resolver.TraverseAllTraversableResolver as ValidatorFactory-scoped traversable resolver.
-19-01-03.19:32:34.022 [restartedMain   ] DEBUG ValidatorFactoryImpl    - HV000234: Using org.hibernate.validator.internal.util.ExecutableParameterNameProvider as ValidatorFactory-scoped parameter name provider.
-19-01-03.19:32:34.022 [restartedMain   ] DEBUG ValidatorFactoryImpl    - HV000234: Using org.hibernate.validator.internal.engine.DefaultClockProvider as ValidatorFactory-scoped clock provider.
-19-01-03.19:32:34.022 [restartedMain   ] DEBUG ValidatorFactoryImpl    - HV000234: Using org.hibernate.validator.internal.engine.scripting.DefaultScriptEvaluatorFactory as ValidatorFactory-scoped script evaluator factory.
-19-01-03.19:32:34.831 [restartedMain   ] INFO  RequestMappingHandlerAdapter  - Looking for @ControllerAdvice: org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@62b021fc: startup date [Thu Jan 03 19:32:30 CST 2019]; root of context hierarchy
-19-01-03.19:32:34.974 [restartedMain   ] INFO  RequestMappingHandlerMapping  - Mapped "{[/aop],methods=[POST]}" onto public void com.bsworld.springboot.start.aop.AopController.run()
-19-01-03.19:32:34.975 [restartedMain   ] INFO  RequestMappingHandlerMapping  - Mapped "{[/login],methods=[POST]}" onto public java.lang.String com.bsworld.springboot.start.shiro.ShiroController.login(com.bsworld.springboot.start.dao.entity.TUser)
-19-01-03.19:32:34.976 [restartedMain   ] INFO  RequestMappingHandlerMapping  - Mapped "{[/logout],methods=[GET]}" onto public java.lang.String com.bsworld.springboot.start.shiro.ShiroController.logout(org.springframework.web.servlet.mvc.support.RedirectAttributes)
-19-01-03.19:32:34.976 [restartedMain   ] INFO  RequestMappingHandlerMapping  - Mapped "{[/403]}" onto public java.lang.String com.bsworld.springboot.start.shiro.ShiroController.unauthorizedRole()
-19-01-03.19:32:34.977 [restartedMain   ] INFO  RequestMappingHandlerMapping  - Mapped "{[/user/edit/{userid}]}" onto public java.lang.String com.bsworld.springboot.start.shiro.ShiroController.getUserList(int)
-19-01-03.19:32:34.978 [restartedMain   ] INFO  RequestMappingHandlerMapping  - Mapped "{[/mysql/test],methods=[POST]}" onto public void com.bsworld.springboot.start.web.MySqlController.test(com.bsworld.springboot.start.web.MySqlTestBean)
-19-01-03.19:32:34.978 [restartedMain   ] INFO  RequestMappingHandlerMapping  - Mapped "{[/mysql/json],methods=[POST]}" onto public void com.bsworld.springboot.start.web.MySqlController.test(java.util.HashMap)
-19-01-03.19:32:34.980 [restartedMain   ] INFO  RequestMappingHandlerMapping  - Mapped "{[/rate/insert],methods=[POST]}" onto public void com.bsworld.springboot.start.web.RateTransController.insert()
-19-01-03.19:32:34.980 [restartedMain   ] INFO  RequestMappingHandlerMapping  - Mapped "{[/rate/query],methods=[POST]}" onto public void com.bsworld.springboot.start.web.RateTransController.query()
-19-01-03.19:32:34.981 [restartedMain   ] INFO  RequestMappingHandlerMapping  - Mapped "{[/rate/threadquery],methods=[POST]}" onto public void com.bsworld.springboot.start.web.RateTransController.queryThread()
-19-01-03.19:32:34.982 [restartedMain   ] INFO  RequestMappingHandlerMapping  - Mapped "{[/user/get],methods=[POST]}" onto public void com.bsworld.springboot.start.web.UserController.run(java.util.HashMap)
-19-01-03.19:32:34.982 [restartedMain   ] INFO  RequestMappingHandlerMapping  - Mapped "{[/user/get10],methods=[POST]}" onto public void com.bsworld.springboot.start.web.UserController.insert()
-19-01-03.19:32:34.986 [restartedMain   ] INFO  RequestMappingHandlerMapping  - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
-19-01-03.19:32:34.987 [restartedMain   ] INFO  RequestMappingHandlerMapping  - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
-19-01-03.19:32:35.189 [restartedMain   ] INFO  SimpleUrlHandlerMapping  - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
-19-01-03.19:32:35.190 [restartedMain   ] INFO  SimpleUrlHandlerMapping  - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
-19-01-03.19:32:35.423 [restartedMain   ] INFO  SimpleUrlHandlerMapping  - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
-19-01-03.19:32:35.936 [restartedMain   ] INFO  OptionalLiveReloadServer  - LiveReload server is running on port 35729
-19-01-03.19:32:36.102 [restartedMain   ] INFO  AnnotationMBeanExporter  - Registering beans for JMX exposure on startup
-19-01-03.19:32:36.107 [restartedMain   ] INFO  AnnotationMBeanExporter  - Bean with name 'druidDateSource' has been autodetected for JMX exposure
-19-01-03.19:32:36.112 [restartedMain   ] INFO  AnnotationMBeanExporter  - Located MBean 'druidDateSource': registering with JMX server as MBean [com.alibaba.druid.pool:name=druidDateSource,type=DruidDataSource]
-19-01-03.19:32:36.134 [restartedMain   ] INFO  Http11NioProtocol       - Starting ProtocolHandler ["http-nio-8080"]
-19-01-03.19:32:36.144 [restartedMain   ] INFO  NioSelectorPool         - Using a shared selector for servlet write/read
-19-01-03.19:32:36.153 [restartedMain   ] INFO  TomcatWebServer         - Tomcat started on port(s): 8080 (http) with context path ''
-19-01-03.19:32:36.154 [restartedMain   ] INFO  SpringbootApplication   - Started SpringbootApplication in 5.249 seconds (JVM running for 67265.433)
-19-01-03.19:32:36.158 [restartedMain   ] INFO  ConditionEvaluationDeltaLoggingListener  - Condition evaluation unchanged
-19-01-03.21:11:01.772 [Thread-48       ] INFO  AnnotationConfigServletWebServerApplicationContext  - Closing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@62b021fc: startup date [Thu Jan 03 19:32:30 CST 2019]; root of context hierarchy
-19-01-03.21:11:01.786 [Thread-48       ] INFO  AnnotationMBeanExporter  - Unregistering JMX-exposed beans on shutdown
-19-01-03.21:11:01.786 [Thread-48       ] INFO  AnnotationMBeanExporter  - Unregistering JMX-exposed beans
-19-01-03.21:11:01.787 [Thread-48       ] DEBUG LifecycleBeanPostProcessor  - Destroying bean [securityManager]...
-19-01-03.21:11:01.789 [Thread-48       ] DEBUG LifecycleBeanPostProcessor  - Destroying bean [getEhCacheManager]...
+19-06-28.10:55:51.517 [Thread-65       ] INFO  AnnotationConfigServletWebServerApplicationContext  - Closing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@7d17e4b8: startup date [Thu Jun 27 11:33:15 CST 2019]; root of context hierarchy
+19-06-28.10:55:51.557 [Thread-65       ] INFO  AnnotationMBeanExporter  - Unregistering JMX-exposed beans on shutdown
+19-06-28.10:55:51.557 [Thread-65       ] INFO  AnnotationMBeanExporter  - Unregistering JMX-exposed beans
+19-06-28.10:55:51.558 [Thread-65       ] DEBUG LifecycleBeanPostProcessor  - Destroying bean [securityManager]...
+19-06-28.10:55:51.562 [Thread-65       ] DEBUG LifecycleBeanPostProcessor  - Destroying bean [getEhCacheManager]...
+19-06-28.15:56:46.637 [background-preinit] DEBUG ResourceBundleMessageInterpolator  - Loaded expression factory via original TCCL
+19-06-28.15:56:46.669 [restartedMain   ] INFO  SpringbootApplication   - Starting SpringbootApplication on localhost with PID 2518 (/Users/uxin/IdeaProjects/Final/springboot/target/classes started by uxin in /Users/uxin/IdeaProjects/Final)
+19-06-28.15:56:46.670 [background-preinit] DEBUG ValidatorFactoryImpl    - HV000234: Using org.hibernate.validator.messageinterpolation.ResourceBundleMessageInterpolator as ValidatorFactory-scoped message interpolator.
+19-06-28.15:56:46.672 [restartedMain   ] DEBUG SpringbootApplication   - Running with Spring Boot v2.0.3.RELEASE, Spring v5.0.7.RELEASE
+19-06-28.15:56:46.672 [background-preinit] DEBUG ValidatorFactoryImpl    - HV000234: Using org.hibernate.validator.internal.engine.resolver.TraverseAllTraversableResolver as ValidatorFactory-scoped traversable resolver.
+19-06-28.15:56:46.672 [restartedMain   ] INFO  SpringbootApplication   - The following profiles are active: mysql
+19-06-28.15:56:46.672 [background-preinit] DEBUG ValidatorFactoryImpl    - HV000234: Using org.hibernate.validator.internal.util.ExecutableParameterNameProvider as ValidatorFactory-scoped parameter name provider.
+19-06-28.15:56:46.673 [background-preinit] DEBUG ValidatorFactoryImpl    - HV000234: Using org.hibernate.validator.internal.engine.DefaultClockProvider as ValidatorFactory-scoped clock provider.
+19-06-28.15:56:46.673 [background-preinit] DEBUG ValidatorFactoryImpl    - HV000234: Using org.hibernate.validator.internal.engine.scripting.DefaultScriptEvaluatorFactory as ValidatorFactory-scoped script evaluator factory.
+19-06-28.15:56:46.869 [restartedMain   ] INFO  AnnotationConfigServletWebServerApplicationContext  - Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@6c988d8d: startup date [Fri Jun 28 15:56:46 CST 2019]; root of context hierarchy
+19-06-28.15:56:50.292 [restartedMain   ] DEBUG ClassPathMapperScanner  - Identified candidate component class: file [/Users/uxin/IdeaProjects/Final/springboot/target/classes/com/bsworld/springboot/start/dao/mapper/TPermissionMapper.class]
+19-06-28.15:56:50.292 [restartedMain   ] DEBUG ClassPathMapperScanner  - Identified candidate component class: file [/Users/uxin/IdeaProjects/Final/springboot/target/classes/com/bsworld/springboot/start/dao/mapper/TRateTransformMapper.class]
+19-06-28.15:56:50.292 [restartedMain   ] DEBUG ClassPathMapperScanner  - Identified candidate component class: file [/Users/uxin/IdeaProjects/Final/springboot/target/classes/com/bsworld/springboot/start/dao/mapper/TRoleMapper.class]
+19-06-28.15:56:50.292 [restartedMain   ] DEBUG ClassPathMapperScanner  - Identified candidate component class: file [/Users/uxin/IdeaProjects/Final/springboot/target/classes/com/bsworld/springboot/start/dao/mapper/TUserMapper.class]
+19-06-28.15:56:50.292 [restartedMain   ] DEBUG ClassPathMapperScanner  - Identified candidate component class: file [/Users/uxin/IdeaProjects/Final/springboot/target/classes/com/bsworld/springboot/start/dao/mapper/TUserRoleMapper.class]
+19-06-28.15:56:50.295 [restartedMain   ] DEBUG ClassPathMapperScanner  - Creating MapperFactoryBean with name 'TPermissionMapper' and 'com.bsworld.springboot.start.dao.mapper.TPermissionMapper' mapperInterface
+19-06-28.15:56:50.299 [restartedMain   ] DEBUG ClassPathMapperScanner  - Creating MapperFactoryBean with name 'TRateTransformMapper' and 'com.bsworld.springboot.start.dao.mapper.TRateTransformMapper' mapperInterface
+19-06-28.15:56:50.299 [restartedMain   ] DEBUG ClassPathMapperScanner  - Creating MapperFactoryBean with name 'TRoleMapper' and 'com.bsworld.springboot.start.dao.mapper.TRoleMapper' mapperInterface
+19-06-28.15:56:50.299 [restartedMain   ] DEBUG ClassPathMapperScanner  - Creating MapperFactoryBean with name 'TUserMapper' and 'com.bsworld.springboot.start.dao.mapper.TUserMapper' mapperInterface
+19-06-28.15:56:50.299 [restartedMain   ] DEBUG ClassPathMapperScanner  - Creating MapperFactoryBean with name 'TUserRoleMapper' and 'com.bsworld.springboot.start.dao.mapper.TUserRoleMapper' mapperInterface
+19-06-28.15:56:52.825 [restartedMain   ] INFO  PostProcessorRegistrationDelegate$BeanPostProcessorChecker  - Bean 'shiroConfig' of type [com.bsworld.springboot.start.config.shiro.ShiroConfig$$EnhancerBySpringCGLIB$$dac1103b] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+19-06-28.15:56:53.188 [restartedMain   ] DEBUG LifecycleBeanPostProcessor  - Initializing bean [getEhCacheManager]...
+19-06-28.15:56:53.190 [restartedMain   ] DEBUG EhCacheManager          - cacheManager property not set.  Constructing CacheManager instance... 
+19-06-28.15:56:53.197 [restartedMain   ] DEBUG ResourceUtils           - Opening resource from class path [ehcache-shiro.xml]
+19-06-28.15:56:53.225 [restartedMain   ] DEBUG ConfigurationFactory    - Configuring ehcache from InputStream
+19-06-28.15:56:53.341 [restartedMain   ] DEBUG PropertyUtil            - propertiesString is null.
+19-06-28.15:56:53.372 [restartedMain   ] DEBUG CacheManager            - No disk store path defined. Skipping disk store path conflict test.
+19-06-28.15:56:53.372 [restartedMain   ] DEBUG ConfigurationHelper     - No CacheManagerEventListenerFactory class specified. Skipping...
+19-06-28.15:56:53.463 [restartedMain   ] DEBUG Cache                   - No BootstrapCacheLoaderFactory class specified. Skipping...
+19-06-28.15:56:53.464 [restartedMain   ] DEBUG Cache                   - CacheWriter factory not configured. Skipping...
+19-06-28.15:56:53.470 [restartedMain   ] DEBUG ConfigurationHelper     - No CacheExceptionHandlerFactory class specified. Skipping...
+19-06-28.15:56:53.477 [restartedMain   ] DEBUG EhCacheManager          - implicit cacheManager created successfully.
+19-06-28.15:56:53.478 [restartedMain   ] INFO  PostProcessorRegistrationDelegate$BeanPostProcessorChecker  - Bean 'getEhCacheManager' of type [org.apache.shiro.cache.ehcache.EhCacheManager] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+19-06-28.15:56:53.489 [restartedMain   ] DEBUG AuthorizingRealm        - No authorizationCache instance set.  Checking for a cacheManager...
+19-06-28.15:56:53.489 [restartedMain   ] DEBUG AuthorizingRealm        - CacheManager [org.apache.shiro.cache.ehcache.EhCacheManager@c742a22] has been configured.  Building authorization cache named [myRelam.authorizationCache]
+19-06-28.15:56:53.489 [restartedMain   ] INFO  EhCacheManager          - Cache with name 'myRelam.authorizationCache' does not yet exist.  Creating now.
+19-06-28.15:56:53.722 [restartedMain   ] DEBUG MemoryStore             - Initialized net.sf.ehcache.store.NotifyingMemoryStore for myRelam.authorizationCache
+19-06-28.15:56:53.738 [restartedMain   ] DEBUG Cache                   - Initialised cache: myRelam.authorizationCache
+19-06-28.15:56:53.738 [restartedMain   ] DEBUG ConfigurationHelper     - CacheDecoratorFactory not configured for defaultCache. Skipping for 'myRelam.authorizationCache'.
+19-06-28.15:56:53.739 [restartedMain   ] INFO  EhCacheManager          - Added EhCache named [myRelam.authorizationCache]
+19-06-28.15:56:54.037 [restartedMain   ] INFO  PostProcessorRegistrationDelegate$BeanPostProcessorChecker  - Bean 'mysqlConfig' of type [com.bsworld.springboot.start.config.mysql.MysqlConfig$$EnhancerBySpringCGLIB$$df9bb59d] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+19-06-28.15:56:54.522 [restartedMain   ] INFO  PostProcessorRegistrationDelegate$BeanPostProcessorChecker  - Bean 'org.springframework.boot.context.properties.ConversionServiceDeducer$Factory' of type [org.springframework.boot.context.properties.ConversionServiceDeducer$Factory] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+19-06-28.15:56:54.911 [restartedMain   ] INFO  PostProcessorRegistrationDelegate$BeanPostProcessorChecker  - Bean 'druidDateSource' of type [com.alibaba.druid.pool.DruidDataSource] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+19-06-28.15:56:54.929 [restartedMain   ] DEBUG LogFactory              - Logging initialized using 'class org.apache.ibatis.logging.commons.JakartaCommonsLoggingImpl' adapter.
+19-06-28.15:56:55.829 [restartedMain   ] DEBUG SqlSessionFactoryBean   - Parsed configuration file: 'class path resource [META-INF/mybatis/mybatis-config.xml]'
+19-06-28.15:57:04.989 [background-preinit] DEBUG ResourceBundleMessageInterpolator  - Loaded expression factory via original TCCL
+19-06-28.15:57:05.026 [background-preinit] DEBUG ValidatorFactoryImpl    - HV000234: Using org.hibernate.validator.messageinterpolation.ResourceBundleMessageInterpolator as ValidatorFactory-scoped message interpolator.
+19-06-28.15:57:05.036 [background-preinit] DEBUG ValidatorFactoryImpl    - HV000234: Using org.hibernate.validator.internal.engine.resolver.TraverseAllTraversableResolver as ValidatorFactory-scoped traversable resolver.
+19-06-28.15:57:05.037 [background-preinit] DEBUG ValidatorFactoryImpl    - HV000234: Using org.hibernate.validator.internal.util.ExecutableParameterNameProvider as ValidatorFactory-scoped parameter name provider.
+19-06-28.15:57:05.037 [background-preinit] DEBUG ValidatorFactoryImpl    - HV000234: Using org.hibernate.validator.internal.engine.DefaultClockProvider as ValidatorFactory-scoped clock provider.
+19-06-28.15:57:05.037 [background-preinit] DEBUG ValidatorFactoryImpl    - HV000234: Using org.hibernate.validator.internal.engine.scripting.DefaultScriptEvaluatorFactory as ValidatorFactory-scoped script evaluator factory.
+19-06-28.15:57:05.064 [restartedMain   ] INFO  SpringbootApplication   - Starting SpringbootApplication on localhost with PID 2524 (/Users/uxin/IdeaProjects/Final/springboot/target/classes started by uxin in /Users/uxin/IdeaProjects/Final)
+19-06-28.15:57:05.065 [restartedMain   ] DEBUG SpringbootApplication   - Running with Spring Boot v2.0.3.RELEASE, Spring v5.0.7.RELEASE
+19-06-28.15:57:05.065 [restartedMain   ] INFO  SpringbootApplication   - The following profiles are active: mysql
+19-06-28.15:57:05.316 [restartedMain   ] INFO  AnnotationConfigServletWebServerApplicationContext  - Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@628e06c9: startup date [Fri Jun 28 15:57:05 CST 2019]; root of context hierarchy
+19-06-28.15:57:10.535 [restartedMain   ] DEBUG ClassPathMapperScanner  - Identified candidate component class: file [/Users/uxin/IdeaProjects/Final/springboot/target/classes/com/bsworld/springboot/start/dao/mapper/TPermissionMapper.class]
+19-06-28.15:57:10.559 [restartedMain   ] DEBUG ClassPathMapperScanner  - Identified candidate component class: file [/Users/uxin/IdeaProjects/Final/springboot/target/classes/com/bsworld/springboot/start/dao/mapper/TRateTransformMapper.class]
+19-06-28.15:57:10.560 [restartedMain   ] DEBUG ClassPathMapperScanner  - Identified candidate component class: file [/Users/uxin/IdeaProjects/Final/springboot/target/classes/com/bsworld/springboot/start/dao/mapper/TRoleMapper.class]
+19-06-28.15:57:10.561 [restartedMain   ] DEBUG ClassPathMapperScanner  - Identified candidate component class: file [/Users/uxin/IdeaProjects/Final/springboot/target/classes/com/bsworld/springboot/start/dao/mapper/TUserMapper.class]
+19-06-28.15:57:10.561 [restartedMain   ] DEBUG ClassPathMapperScanner  - Identified candidate component class: file [/Users/uxin/IdeaProjects/Final/springboot/target/classes/com/bsworld/springboot/start/dao/mapper/TUserRoleMapper.class]
+19-06-28.15:57:10.562 [restartedMain   ] DEBUG ClassPathMapperScanner  - Creating MapperFactoryBean with name 'TPermissionMapper' and 'com.bsworld.springboot.start.dao.mapper.TPermissionMapper' mapperInterface
+19-06-28.15:57:10.581 [restartedMain   ] DEBUG ClassPathMapperScanner  - Creating MapperFactoryBean with name 'TRateTransformMapper' and 'com.bsworld.springboot.start.dao.mapper.TRateTransformMapper' mapperInterface
+19-06-28.15:57:10.582 [restartedMain   ] DEBUG ClassPathMapperScanner  - Creating MapperFactoryBean with name 'TRoleMapper' and 'com.bsworld.springboot.start.dao.mapper.TRoleMapper' mapperInterface
+19-06-28.15:57:10.582 [restartedMain   ] DEBUG ClassPathMapperScanner  - Creating MapperFactoryBean with name 'TUserMapper' and 'com.bsworld.springboot.start.dao.mapper.TUserMapper' mapperInterface
+19-06-28.15:57:10.582 [restartedMain   ] DEBUG ClassPathMapperScanner  - Creating MapperFactoryBean with name 'TUserRoleMapper' and 'com.bsworld.springboot.start.dao.mapper.TUserRoleMapper' mapperInterface
+19-06-28.15:57:13.949 [restartedMain   ] INFO  PostProcessorRegistrationDelegate$BeanPostProcessorChecker  - Bean 'shiroConfig' of type [com.bsworld.springboot.start.config.shiro.ShiroConfig$$EnhancerBySpringCGLIB$$3ea91254] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+19-06-28.15:57:14.301 [restartedMain   ] DEBUG LifecycleBeanPostProcessor  - Initializing bean [getEhCacheManager]...
+19-06-28.15:57:14.302 [restartedMain   ] DEBUG EhCacheManager          - cacheManager property not set.  Constructing CacheManager instance... 
+19-06-28.15:57:14.305 [restartedMain   ] DEBUG ResourceUtils           - Opening resource from class path [ehcache-shiro.xml]
+19-06-28.15:57:14.355 [restartedMain   ] DEBUG ConfigurationFactory    - Configuring ehcache from InputStream
+19-06-28.15:57:14.544 [restartedMain   ] DEBUG PropertyUtil            - propertiesString is null.
+19-06-28.15:57:14.584 [restartedMain   ] DEBUG CacheManager            - No disk store path defined. Skipping disk store path conflict test.
+19-06-28.15:57:14.585 [restartedMain   ] DEBUG ConfigurationHelper     - No CacheManagerEventListenerFactory class specified. Skipping...
+19-06-28.15:57:14.599 [restartedMain   ] DEBUG Cache                   - No BootstrapCacheLoaderFactory class specified. Skipping...
+19-06-28.15:57:14.599 [restartedMain   ] DEBUG Cache                   - CacheWriter factory not configured. Skipping...
+19-06-28.15:57:14.601 [restartedMain   ] DEBUG ConfigurationHelper     - No CacheExceptionHandlerFactory class specified. Skipping...
+19-06-28.15:57:14.630 [restartedMain   ] DEBUG EhCacheManager          - implicit cacheManager created successfully.
+19-06-28.15:57:14.632 [restartedMain   ] INFO  PostProcessorRegistrationDelegate$BeanPostProcessorChecker  - Bean 'getEhCacheManager' of type [org.apache.shiro.cache.ehcache.EhCacheManager] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+19-06-28.15:57:14.647 [restartedMain   ] DEBUG AuthorizingRealm        - No authorizationCache instance set.  Checking for a cacheManager...
+19-06-28.15:57:14.648 [restartedMain   ] DEBUG AuthorizingRealm        - CacheManager [org.apache.shiro.cache.ehcache.EhCacheManager@2c162e74] has been configured.  Building authorization cache named [myRelam.authorizationCache]
+19-06-28.15:57:14.648 [restartedMain   ] INFO  EhCacheManager          - Cache with name 'myRelam.authorizationCache' does not yet exist.  Creating now.
+19-06-28.15:57:14.706 [restartedMain   ] DEBUG MemoryStore             - Initialized net.sf.ehcache.store.NotifyingMemoryStore for myRelam.authorizationCache
+19-06-28.15:57:14.741 [restartedMain   ] DEBUG Cache                   - Initialised cache: myRelam.authorizationCache
+19-06-28.15:57:14.753 [restartedMain   ] DEBUG ConfigurationHelper     - CacheDecoratorFactory not configured for defaultCache. Skipping for 'myRelam.authorizationCache'.
+19-06-28.15:57:14.753 [restartedMain   ] INFO  EhCacheManager          - Added EhCache named [myRelam.authorizationCache]
+19-06-28.15:57:15.032 [restartedMain   ] INFO  PostProcessorRegistrationDelegate$BeanPostProcessorChecker  - Bean 'mysqlConfig' of type [com.bsworld.springboot.start.config.mysql.MysqlConfig$$EnhancerBySpringCGLIB$$4383b7b6] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+19-06-28.15:57:15.378 [restartedMain   ] INFO  PostProcessorRegistrationDelegate$BeanPostProcessorChecker  - Bean 'org.springframework.boot.context.properties.ConversionServiceDeducer$Factory' of type [org.springframework.boot.context.properties.ConversionServiceDeducer$Factory] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+19-06-28.15:57:15.721 [restartedMain   ] INFO  PostProcessorRegistrationDelegate$BeanPostProcessorChecker  - Bean 'druidDateSource' of type [com.alibaba.druid.pool.DruidDataSource] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+19-06-28.15:57:15.729 [restartedMain   ] DEBUG LogFactory              - Logging initialized using 'class org.apache.ibatis.logging.commons.JakartaCommonsLoggingImpl' adapter.
+19-06-28.15:57:16.410 [restartedMain   ] DEBUG SqlSessionFactoryBean   - Parsed configuration file: 'class path resource [META-INF/mybatis/mybatis-config.xml]'
+19-06-28.15:57:16.926 [restartedMain   ] DEBUG SqlSessionFactoryBean   - Parsed mapper file: 'file [/Users/uxin/IdeaProjects/Final/springboot/target/classes/META-INF/mybatis/mapper/TPermissionMapper.xml]'
+19-06-28.15:57:17.078 [restartedMain   ] DEBUG SqlSessionFactoryBean   - Parsed mapper file: 'file [/Users/uxin/IdeaProjects/Final/springboot/target/classes/META-INF/mybatis/mapper/TRateTransformMapper.xml]'
+19-06-28.15:57:17.194 [restartedMain   ] DEBUG SqlSessionFactoryBean   - Parsed mapper file: 'file [/Users/uxin/IdeaProjects/Final/springboot/target/classes/META-INF/mybatis/mapper/TRoleMapper.xml]'
+19-06-28.15:57:17.272 [restartedMain   ] DEBUG SqlSessionFactoryBean   - Parsed mapper file: 'file [/Users/uxin/IdeaProjects/Final/springboot/target/classes/META-INF/mybatis/mapper/TUserMapper.xml]'
+19-06-28.15:57:17.376 [restartedMain   ] DEBUG SqlSessionFactoryBean   - Parsed mapper file: 'file [/Users/uxin/IdeaProjects/Final/springboot/target/classes/META-INF/mybatis/mapper/TUserRoleMapper.xml]'
+19-06-28.15:57:17.562 [restartedMain   ] DEBUG SqlSessionFactoryBean   - Parsed mapper file: 'file [/Users/uxin/IdeaProjects/Final/springboot/target/classes/META-INF/mybatis/mapper/UserMapper.xml]'
+19-06-28.15:57:17.568 [restartedMain   ] INFO  PostProcessorRegistrationDelegate$BeanPostProcessorChecker  - Bean 'sqlSessionFactory' of type [org.apache.ibatis.session.defaults.DefaultSqlSessionFactory] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+19-06-28.15:57:17.579 [restartedMain   ] INFO  PostProcessorRegistrationDelegate$BeanPostProcessorChecker  - Bean 'TUserMapper' of type [org.mybatis.spring.mapper.MapperFactoryBean] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+19-06-28.15:57:17.600 [restartedMain   ] INFO  PostProcessorRegistrationDelegate$BeanPostProcessorChecker  - Bean 'TUserMapper' of type [com.sun.proxy.$Proxy63] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+19-06-28.15:57:17.603 [restartedMain   ] INFO  PostProcessorRegistrationDelegate$BeanPostProcessorChecker  - Bean 'TUserServiceImpl' of type [com.bsworld.springboot.start.service.impl.TUserServiceImpl] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+19-06-28.15:57:17.622 [restartedMain   ] INFO  PostProcessorRegistrationDelegate$BeanPostProcessorChecker  - Bean 'TUserRoleMapper' of type [org.mybatis.spring.mapper.MapperFactoryBean] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+19-06-28.15:57:17.624 [restartedMain   ] INFO  PostProcessorRegistrationDelegate$BeanPostProcessorChecker  - Bean 'TUserRoleMapper' of type [com.sun.proxy.$Proxy65] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+19-06-28.15:57:17.625 [restartedMain   ] INFO  PostProcessorRegistrationDelegate$BeanPostProcessorChecker  - Bean 'TUserRoleServiceImpl' of type [com.bsworld.springboot.start.service.impl.TUserRoleServiceImpl] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+19-06-28.15:57:17.632 [restartedMain   ] INFO  PostProcessorRegistrationDelegate$BeanPostProcessorChecker  - Bean 'TRoleMapper' of type [org.mybatis.spring.mapper.MapperFactoryBean] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+19-06-28.15:57:17.651 [restartedMain   ] INFO  PostProcessorRegistrationDelegate$BeanPostProcessorChecker  - Bean 'TRoleMapper' of type [com.sun.proxy.$Proxy66] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+19-06-28.15:57:17.653 [restartedMain   ] INFO  PostProcessorRegistrationDelegate$BeanPostProcessorChecker  - Bean 'TRoleServiceImpl' of type [com.bsworld.springboot.start.service.impl.TRoleServiceImpl] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+19-06-28.15:57:17.662 [restartedMain   ] INFO  PostProcessorRegistrationDelegate$BeanPostProcessorChecker  - Bean 'TPermissionMapper' of type [org.mybatis.spring.mapper.MapperFactoryBean] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+19-06-28.15:57:17.667 [restartedMain   ] INFO  PostProcessorRegistrationDelegate$BeanPostProcessorChecker  - Bean 'TPermissionMapper' of type [com.sun.proxy.$Proxy67] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+19-06-28.15:57:17.668 [restartedMain   ] INFO  PostProcessorRegistrationDelegate$BeanPostProcessorChecker  - Bean 'TPermissionServiceImpl' of type [com.bsworld.springboot.start.service.impl.TPermissionServiceImpl] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+19-06-28.15:57:17.668 [restartedMain   ] DEBUG LifecycleBeanPostProcessor  - Initializing bean [myShiroRealm]...
+19-06-28.15:57:17.668 [restartedMain   ] INFO  PostProcessorRegistrationDelegate$BeanPostProcessorChecker  - Bean 'myShiroRealm' of type [com.bsworld.springboot.start.shiro.MyShiroRealm] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+19-06-28.15:57:17.673 [restartedMain   ] DEBUG AuthorizingRealm        - No authorizationCache instance set.  Checking for a cacheManager...
+19-06-28.15:57:17.673 [restartedMain   ] DEBUG AuthorizingRealm        - CacheManager [org.apache.shiro.cache.ehcache.EhCacheManager@2c162e74] has been configured.  Building authorization cache named [myRelam2.authorizationCache]
+19-06-28.15:57:17.673 [restartedMain   ] INFO  EhCacheManager          - Cache with name 'myRelam2.authorizationCache' does not yet exist.  Creating now.
+19-06-28.15:57:17.674 [restartedMain   ] DEBUG MemoryStore             - Initialized net.sf.ehcache.store.NotifyingMemoryStore for myRelam2.authorizationCache
+19-06-28.15:57:17.674 [restartedMain   ] DEBUG Cache                   - Initialised cache: myRelam2.authorizationCache
+19-06-28.15:57:17.674 [restartedMain   ] DEBUG ConfigurationHelper     - CacheDecoratorFactory not configured for defaultCache. Skipping for 'myRelam2.authorizationCache'.
+19-06-28.15:57:17.674 [restartedMain   ] INFO  EhCacheManager          - Added EhCache named [myRelam2.authorizationCache]
+19-06-28.15:57:17.756 [restartedMain   ] DEBUG LifecycleBeanPostProcessor  - Initializing bean [myShiroRealm2]...
+19-06-28.15:57:17.757 [restartedMain   ] INFO  PostProcessorRegistrationDelegate$BeanPostProcessorChecker  - Bean 'myShiroRealm2' of type [com.bsworld.springboot.start.shiro.MyShiroRealm2] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+19-06-28.15:57:18.930 [restartedMain   ] INFO  PostProcessorRegistrationDelegate$BeanPostProcessorChecker  - Bean 'securityManager' of type [org.apache.shiro.web.mgt.DefaultWebSecurityManager] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+19-06-28.15:57:19.243 [restartedMain   ] INFO  PostProcessorRegistrationDelegate$BeanPostProcessorChecker  - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$7f18ade4] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+19-06-28.15:57:19.307 [restartedMain   ] INFO  PostProcessorRegistrationDelegate$BeanPostProcessorChecker  - Bean 'getAuthorizationAttributeSourceAdvisor' of type [org.apache.shiro.spring.security.interceptor.AuthorizationAttributeSourceAdvisor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+19-06-28.15:57:21.075 [restartedMain   ] INFO  TomcatWebServer         - Tomcat initialized with port(s): 8080 (http)
+19-06-28.15:57:21.170 [restartedMain   ] INFO  Http11NioProtocol       - Initializing ProtocolHandler ["http-nio-8080"]
+19-06-28.15:57:21.189 [restartedMain   ] INFO  StandardService         - Starting service [Tomcat]
+19-06-28.15:57:21.190 [restartedMain   ] INFO  StandardEngine          - Starting Servlet Engine: Apache Tomcat/8.5.31
+19-06-28.15:57:21.201 [localhost-startStop-1] INFO  AprLifecycleListener    - The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [/Users/uxin/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:.]
+19-06-28.15:57:21.529 [localhost-startStop-1] INFO  [/]                     - Initializing Spring embedded WebApplicationContext
+19-06-28.15:57:21.529 [localhost-startStop-1] INFO  ContextLoader           - Root WebApplicationContext: initialization completed in 16214 ms
+19-06-28.15:57:22.281 [localhost-startStop-1] DEBUG DefaultFilterChainManager  - Creating chain [/user] from String definition [authc]
+19-06-28.15:57:22.282 [localhost-startStop-1] DEBUG DefaultFilterChainManager  - Attempting to apply path [/user] to filter [authc] with config [null]
+19-06-28.15:57:22.284 [localhost-startStop-1] DEBUG DefaultFilterChainManager  - Creating chain [/user/edit/**] from String definition [authc,perms[user:edit]]
+19-06-28.15:57:22.284 [localhost-startStop-1] DEBUG DefaultFilterChainManager  - Attempting to apply path [/user/edit/**] to filter [authc] with config [null]
+19-06-28.15:57:22.285 [localhost-startStop-1] DEBUG DefaultFilterChainManager  - Attempting to apply path [/user/edit/**] to filter [perms] with config [user:edit]
+19-06-28.15:57:22.285 [localhost-startStop-1] DEBUG DefaultFilterChainManager  - Creating chain [/login] from String definition [anon]
+19-06-28.15:57:22.286 [localhost-startStop-1] DEBUG DefaultFilterChainManager  - Attempting to apply path [/login] to filter [anon] with config [null]
+19-06-28.15:57:22.286 [localhost-startStop-1] DEBUG DefaultFilterChainManager  - Creating chain [/**] from String definition [anon]
+19-06-28.15:57:22.286 [localhost-startStop-1] DEBUG DefaultFilterChainManager  - Attempting to apply path [/**] to filter [anon] with config [null]
+19-06-28.15:57:22.416 [localhost-startStop-1] DEBUG ShiroFilterFactoryBean  - Found filter chain candidate filter 'requestContextFilter'
+19-06-28.15:57:22.685 [localhost-startStop-1] DEBUG ShiroFilterFactoryBean  - Found filter chain candidate filter 'hiddenHttpMethodFilter'
+19-06-28.15:57:22.816 [localhost-startStop-1] DEBUG ShiroFilterFactoryBean  - Found filter chain candidate filter 'httpPutFormContentFilter'
+19-06-28.15:57:22.878 [localhost-startStop-1] DEBUG ShiroFilterFactoryBean  - Found filter chain candidate filter 'characterEncodingFilter'
+19-06-28.15:57:23.032 [localhost-startStop-1] INFO  ServletRegistrationBean  - Servlet dispatcherServlet mapped to [/]
+19-06-28.15:57:23.043 [localhost-startStop-1] INFO  FilterRegistrationBean  - Mapping filter: 'characterEncodingFilter' to: [/*]
+19-06-28.15:57:23.043 [localhost-startStop-1] INFO  FilterRegistrationBean  - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+19-06-28.15:57:23.043 [localhost-startStop-1] INFO  FilterRegistrationBean  - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+19-06-28.15:57:23.043 [localhost-startStop-1] INFO  FilterRegistrationBean  - Mapping filter: 'requestContextFilter' to: [/*]
+19-06-28.15:57:23.043 [localhost-startStop-1] INFO  FilterRegistrationBean  - Mapping filter: 'shiroFilter' to: [/*]
+19-06-28.15:57:24.432 [restartedMain   ] DEBUG TraversableResolvers    - Cannot find javax.persistence.Persistence on classpath. Assuming non JPA 2 environment. All properties will per default be traversable.
+19-06-28.15:57:24.433 [restartedMain   ] DEBUG ResourceBundleMessageInterpolator  - Loaded expression factory via original TCCL
+19-06-28.15:57:24.474 [restartedMain   ] DEBUG TraversableResolvers    - Cannot find javax.persistence.Persistence on classpath. Assuming non JPA 2 environment. All properties will per default be traversable.
+19-06-28.15:57:24.475 [restartedMain   ] DEBUG ConfigurationImpl       - Setting custom MessageInterpolator of type org.springframework.validation.beanvalidation.LocaleContextMessageInterpolator
+19-06-28.15:57:24.476 [restartedMain   ] DEBUG ConfigurationImpl       - Setting custom ConstraintValidatorFactory of type org.springframework.validation.beanvalidation.SpringConstraintValidatorFactory
+19-06-28.15:57:24.476 [restartedMain   ] DEBUG ConfigurationImpl       - Setting custom ParameterNameProvider of type org.springframework.validation.beanvalidation.LocalValidatorFactoryBean$1
+19-06-28.15:57:24.532 [restartedMain   ] DEBUG ValidationXmlParser     - Trying to load META-INF/validation.xml for XML based Validator configuration.
+19-06-28.15:57:24.533 [restartedMain   ] DEBUG ResourceLoaderHelper    - Trying to load META-INF/validation.xml via user class loader
+19-06-28.15:57:24.533 [restartedMain   ] DEBUG ResourceLoaderHelper    - Trying to load META-INF/validation.xml via TCCL
+19-06-28.15:57:24.533 [restartedMain   ] DEBUG ResourceLoaderHelper    - Trying to load META-INF/validation.xml via Hibernate Validator's class loader
+19-06-28.15:57:24.534 [restartedMain   ] DEBUG ValidationXmlParser     - No META-INF/validation.xml found. Using annotation based configuration only.
+19-06-28.15:57:24.556 [restartedMain   ] DEBUG ValidatorFactoryImpl    - HV000234: Using org.springframework.validation.beanvalidation.LocaleContextMessageInterpolator as ValidatorFactory-scoped message interpolator.
+19-06-28.15:57:24.556 [restartedMain   ] DEBUG ValidatorFactoryImpl    - HV000234: Using org.hibernate.validator.internal.engine.resolver.TraverseAllTraversableResolver as ValidatorFactory-scoped traversable resolver.
+19-06-28.15:57:24.587 [restartedMain   ] DEBUG ValidatorFactoryImpl    - HV000234: Using org.hibernate.validator.internal.util.ExecutableParameterNameProvider as ValidatorFactory-scoped parameter name provider.
+19-06-28.15:57:24.589 [restartedMain   ] DEBUG ValidatorFactoryImpl    - HV000234: Using org.hibernate.validator.internal.engine.DefaultClockProvider as ValidatorFactory-scoped clock provider.
+19-06-28.15:57:24.589 [restartedMain   ] DEBUG ValidatorFactoryImpl    - HV000234: Using org.hibernate.validator.internal.engine.scripting.DefaultScriptEvaluatorFactory as ValidatorFactory-scoped script evaluator factory.
+19-06-28.15:57:25.876 [restartedMain   ] INFO  RequestMappingHandlerAdapter  - Looking for @ControllerAdvice: org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@628e06c9: startup date [Fri Jun 28 15:57:05 CST 2019]; root of context hierarchy
+19-06-28.15:57:26.438 [restartedMain   ] INFO  RequestMappingHandlerMapping  - Mapped "{[/aop],methods=[POST]}" onto public void com.bsworld.springboot.start.aop.AopController.run()
+19-06-28.15:57:26.449 [restartedMain   ] INFO  RequestMappingHandlerMapping  - Mapped "{[/logout],methods=[GET]}" onto public java.lang.String com.bsworld.springboot.start.shiro.ShiroController.logout(org.springframework.web.servlet.mvc.support.RedirectAttributes)
+19-06-28.15:57:26.449 [restartedMain   ] INFO  RequestMappingHandlerMapping  - Mapped "{[/login],methods=[POST]}" onto public java.lang.String com.bsworld.springboot.start.shiro.ShiroController.login(com.bsworld.springboot.start.dao.entity.TUser)
+19-06-28.15:57:26.450 [restartedMain   ] INFO  RequestMappingHandlerMapping  - Mapped "{[/403]}" onto public java.lang.String com.bsworld.springboot.start.shiro.ShiroController.unauthorizedRole()
+19-06-28.15:57:26.450 [restartedMain   ] INFO  RequestMappingHandlerMapping  - Mapped "{[/user/edit/{userid}]}" onto public java.lang.String com.bsworld.springboot.start.shiro.ShiroController.getUserList(int)
+19-06-28.15:57:26.454 [restartedMain   ] INFO  RequestMappingHandlerMapping  - Mapped "{[/mysql/test],methods=[POST]}" onto public void com.bsworld.springboot.start.web.MySqlController.test(com.bsworld.springboot.start.web.MySqlTestBean)
+19-06-28.15:57:26.455 [restartedMain   ] INFO  RequestMappingHandlerMapping  - Mapped "{[/mysql/json],methods=[POST]}" onto public void com.bsworld.springboot.start.web.MySqlController.test(java.util.HashMap)
+19-06-28.15:57:26.458 [restartedMain   ] INFO  RequestMappingHandlerMapping  - Mapped "{[/rate/insert],methods=[POST]}" onto public void com.bsworld.springboot.start.web.RateTransController.insert()
+19-06-28.15:57:26.458 [restartedMain   ] INFO  RequestMappingHandlerMapping  - Mapped "{[/rate/query],methods=[POST]}" onto public void com.bsworld.springboot.start.web.RateTransController.query()
+19-06-28.15:57:26.459 [restartedMain   ] INFO  RequestMappingHandlerMapping  - Mapped "{[/rate/threadquery],methods=[POST]}" onto public void com.bsworld.springboot.start.web.RateTransController.queryThread()
+19-06-28.15:57:26.462 [restartedMain   ] INFO  RequestMappingHandlerMapping  - Mapped "{[/user/get],methods=[POST]}" onto public void com.bsworld.springboot.start.web.UserController.run(java.util.HashMap)
+19-06-28.15:57:26.463 [restartedMain   ] INFO  RequestMappingHandlerMapping  - Mapped "{[/user/get10],methods=[POST]}" onto public void com.bsworld.springboot.start.web.UserController.insert()
+19-06-28.15:57:26.470 [restartedMain   ] INFO  RequestMappingHandlerMapping  - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+19-06-28.15:57:26.485 [restartedMain   ] INFO  RequestMappingHandlerMapping  - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+19-06-28.15:57:26.910 [restartedMain   ] INFO  SimpleUrlHandlerMapping  - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+19-06-28.15:57:26.911 [restartedMain   ] INFO  SimpleUrlHandlerMapping  - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+19-06-28.15:57:27.095 [restartedMain   ] INFO  SimpleUrlHandlerMapping  - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+19-06-28.15:57:28.062 [restartedMain   ] INFO  OptionalLiveReloadServer  - LiveReload server is running on port 35729
+19-06-28.15:57:28.215 [restartedMain   ] INFO  AnnotationMBeanExporter  - Registering beans for JMX exposure on startup
+19-06-28.15:57:28.224 [restartedMain   ] INFO  AnnotationMBeanExporter  - Bean with name 'druidDateSource' has been autodetected for JMX exposure
+19-06-28.15:57:28.250 [restartedMain   ] INFO  AnnotationMBeanExporter  - Located MBean 'druidDateSource': registering with JMX server as MBean [com.alibaba.druid.pool:name=druidDateSource,type=DruidDataSource]
+19-06-28.15:57:28.406 [restartedMain   ] INFO  Http11NioProtocol       - Starting ProtocolHandler ["http-nio-8080"]
+19-06-28.15:57:28.471 [restartedMain   ] INFO  NioSelectorPool         - Using a shared selector for servlet write/read
+19-06-28.15:57:28.683 [restartedMain   ] INFO  TomcatWebServer         - Tomcat started on port(s): 8080 (http) with context path ''
+19-06-28.15:57:28.698 [restartedMain   ] INFO  SpringbootApplication   - Started SpringbootApplication in 25.297 seconds (JVM running for 30.766)
+19-06-28.16:00:46.154 [http-nio-8080-exec-1] INFO  [/]                     - Initializing Spring FrameworkServlet 'dispatcherServlet'
+19-06-28.16:00:46.155 [http-nio-8080-exec-1] INFO  DispatcherServlet       - FrameworkServlet 'dispatcherServlet': initialization started
+19-06-28.16:00:46.317 [http-nio-8080-exec-1] INFO  DispatcherServlet       - FrameworkServlet 'dispatcherServlet': initialization completed in 162 ms
+19-06-28.16:01:14.077 [Thread-62       ] INFO  AnnotationConfigServletWebServerApplicationContext  - Closing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@628e06c9: startup date [Fri Jun 28 15:57:05 CST 2019]; root of context hierarchy
+19-06-28.16:01:14.087 [Thread-62       ] INFO  AnnotationMBeanExporter  - Unregistering JMX-exposed beans on shutdown
+19-06-28.16:01:14.089 [Thread-62       ] INFO  AnnotationMBeanExporter  - Unregistering JMX-exposed beans
+19-06-28.16:01:14.091 [Thread-62       ] DEBUG LifecycleBeanPostProcessor  - Destroying bean [securityManager]...
+19-06-28.16:01:14.102 [Thread-62       ] DEBUG LifecycleBeanPostProcessor  - Destroying bean [getEhCacheManager]...
+19-06-28.16:01:20.172 [background-preinit] DEBUG ResourceBundleMessageInterpolator  - Loaded expression factory via original TCCL
+19-06-28.16:01:20.185 [restartedMain   ] INFO  SpringbootApplication   - Starting SpringbootApplication on localhost with PID 2545 (/Users/uxin/IdeaProjects/Final/springboot/target/classes started by uxin in /Users/uxin/IdeaProjects/Final)
+19-06-28.16:01:20.186 [restartedMain   ] DEBUG SpringbootApplication   - Running with Spring Boot v2.0.3.RELEASE, Spring v5.0.7.RELEASE
+19-06-28.16:01:20.186 [restartedMain   ] INFO  SpringbootApplication   - The following profiles are active: mysql
+19-06-28.16:01:20.213 [background-preinit] DEBUG ValidatorFactoryImpl    - HV000234: Using org.hibernate.validator.messageinterpolation.ResourceBundleMessageInterpolator as ValidatorFactory-scoped message interpolator.
+19-06-28.16:01:20.213 [background-preinit] DEBUG ValidatorFactoryImpl    - HV000234: Using org.hibernate.validator.internal.engine.resolver.TraverseAllTraversableResolver as ValidatorFactory-scoped traversable resolver.
+19-06-28.16:01:20.214 [background-preinit] DEBUG ValidatorFactoryImpl    - HV000234: Using org.hibernate.validator.internal.util.ExecutableParameterNameProvider as ValidatorFactory-scoped parameter name provider.
+19-06-28.16:01:20.214 [background-preinit] DEBUG ValidatorFactoryImpl    - HV000234: Using org.hibernate.validator.internal.engine.DefaultClockProvider as ValidatorFactory-scoped clock provider.
+19-06-28.16:01:20.216 [background-preinit] DEBUG ValidatorFactoryImpl    - HV000234: Using org.hibernate.validator.internal.engine.scripting.DefaultScriptEvaluatorFactory as ValidatorFactory-scoped script evaluator factory.
+19-06-28.16:01:20.366 [restartedMain   ] INFO  AnnotationConfigServletWebServerApplicationContext  - Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@4e0c9a9b: startup date [Fri Jun 28 16:01:20 CST 2019]; root of context hierarchy
+19-06-28.16:01:24.667 [restartedMain   ] DEBUG ClassPathMapperScanner  - Identified candidate component class: file [/Users/uxin/IdeaProjects/Final/springboot/target/classes/com/bsworld/springboot/start/dao/mapper/TPermissionMapper.class]
+19-06-28.16:01:24.668 [restartedMain   ] DEBUG ClassPathMapperScanner  - Identified candidate component class: file [/Users/uxin/IdeaProjects/Final/springboot/target/classes/com/bsworld/springboot/start/dao/mapper/TRateTransformMapper.class]
+19-06-28.16:01:24.668 [restartedMain   ] DEBUG ClassPathMapperScanner  - Identified candidate component class: file [/Users/uxin/IdeaProjects/Final/springboot/target/classes/com/bsworld/springboot/start/dao/mapper/TRoleMapper.class]
+19-06-28.16:01:24.668 [restartedMain   ] DEBUG ClassPathMapperScanner  - Identified candidate component class: file [/Users/uxin/IdeaProjects/Final/springboot/target/classes/com/bsworld/springboot/start/dao/mapper/TUserMapper.class]
+19-06-28.16:01:24.668 [restartedMain   ] DEBUG ClassPathMapperScanner  - Identified candidate component class: file [/Users/uxin/IdeaProjects/Final/springboot/target/classes/com/bsworld/springboot/start/dao/mapper/TUserRoleMapper.class]
+19-06-28.16:01:24.669 [restartedMain   ] DEBUG ClassPathMapperScanner  - Creating MapperFactoryBean with name 'TPermissionMapper' and 'com.bsworld.springboot.start.dao.mapper.TPermissionMapper' mapperInterface
+19-06-28.16:01:24.671 [restartedMain   ] DEBUG ClassPathMapperScanner  - Creating MapperFactoryBean with name 'TRateTransformMapper' and 'com.bsworld.springboot.start.dao.mapper.TRateTransformMapper' mapperInterface
+19-06-28.16:01:24.671 [restartedMain   ] DEBUG ClassPathMapperScanner  - Creating MapperFactoryBean with name 'TRoleMapper' and 'com.bsworld.springboot.start.dao.mapper.TRoleMapper' mapperInterface
+19-06-28.16:01:24.671 [restartedMain   ] DEBUG ClassPathMapperScanner  - Creating MapperFactoryBean with name 'TUserMapper' and 'com.bsworld.springboot.start.dao.mapper.TUserMapper' mapperInterface
+19-06-28.16:01:24.671 [restartedMain   ] DEBUG ClassPathMapperScanner  - Creating MapperFactoryBean with name 'TUserRoleMapper' and 'com.bsworld.springboot.start.dao.mapper.TUserRoleMapper' mapperInterface
+19-06-28.16:01:26.077 [restartedMain   ] INFO  PostProcessorRegistrationDelegate$BeanPostProcessorChecker  - Bean 'shiroConfig' of type [com.bsworld.springboot.start.config.shiro.ShiroConfig$$EnhancerBySpringCGLIB$$b2e847f7] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+19-06-28.16:01:26.178 [restartedMain   ] DEBUG LifecycleBeanPostProcessor  - Initializing bean [getEhCacheManager]...
+19-06-28.16:01:26.179 [restartedMain   ] DEBUG EhCacheManager          - cacheManager property not set.  Constructing CacheManager instance... 
+19-06-28.16:01:26.181 [restartedMain   ] DEBUG ResourceUtils           - Opening resource from class path [ehcache-shiro.xml]
+19-06-28.16:01:26.191 [restartedMain   ] DEBUG ConfigurationFactory    - Configuring ehcache from InputStream
+19-06-28.16:01:26.262 [restartedMain   ] DEBUG PropertyUtil            - propertiesString is null.
+19-06-28.16:01:26.279 [restartedMain   ] DEBUG CacheManager            - No disk store path defined. Skipping disk store path conflict test.
+19-06-28.16:01:26.279 [restartedMain   ] DEBUG ConfigurationHelper     - No CacheManagerEventListenerFactory class specified. Skipping...
+19-06-28.16:01:26.307 [restartedMain   ] DEBUG Cache                   - No BootstrapCacheLoaderFactory class specified. Skipping...
+19-06-28.16:01:26.321 [restartedMain   ] DEBUG Cache                   - CacheWriter factory not configured. Skipping...
+19-06-28.16:01:26.336 [restartedMain   ] DEBUG ConfigurationHelper     - No CacheExceptionHandlerFactory class specified. Skipping...
+19-06-28.16:01:26.371 [restartedMain   ] DEBUG EhCacheManager          - implicit cacheManager created successfully.
+19-06-28.16:01:26.373 [restartedMain   ] INFO  PostProcessorRegistrationDelegate$BeanPostProcessorChecker  - Bean 'getEhCacheManager' of type [org.apache.shiro.cache.ehcache.EhCacheManager] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+19-06-28.16:01:26.395 [restartedMain   ] DEBUG AuthorizingRealm        - No authorizationCache instance set.  Checking for a cacheManager...
+19-06-28.16:01:26.395 [restartedMain   ] DEBUG AuthorizingRealm        - CacheManager [org.apache.shiro.cache.ehcache.EhCacheManager@fc25b8] has been configured.  Building authorization cache named [myRelam.authorizationCache]
+19-06-28.16:01:26.395 [restartedMain   ] INFO  EhCacheManager          - Cache with name 'myRelam.authorizationCache' does not yet exist.  Creating now.
+19-06-28.16:01:26.431 [restartedMain   ] DEBUG MemoryStore             - Initialized net.sf.ehcache.store.NotifyingMemoryStore for myRelam.authorizationCache
+19-06-28.16:01:26.438 [restartedMain   ] DEBUG Cache                   - Initialised cache: myRelam.authorizationCache
+19-06-28.16:01:26.438 [restartedMain   ] DEBUG ConfigurationHelper     - CacheDecoratorFactory not configured for defaultCache. Skipping for 'myRelam.authorizationCache'.
+19-06-28.16:01:26.438 [restartedMain   ] INFO  EhCacheManager          - Added EhCache named [myRelam.authorizationCache]
+19-06-28.16:01:26.480 [restartedMain   ] INFO  PostProcessorRegistrationDelegate$BeanPostProcessorChecker  - Bean 'mysqlConfig' of type [com.bsworld.springboot.start.config.mysql.MysqlConfig$$EnhancerBySpringCGLIB$$b7c2ed59] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+19-06-28.16:01:26.776 [restartedMain   ] INFO  PostProcessorRegistrationDelegate$BeanPostProcessorChecker  - Bean 'org.springframework.boot.context.properties.ConversionServiceDeducer$Factory' of type [org.springframework.boot.context.properties.ConversionServiceDeducer$Factory] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+19-06-28.16:01:26.894 [restartedMain   ] INFO  PostProcessorRegistrationDelegate$BeanPostProcessorChecker  - Bean 'druidDateSource' of type [com.alibaba.druid.pool.DruidDataSource] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+19-06-28.16:01:26.907 [restartedMain   ] DEBUG LogFactory              - Logging initialized using 'class org.apache.ibatis.logging.commons.JakartaCommonsLoggingImpl' adapter.
+19-06-28.16:01:27.230 [restartedMain   ] DEBUG SqlSessionFactoryBean   - Parsed configuration file: 'class path resource [META-INF/mybatis/mybatis-config.xml]'
+19-06-28.16:01:27.338 [restartedMain   ] DEBUG SqlSessionFactoryBean   - Parsed mapper file: 'file [/Users/uxin/IdeaProjects/Final/springboot/target/classes/META-INF/mybatis/mapper/TPermissionMapper.xml]'
+19-06-28.16:01:27.423 [restartedMain   ] DEBUG SqlSessionFactoryBean   - Parsed mapper file: 'file [/Users/uxin/IdeaProjects/Final/springboot/target/classes/META-INF/mybatis/mapper/TRateTransformMapper.xml]'
+19-06-28.16:01:27.468 [restartedMain   ] DEBUG SqlSessionFactoryBean   - Parsed mapper file: 'file [/Users/uxin/IdeaProjects/Final/springboot/target/classes/META-INF/mybatis/mapper/TRoleMapper.xml]'
+19-06-28.16:01:27.489 [restartedMain   ] DEBUG SqlSessionFactoryBean   - Parsed mapper file: 'file [/Users/uxin/IdeaProjects/Final/springboot/target/classes/META-INF/mybatis/mapper/TUserMapper.xml]'
+19-06-28.16:01:27.505 [restartedMain   ] DEBUG SqlSessionFactoryBean   - Parsed mapper file: 'file [/Users/uxin/IdeaProjects/Final/springboot/target/classes/META-INF/mybatis/mapper/TUserRoleMapper.xml]'
+19-06-28.16:01:27.537 [restartedMain   ] DEBUG SqlSessionFactoryBean   - Parsed mapper file: 'file [/Users/uxin/IdeaProjects/Final/springboot/target/classes/META-INF/mybatis/mapper/UserMapper.xml]'
+19-06-28.16:01:27.541 [restartedMain   ] INFO  PostProcessorRegistrationDelegate$BeanPostProcessorChecker  - Bean 'sqlSessionFactory' of type [org.apache.ibatis.session.defaults.DefaultSqlSessionFactory] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+19-06-28.16:01:27.549 [restartedMain   ] INFO  PostProcessorRegistrationDelegate$BeanPostProcessorChecker  - Bean 'TUserMapper' of type [org.mybatis.spring.mapper.MapperFactoryBean] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+19-06-28.16:01:27.551 [restartedMain   ] INFO  PostProcessorRegistrationDelegate$BeanPostProcessorChecker  - Bean 'TUserMapper' of type [com.sun.proxy.$Proxy63] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+19-06-28.16:01:27.554 [restartedMain   ] INFO  PostProcessorRegistrationDelegate$BeanPostProcessorChecker  - Bean 'TUserServiceImpl' of type [com.bsworld.springboot.start.service.impl.TUserServiceImpl] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+19-06-28.16:01:27.561 [restartedMain   ] INFO  PostProcessorRegistrationDelegate$BeanPostProcessorChecker  - Bean 'TUserRoleMapper' of type [org.mybatis.spring.mapper.MapperFactoryBean] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+19-06-28.16:01:27.563 [restartedMain   ] INFO  PostProcessorRegistrationDelegate$BeanPostProcessorChecker  - Bean 'TUserRoleMapper' of type [com.sun.proxy.$Proxy65] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+19-06-28.16:01:27.563 [restartedMain   ] INFO  PostProcessorRegistrationDelegate$BeanPostProcessorChecker  - Bean 'TUserRoleServiceImpl' of type [com.bsworld.springboot.start.service.impl.TUserRoleServiceImpl] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+19-06-28.16:01:27.570 [restartedMain   ] INFO  PostProcessorRegistrationDelegate$BeanPostProcessorChecker  - Bean 'TRoleMapper' of type [org.mybatis.spring.mapper.MapperFactoryBean] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+19-06-28.16:01:27.571 [restartedMain   ] INFO  PostProcessorRegistrationDelegate$BeanPostProcessorChecker  - Bean 'TRoleMapper' of type [com.sun.proxy.$Proxy66] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+19-06-28.16:01:27.572 [restartedMain   ] INFO  PostProcessorRegistrationDelegate$BeanPostProcessorChecker  - Bean 'TRoleServiceImpl' of type [com.bsworld.springboot.start.service.impl.TRoleServiceImpl] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+19-06-28.16:01:27.577 [restartedMain   ] INFO  PostProcessorRegistrationDelegate$BeanPostProcessorChecker  - Bean 'TPermissionMapper' of type [org.mybatis.spring.mapper.MapperFactoryBean] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+19-06-28.16:01:27.579 [restartedMain   ] INFO  PostProcessorRegistrationDelegate$BeanPostProcessorChecker  - Bean 'TPermissionMapper' of type [com.sun.proxy.$Proxy67] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+19-06-28.16:01:27.579 [restartedMain   ] INFO  PostProcessorRegistrationDelegate$BeanPostProcessorChecker  - Bean 'TPermissionServiceImpl' of type [com.bsworld.springboot.start.service.impl.TPermissionServiceImpl] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+19-06-28.16:01:27.580 [restartedMain   ] DEBUG LifecycleBeanPostProcessor  - Initializing bean [myShiroRealm]...
+19-06-28.16:01:27.580 [restartedMain   ] INFO  PostProcessorRegistrationDelegate$BeanPostProcessorChecker  - Bean 'myShiroRealm' of type [com.bsworld.springboot.start.shiro.MyShiroRealm] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+19-06-28.16:01:27.586 [restartedMain   ] DEBUG AuthorizingRealm        - No authorizationCache instance set.  Checking for a cacheManager...
+19-06-28.16:01:27.586 [restartedMain   ] DEBUG AuthorizingRealm        - CacheManager [org.apache.shiro.cache.ehcache.EhCacheManager@fc25b8] has been configured.  Building authorization cache named [myRelam2.authorizationCache]
+19-06-28.16:01:27.587 [restartedMain   ] INFO  EhCacheManager          - Cache with name 'myRelam2.authorizationCache' does not yet exist.  Creating now.
+19-06-28.16:01:27.587 [restartedMain   ] DEBUG MemoryStore             - Initialized net.sf.ehcache.store.NotifyingMemoryStore for myRelam2.authorizationCache
+19-06-28.16:01:27.588 [restartedMain   ] DEBUG Cache                   - Initialised cache: myRelam2.authorizationCache
+19-06-28.16:01:27.588 [restartedMain   ] DEBUG ConfigurationHelper     - CacheDecoratorFactory not configured for defaultCache. Skipping for 'myRelam2.authorizationCache'.
+19-06-28.16:01:27.588 [restartedMain   ] INFO  EhCacheManager          - Added EhCache named [myRelam2.authorizationCache]
+19-06-28.16:01:27.612 [restartedMain   ] DEBUG LifecycleBeanPostProcessor  - Initializing bean [myShiroRealm2]...
+19-06-28.16:01:27.613 [restartedMain   ] INFO  PostProcessorRegistrationDelegate$BeanPostProcessorChecker  - Bean 'myShiroRealm2' of type [com.bsworld.springboot.start.shiro.MyShiroRealm2] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+19-06-28.16:01:28.182 [restartedMain   ] INFO  PostProcessorRegistrationDelegate$BeanPostProcessorChecker  - Bean 'securityManager' of type [org.apache.shiro.web.mgt.DefaultWebSecurityManager] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+19-06-28.16:01:28.259 [restartedMain   ] INFO  PostProcessorRegistrationDelegate$BeanPostProcessorChecker  - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$f357e387] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+19-06-28.16:01:28.287 [restartedMain   ] INFO  PostProcessorRegistrationDelegate$BeanPostProcessorChecker  - Bean 'getAuthorizationAttributeSourceAdvisor' of type [org.apache.shiro.spring.security.interceptor.AuthorizationAttributeSourceAdvisor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+19-06-28.16:01:29.148 [restartedMain   ] INFO  TomcatWebServer         - Tomcat initialized with port(s): 8080 (http)
+19-06-28.16:01:29.169 [restartedMain   ] INFO  Http11NioProtocol       - Initializing ProtocolHandler ["http-nio-8080"]
+19-06-28.16:01:29.183 [restartedMain   ] INFO  StandardService         - Starting service [Tomcat]
+19-06-28.16:01:29.184 [restartedMain   ] INFO  StandardEngine          - Starting Servlet Engine: Apache Tomcat/8.5.31
+19-06-28.16:01:29.192 [localhost-startStop-1] INFO  AprLifecycleListener    - The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [/Users/uxin/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:.]
+19-06-28.16:01:29.297 [localhost-startStop-1] INFO  [/]                     - Initializing Spring embedded WebApplicationContext
+19-06-28.16:01:29.297 [localhost-startStop-1] INFO  ContextLoader           - Root WebApplicationContext: initialization completed in 8932 ms
+19-06-28.16:01:29.536 [localhost-startStop-1] DEBUG DefaultFilterChainManager  - Creating chain [/user] from String definition [authc]
+19-06-28.16:01:29.536 [localhost-startStop-1] DEBUG DefaultFilterChainManager  - Attempting to apply path [/user] to filter [authc] with config [null]
+19-06-28.16:01:29.539 [localhost-startStop-1] DEBUG DefaultFilterChainManager  - Creating chain [/user/edit/**] from String definition [authc,perms[user:edit]]
+19-06-28.16:01:29.539 [localhost-startStop-1] DEBUG DefaultFilterChainManager  - Attempting to apply path [/user/edit/**] to filter [authc] with config [null]
+19-06-28.16:01:29.539 [localhost-startStop-1] DEBUG DefaultFilterChainManager  - Attempting to apply path [/user/edit/**] to filter [perms] with config [user:edit]
+19-06-28.16:01:29.540 [localhost-startStop-1] DEBUG DefaultFilterChainManager  - Creating chain [/login] from String definition [anon]
+19-06-28.16:01:29.540 [localhost-startStop-1] DEBUG DefaultFilterChainManager  - Attempting to apply path [/login] to filter [anon] with config [null]
+19-06-28.16:01:29.540 [localhost-startStop-1] DEBUG DefaultFilterChainManager  - Creating chain [/**] from String definition [anon]
+19-06-28.16:01:29.540 [localhost-startStop-1] DEBUG DefaultFilterChainManager  - Attempting to apply path [/**] to filter [anon] with config [null]
+19-06-28.16:01:29.564 [localhost-startStop-1] DEBUG ShiroFilterFactoryBean  - Found filter chain candidate filter 'requestContextFilter'
+19-06-28.16:01:29.604 [localhost-startStop-1] DEBUG ShiroFilterFactoryBean  - Found filter chain candidate filter 'hiddenHttpMethodFilter'
+19-06-28.16:01:29.625 [localhost-startStop-1] DEBUG ShiroFilterFactoryBean  - Found filter chain candidate filter 'httpPutFormContentFilter'
+19-06-28.16:01:29.645 [localhost-startStop-1] DEBUG ShiroFilterFactoryBean  - Found filter chain candidate filter 'characterEncodingFilter'
+19-06-28.16:01:29.661 [localhost-startStop-1] INFO  ServletRegistrationBean  - Servlet dispatcherServlet mapped to [/]
+19-06-28.16:01:29.671 [localhost-startStop-1] INFO  FilterRegistrationBean  - Mapping filter: 'characterEncodingFilter' to: [/*]
+19-06-28.16:01:29.671 [localhost-startStop-1] INFO  FilterRegistrationBean  - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+19-06-28.16:01:29.671 [localhost-startStop-1] INFO  FilterRegistrationBean  - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+19-06-28.16:01:29.671 [localhost-startStop-1] INFO  FilterRegistrationBean  - Mapping filter: 'requestContextFilter' to: [/*]
+19-06-28.16:01:29.671 [localhost-startStop-1] INFO  FilterRegistrationBean  - Mapping filter: 'shiroFilter' to: [/*]
+19-06-28.16:01:30.414 [restartedMain   ] DEBUG TraversableResolvers    - Cannot find javax.persistence.Persistence on classpath. Assuming non JPA 2 environment. All properties will per default be traversable.
+19-06-28.16:01:30.414 [restartedMain   ] DEBUG ResourceBundleMessageInterpolator  - Loaded expression factory via original TCCL
+19-06-28.16:01:30.431 [restartedMain   ] DEBUG TraversableResolvers    - Cannot find javax.persistence.Persistence on classpath. Assuming non JPA 2 environment. All properties will per default be traversable.
+19-06-28.16:01:30.433 [restartedMain   ] DEBUG ConfigurationImpl       - Setting custom MessageInterpolator of type org.springframework.validation.beanvalidation.LocaleContextMessageInterpolator
+19-06-28.16:01:30.434 [restartedMain   ] DEBUG ConfigurationImpl       - Setting custom ConstraintValidatorFactory of type org.springframework.validation.beanvalidation.SpringConstraintValidatorFactory
+19-06-28.16:01:30.435 [restartedMain   ] DEBUG ConfigurationImpl       - Setting custom ParameterNameProvider of type org.springframework.validation.beanvalidation.LocalValidatorFactoryBean$1
+19-06-28.16:01:30.436 [restartedMain   ] DEBUG ValidationXmlParser     - Trying to load META-INF/validation.xml for XML based Validator configuration.
+19-06-28.16:01:30.436 [restartedMain   ] DEBUG ResourceLoaderHelper    - Trying to load META-INF/validation.xml via user class loader
+19-06-28.16:01:30.437 [restartedMain   ] DEBUG ResourceLoaderHelper    - Trying to load META-INF/validation.xml via TCCL
+19-06-28.16:01:30.437 [restartedMain   ] DEBUG ResourceLoaderHelper    - Trying to load META-INF/validation.xml via Hibernate Validator's class loader
+19-06-28.16:01:30.437 [restartedMain   ] DEBUG ValidationXmlParser     - No META-INF/validation.xml found. Using annotation based configuration only.
+19-06-28.16:01:30.446 [restartedMain   ] DEBUG ValidatorFactoryImpl    - HV000234: Using org.springframework.validation.beanvalidation.LocaleContextMessageInterpolator as ValidatorFactory-scoped message interpolator.
+19-06-28.16:01:30.446 [restartedMain   ] DEBUG ValidatorFactoryImpl    - HV000234: Using org.hibernate.validator.internal.engine.resolver.TraverseAllTraversableResolver as ValidatorFactory-scoped traversable resolver.
+19-06-28.16:01:30.447 [restartedMain   ] DEBUG ValidatorFactoryImpl    - HV000234: Using org.hibernate.validator.internal.util.ExecutableParameterNameProvider as ValidatorFactory-scoped parameter name provider.
+19-06-28.16:01:30.447 [restartedMain   ] DEBUG ValidatorFactoryImpl    - HV000234: Using org.hibernate.validator.internal.engine.DefaultClockProvider as ValidatorFactory-scoped clock provider.
+19-06-28.16:01:30.447 [restartedMain   ] DEBUG ValidatorFactoryImpl    - HV000234: Using org.hibernate.validator.internal.engine.scripting.DefaultScriptEvaluatorFactory as ValidatorFactory-scoped script evaluator factory.
+19-06-28.16:01:31.303 [restartedMain   ] INFO  RequestMappingHandlerAdapter  - Looking for @ControllerAdvice: org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@4e0c9a9b: startup date [Fri Jun 28 16:01:20 CST 2019]; root of context hierarchy
+19-06-28.16:01:31.470 [restartedMain   ] INFO  RequestMappingHandlerMapping  - Mapped "{[/aop],methods=[POST]}" onto public void com.bsworld.springboot.start.aop.AopController.run()
+19-06-28.16:01:31.476 [restartedMain   ] INFO  RequestMappingHandlerMapping  - Mapped "{[/login],methods=[POST]}" onto public java.lang.String com.bsworld.springboot.start.shiro.ShiroController.login(com.bsworld.springboot.start.dao.entity.TUser)
+19-06-28.16:01:31.477 [restartedMain   ] INFO  RequestMappingHandlerMapping  - Mapped "{[/logout],methods=[GET]}" onto public java.lang.String com.bsworld.springboot.start.shiro.ShiroController.logout(org.springframework.web.servlet.mvc.support.RedirectAttributes)
+19-06-28.16:01:31.477 [restartedMain   ] INFO  RequestMappingHandlerMapping  - Mapped "{[/403]}" onto public java.lang.String com.bsworld.springboot.start.shiro.ShiroController.unauthorizedRole()
+19-06-28.16:01:31.477 [restartedMain   ] INFO  RequestMappingHandlerMapping  - Mapped "{[/user/edit/{userid}]}" onto public java.lang.String com.bsworld.springboot.start.shiro.ShiroController.getUserList(int)
+19-06-28.16:01:31.478 [restartedMain   ] INFO  RequestMappingHandlerMapping  - Mapped "{[/mysql/test],methods=[POST]}" onto public void com.bsworld.springboot.start.web.MySqlController.test(com.bsworld.springboot.start.web.MySqlTestBean)
+19-06-28.16:01:31.479 [restartedMain   ] INFO  RequestMappingHandlerMapping  - Mapped "{[/mysql/json],methods=[POST]}" onto public void com.bsworld.springboot.start.web.MySqlController.test(java.util.HashMap)
+19-06-28.16:01:31.480 [restartedMain   ] INFO  RequestMappingHandlerMapping  - Mapped "{[/rate/insert],methods=[POST]}" onto public void com.bsworld.springboot.start.web.RateTransController.insert()
+19-06-28.16:01:31.481 [restartedMain   ] INFO  RequestMappingHandlerMapping  - Mapped "{[/rate/query],methods=[POST]}" onto public void com.bsworld.springboot.start.web.RateTransController.query()
+19-06-28.16:01:31.481 [restartedMain   ] INFO  RequestMappingHandlerMapping  - Mapped "{[/rate/threadquery],methods=[POST]}" onto public void com.bsworld.springboot.start.web.RateTransController.queryThread()
+19-06-28.16:01:31.485 [restartedMain   ] INFO  RequestMappingHandlerMapping  - Mapped "{[/user/get],methods=[POST]}" onto public void com.bsworld.springboot.start.web.UserController.run(java.util.HashMap)
+19-06-28.16:01:31.485 [restartedMain   ] INFO  RequestMappingHandlerMapping  - Mapped "{[/user/get10],methods=[POST]}" onto public void com.bsworld.springboot.start.web.UserController.insert()
+19-06-28.16:01:31.488 [restartedMain   ] INFO  RequestMappingHandlerMapping  - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+19-06-28.16:01:31.490 [restartedMain   ] INFO  RequestMappingHandlerMapping  - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+19-06-28.16:01:31.727 [restartedMain   ] INFO  SimpleUrlHandlerMapping  - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+19-06-28.16:01:31.727 [restartedMain   ] INFO  SimpleUrlHandlerMapping  - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+19-06-28.16:01:31.834 [restartedMain   ] INFO  SimpleUrlHandlerMapping  - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+19-06-28.16:01:32.286 [restartedMain   ] INFO  OptionalLiveReloadServer  - LiveReload server is running on port 35729
+19-06-28.16:01:32.350 [restartedMain   ] INFO  AnnotationMBeanExporter  - Registering beans for JMX exposure on startup
+19-06-28.16:01:32.351 [restartedMain   ] INFO  AnnotationMBeanExporter  - Bean with name 'druidDateSource' has been autodetected for JMX exposure
+19-06-28.16:01:32.366 [restartedMain   ] INFO  AnnotationMBeanExporter  - Located MBean 'druidDateSource': registering with JMX server as MBean [com.alibaba.druid.pool:name=druidDateSource,type=DruidDataSource]
+19-06-28.16:01:32.391 [restartedMain   ] INFO  Http11NioProtocol       - Starting ProtocolHandler ["http-nio-8080"]
+19-06-28.16:01:32.429 [restartedMain   ] INFO  NioSelectorPool         - Using a shared selector for servlet write/read
+19-06-28.16:01:32.462 [restartedMain   ] INFO  TomcatWebServer         - Tomcat started on port(s): 8080 (http) with context path ''
+19-06-28.16:01:32.475 [restartedMain   ] INFO  SpringbootApplication   - Started SpringbootApplication in 13.355 seconds (JVM running for 16.809)
+19-06-28.16:01:51.200 [http-nio-8080-exec-1] INFO  [/]                     - Initializing Spring FrameworkServlet 'dispatcherServlet'
+19-06-28.16:01:51.201 [http-nio-8080-exec-1] INFO  DispatcherServlet       - FrameworkServlet 'dispatcherServlet': initialization started
+19-06-28.16:01:51.265 [http-nio-8080-exec-1] INFO  DispatcherServlet       - FrameworkServlet 'dispatcherServlet': initialization completed in 64 ms
+19-06-28.16:09:09.521 [Thread-38       ] INFO  AnnotationConfigServletWebServerApplicationContext  - Closing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@4e0c9a9b: startup date [Fri Jun 28 16:01:20 CST 2019]; root of context hierarchy
+19-06-28.16:09:09.542 [Thread-38       ] INFO  AnnotationMBeanExporter  - Unregistering JMX-exposed beans on shutdown
+19-06-28.16:09:09.543 [Thread-38       ] INFO  AnnotationMBeanExporter  - Unregistering JMX-exposed beans
+19-06-28.16:09:09.545 [Thread-38       ] DEBUG LifecycleBeanPostProcessor  - Destroying bean [securityManager]...
+19-06-28.16:09:09.558 [Thread-38       ] DEBUG LifecycleBeanPostProcessor  - Destroying bean [getEhCacheManager]...
+19-06-28.16:43:04.434 [background-preinit] DEBUG ResourceBundleMessageInterpolator  - Loaded expression factory via original TCCL
+19-06-28.16:43:04.696 [restartedMain   ] INFO  SpringbootApplication   - Starting SpringbootApplication on localhost with PID 2858 (/Users/uxin/IdeaProjects/Final/springboot/target/classes started by uxin in /Users/uxin/IdeaProjects/Final)
+19-06-28.16:43:04.697 [restartedMain   ] DEBUG SpringbootApplication   - Running with Spring Boot v2.0.3.RELEASE, Spring v5.0.7.RELEASE
+19-06-28.16:43:04.698 [restartedMain   ] INFO  SpringbootApplication   - The following profiles are active: mysql
+19-06-28.16:43:04.703 [background-preinit] DEBUG ValidatorFactoryImpl    - HV000234: Using org.hibernate.validator.messageinterpolation.ResourceBundleMessageInterpolator as ValidatorFactory-scoped message interpolator.
+19-06-28.16:43:04.704 [background-preinit] DEBUG ValidatorFactoryImpl    - HV000234: Using org.hibernate.validator.internal.engine.resolver.TraverseAllTraversableResolver as ValidatorFactory-scoped traversable resolver.
+19-06-28.16:43:04.704 [background-preinit] DEBUG ValidatorFactoryImpl    - HV000234: Using org.hibernate.validator.internal.util.ExecutableParameterNameProvider as ValidatorFactory-scoped parameter name provider.
+19-06-28.16:43:04.704 [background-preinit] DEBUG ValidatorFactoryImpl    - HV000234: Using org.hibernate.validator.internal.engine.DefaultClockProvider as ValidatorFactory-scoped clock provider.
+19-06-28.16:43:04.704 [background-preinit] DEBUG ValidatorFactoryImpl    - HV000234: Using org.hibernate.validator.internal.engine.scripting.DefaultScriptEvaluatorFactory as ValidatorFactory-scoped script evaluator factory.
+19-06-28.16:43:05.093 [restartedMain   ] INFO  AnnotationConfigServletWebServerApplicationContext  - Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@2fc95cd6: startup date [Fri Jun 28 16:43:05 CST 2019]; root of context hierarchy
+19-06-28.16:43:08.256 [restartedMain   ] DEBUG ClassPathMapperScanner  - Identified candidate component class: file [/Users/uxin/IdeaProjects/Final/springboot/target/classes/com/bsworld/springboot/start/dao/mapper/TPermissionMapper.class]
+19-06-28.16:43:08.257 [restartedMain   ] DEBUG ClassPathMapperScanner  - Identified candidate component class: file [/Users/uxin/IdeaProjects/Final/springboot/target/classes/com/bsworld/springboot/start/dao/mapper/TRateTransformMapper.class]
+19-06-28.16:43:08.258 [restartedMain   ] DEBUG ClassPathMapperScanner  - Identified candidate component class: file [/Users/uxin/IdeaProjects/Final/springboot/target/classes/com/bsworld/springboot/start/dao/mapper/TRoleMapper.class]
+19-06-28.16:43:08.263 [restartedMain   ] DEBUG ClassPathMapperScanner  - Identified candidate component class: file [/Users/uxin/IdeaProjects/Final/springboot/target/classes/com/bsworld/springboot/start/dao/mapper/TUserMapper.class]
+19-06-28.16:43:08.263 [restartedMain   ] DEBUG ClassPathMapperScanner  - Identified candidate component class: file [/Users/uxin/IdeaProjects/Final/springboot/target/classes/com/bsworld/springboot/start/dao/mapper/TUserRoleMapper.class]
+19-06-28.16:43:08.264 [restartedMain   ] DEBUG ClassPathMapperScanner  - Creating MapperFactoryBean with name 'TPermissionMapper' and 'com.bsworld.springboot.start.dao.mapper.TPermissionMapper' mapperInterface
+19-06-28.16:43:08.271 [restartedMain   ] DEBUG ClassPathMapperScanner  - Creating MapperFactoryBean with name 'TRateTransformMapper' and 'com.bsworld.springboot.start.dao.mapper.TRateTransformMapper' mapperInterface
+19-06-28.16:43:08.271 [restartedMain   ] DEBUG ClassPathMapperScanner  - Creating MapperFactoryBean with name 'TRoleMapper' and 'com.bsworld.springboot.start.dao.mapper.TRoleMapper' mapperInterface
+19-06-28.16:43:08.272 [restartedMain   ] DEBUG ClassPathMapperScanner  - Creating MapperFactoryBean with name 'TUserMapper' and 'com.bsworld.springboot.start.dao.mapper.TUserMapper' mapperInterface
+19-06-28.16:43:08.272 [restartedMain   ] DEBUG ClassPathMapperScanner  - Creating MapperFactoryBean with name 'TUserRoleMapper' and 'com.bsworld.springboot.start.dao.mapper.TUserRoleMapper' mapperInterface
+19-06-28.16:43:10.057 [restartedMain   ] INFO  PostProcessorRegistrationDelegate$BeanPostProcessorChecker  - Bean 'shiroConfig' of type [com.bsworld.springboot.start.config.shiro.ShiroConfig$$EnhancerBySpringCGLIB$$e97d381f] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+19-06-28.16:43:10.441 [restartedMain   ] DEBUG LifecycleBeanPostProcessor  - Initializing bean [getEhCacheManager]...
+19-06-28.16:43:10.444 [restartedMain   ] DEBUG EhCacheManager          - cacheManager property not set.  Constructing CacheManager instance... 
+19-06-28.16:43:10.451 [restartedMain   ] DEBUG ResourceUtils           - Opening resource from class path [ehcache-shiro.xml]
+19-06-28.16:43:10.509 [restartedMain   ] DEBUG ConfigurationFactory    - Configuring ehcache from InputStream
+19-06-28.16:43:10.620 [restartedMain   ] DEBUG PropertyUtil            - propertiesString is null.
+19-06-28.16:43:10.638 [restartedMain   ] DEBUG CacheManager            - No disk store path defined. Skipping disk store path conflict test.
+19-06-28.16:43:10.638 [restartedMain   ] DEBUG ConfigurationHelper     - No CacheManagerEventListenerFactory class specified. Skipping...
+19-06-28.16:43:10.692 [restartedMain   ] DEBUG Cache                   - No BootstrapCacheLoaderFactory class specified. Skipping...
+19-06-28.16:43:10.695 [restartedMain   ] DEBUG Cache                   - CacheWriter factory not configured. Skipping...
+19-06-28.16:43:10.701 [restartedMain   ] DEBUG ConfigurationHelper     - No CacheExceptionHandlerFactory class specified. Skipping...
+19-06-28.16:43:10.717 [restartedMain   ] DEBUG EhCacheManager          - implicit cacheManager created successfully.
+19-06-28.16:43:10.718 [restartedMain   ] INFO  PostProcessorRegistrationDelegate$BeanPostProcessorChecker  - Bean 'getEhCacheManager' of type [org.apache.shiro.cache.ehcache.EhCacheManager] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+19-06-28.16:43:10.737 [restartedMain   ] DEBUG AuthorizingRealm        - No authorizationCache instance set.  Checking for a cacheManager...
+19-06-28.16:43:10.738 [restartedMain   ] DEBUG AuthorizingRealm        - CacheManager [org.apache.shiro.cache.ehcache.EhCacheManager@55b0257] has been configured.  Building authorization cache named [myRelam.authorizationCache]
+19-06-28.16:43:10.738 [restartedMain   ] INFO  EhCacheManager          - Cache with name 'myRelam.authorizationCache' does not yet exist.  Creating now.
+19-06-28.16:43:10.830 [restartedMain   ] DEBUG MemoryStore             - Initialized net.sf.ehcache.store.NotifyingMemoryStore for myRelam.authorizationCache
+19-06-28.16:43:10.861 [restartedMain   ] DEBUG Cache                   - Initialised cache: myRelam.authorizationCache
+19-06-28.16:43:10.862 [restartedMain   ] DEBUG ConfigurationHelper     - CacheDecoratorFactory not configured for defaultCache. Skipping for 'myRelam.authorizationCache'.
+19-06-28.16:43:10.862 [restartedMain   ] INFO  EhCacheManager          - Added EhCache named [myRelam.authorizationCache]
+19-06-28.16:43:10.923 [restartedMain   ] INFO  PostProcessorRegistrationDelegate$BeanPostProcessorChecker  - Bean 'mysqlConfig' of type [com.bsworld.springboot.start.config.mysql.MysqlConfig$$EnhancerBySpringCGLIB$$ee57dd81] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+19-06-28.16:43:11.142 [restartedMain   ] INFO  PostProcessorRegistrationDelegate$BeanPostProcessorChecker  - Bean 'org.springframework.boot.context.properties.ConversionServiceDeducer$Factory' of type [org.springframework.boot.context.properties.ConversionServiceDeducer$Factory] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+19-06-28.16:43:11.235 [restartedMain   ] INFO  PostProcessorRegistrationDelegate$BeanPostProcessorChecker  - Bean 'druidDateSource' of type [com.alibaba.druid.pool.DruidDataSource] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+19-06-28.16:43:11.242 [restartedMain   ] DEBUG LogFactory              - Logging initialized using 'class org.apache.ibatis.logging.commons.JakartaCommonsLoggingImpl' adapter.
+19-06-28.16:43:11.537 [restartedMain   ] DEBUG SqlSessionFactoryBean   - Parsed configuration file: 'class path resource [META-INF/mybatis/mybatis-config.xml]'
+19-06-28.16:43:11.723 [restartedMain   ] DEBUG SqlSessionFactoryBean   - Parsed mapper file: 'file [/Users/uxin/IdeaProjects/Final/springboot/target/classes/META-INF/mybatis/mapper/TPermissionMapper.xml]'
+19-06-28.16:43:11.831 [restartedMain   ] DEBUG SqlSessionFactoryBean   - Parsed mapper file: 'file [/Users/uxin/IdeaProjects/Final/springboot/target/classes/META-INF/mybatis/mapper/TRateTransformMapper.xml]'
+19-06-28.16:43:11.979 [restartedMain   ] DEBUG SqlSessionFactoryBean   - Parsed mapper file: 'file [/Users/uxin/IdeaProjects/Final/springboot/target/classes/META-INF/mybatis/mapper/TRoleMapper.xml]'
+19-06-28.16:43:12.014 [restartedMain   ] DEBUG SqlSessionFactoryBean   - Parsed mapper file: 'file [/Users/uxin/IdeaProjects/Final/springboot/target/classes/META-INF/mybatis/mapper/TUserMapper.xml]'
+19-06-28.16:43:12.047 [restartedMain   ] DEBUG SqlSessionFactoryBean   - Parsed mapper file: 'file [/Users/uxin/IdeaProjects/Final/springboot/target/classes/META-INF/mybatis/mapper/TUserRoleMapper.xml]'
+19-06-28.16:43:12.118 [restartedMain   ] DEBUG SqlSessionFactoryBean   - Parsed mapper file: 'file [/Users/uxin/IdeaProjects/Final/springboot/target/classes/META-INF/mybatis/mapper/UserMapper.xml]'
+19-06-28.16:43:12.121 [restartedMain   ] INFO  PostProcessorRegistrationDelegate$BeanPostProcessorChecker  - Bean 'sqlSessionFactory' of type [org.apache.ibatis.session.defaults.DefaultSqlSessionFactory] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+19-06-28.16:43:12.131 [restartedMain   ] INFO  PostProcessorRegistrationDelegate$BeanPostProcessorChecker  - Bean 'TUserMapper' of type [org.mybatis.spring.mapper.MapperFactoryBean] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+19-06-28.16:43:12.134 [restartedMain   ] INFO  PostProcessorRegistrationDelegate$BeanPostProcessorChecker  - Bean 'TUserMapper' of type [com.sun.proxy.$Proxy63] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+19-06-28.16:43:12.136 [restartedMain   ] INFO  PostProcessorRegistrationDelegate$BeanPostProcessorChecker  - Bean 'TUserServiceImpl' of type [com.bsworld.springboot.start.service.impl.TUserServiceImpl] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+19-06-28.16:43:12.145 [restartedMain   ] INFO  PostProcessorRegistrationDelegate$BeanPostProcessorChecker  - Bean 'TUserRoleMapper' of type [org.mybatis.spring.mapper.MapperFactoryBean] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+19-06-28.16:43:12.151 [restartedMain   ] INFO  PostProcessorRegistrationDelegate$BeanPostProcessorChecker  - Bean 'TUserRoleMapper' of type [com.sun.proxy.$Proxy65] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+19-06-28.16:43:12.159 [restartedMain   ] INFO  PostProcessorRegistrationDelegate$BeanPostProcessorChecker  - Bean 'TUserRoleServiceImpl' of type [com.bsworld.springboot.start.service.impl.TUserRoleServiceImpl] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+19-06-28.16:43:12.169 [restartedMain   ] INFO  PostProcessorRegistrationDelegate$BeanPostProcessorChecker  - Bean 'TRoleMapper' of type [org.mybatis.spring.mapper.MapperFactoryBean] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+19-06-28.16:43:12.173 [restartedMain   ] INFO  PostProcessorRegistrationDelegate$BeanPostProcessorChecker  - Bean 'TRoleMapper' of type [com.sun.proxy.$Proxy66] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+19-06-28.16:43:12.174 [restartedMain   ] INFO  PostProcessorRegistrationDelegate$BeanPostProcessorChecker  - Bean 'TRoleServiceImpl' of type [com.bsworld.springboot.start.service.impl.TRoleServiceImpl] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+19-06-28.16:43:12.179 [restartedMain   ] INFO  PostProcessorRegistrationDelegate$BeanPostProcessorChecker  - Bean 'TPermissionMapper' of type [org.mybatis.spring.mapper.MapperFactoryBean] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+19-06-28.16:43:12.182 [restartedMain   ] INFO  PostProcessorRegistrationDelegate$BeanPostProcessorChecker  - Bean 'TPermissionMapper' of type [com.sun.proxy.$Proxy67] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+19-06-28.16:43:12.182 [restartedMain   ] INFO  PostProcessorRegistrationDelegate$BeanPostProcessorChecker  - Bean 'TPermissionServiceImpl' of type [com.bsworld.springboot.start.service.impl.TPermissionServiceImpl] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+19-06-28.16:43:12.183 [restartedMain   ] DEBUG LifecycleBeanPostProcessor  - Initializing bean [myShiroRealm]...
+19-06-28.16:43:12.183 [restartedMain   ] INFO  PostProcessorRegistrationDelegate$BeanPostProcessorChecker  - Bean 'myShiroRealm' of type [com.bsworld.springboot.start.shiro.MyShiroRealm] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+19-06-28.16:43:12.186 [restartedMain   ] DEBUG AuthorizingRealm        - No authorizationCache instance set.  Checking for a cacheManager...
+19-06-28.16:43:12.186 [restartedMain   ] DEBUG AuthorizingRealm        - CacheManager [org.apache.shiro.cache.ehcache.EhCacheManager@55b0257] has been configured.  Building authorization cache named [myRelam2.authorizationCache]
+19-06-28.16:43:12.186 [restartedMain   ] INFO  EhCacheManager          - Cache with name 'myRelam2.authorizationCache' does not yet exist.  Creating now.
+19-06-28.16:43:12.187 [restartedMain   ] DEBUG MemoryStore             - Initialized net.sf.ehcache.store.NotifyingMemoryStore for myRelam2.authorizationCache
+19-06-28.16:43:12.188 [restartedMain   ] DEBUG Cache                   - Initialised cache: myRelam2.authorizationCache
+19-06-28.16:43:12.189 [restartedMain   ] DEBUG ConfigurationHelper     - CacheDecoratorFactory not configured for defaultCache. Skipping for 'myRelam2.authorizationCache'.
+19-06-28.16:43:12.189 [restartedMain   ] INFO  EhCacheManager          - Added EhCache named [myRelam2.authorizationCache]
+19-06-28.16:43:12.208 [restartedMain   ] DEBUG LifecycleBeanPostProcessor  - Initializing bean [myShiroRealm2]...
+19-06-28.16:43:12.208 [restartedMain   ] INFO  PostProcessorRegistrationDelegate$BeanPostProcessorChecker  - Bean 'myShiroRealm2' of type [com.bsworld.springboot.start.shiro.MyShiroRealm2] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+19-06-28.16:43:13.197 [restartedMain   ] INFO  PostProcessorRegistrationDelegate$BeanPostProcessorChecker  - Bean 'securityManager' of type [org.apache.shiro.web.mgt.DefaultWebSecurityManager] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+19-06-28.16:43:13.387 [restartedMain   ] INFO  PostProcessorRegistrationDelegate$BeanPostProcessorChecker  - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$29ecd3af] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+19-06-28.16:43:13.535 [restartedMain   ] INFO  PostProcessorRegistrationDelegate$BeanPostProcessorChecker  - Bean 'getAuthorizationAttributeSourceAdvisor' of type [org.apache.shiro.spring.security.interceptor.AuthorizationAttributeSourceAdvisor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+19-06-28.16:43:14.838 [restartedMain   ] INFO  TomcatWebServer         - Tomcat initialized with port(s): 8080 (http)
+19-06-28.16:43:14.864 [restartedMain   ] INFO  Http11NioProtocol       - Initializing ProtocolHandler ["http-nio-8080"]
+19-06-28.16:43:14.876 [restartedMain   ] INFO  StandardService         - Starting service [Tomcat]
+19-06-28.16:43:14.877 [restartedMain   ] INFO  StandardEngine          - Starting Servlet Engine: Apache Tomcat/8.5.31
+19-06-28.16:43:14.883 [localhost-startStop-1] INFO  AprLifecycleListener    - The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [/Users/uxin/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:.]
+19-06-28.16:43:15.019 [localhost-startStop-1] INFO  [/]                     - Initializing Spring embedded WebApplicationContext
+19-06-28.16:43:15.020 [localhost-startStop-1] INFO  ContextLoader           - Root WebApplicationContext: initialization completed in 9927 ms
+19-06-28.16:43:15.321 [localhost-startStop-1] DEBUG DefaultFilterChainManager  - Creating chain [/user] from String definition [authc]
+19-06-28.16:43:15.321 [localhost-startStop-1] DEBUG DefaultFilterChainManager  - Attempting to apply path [/user] to filter [authc] with config [null]
+19-06-28.16:43:15.325 [localhost-startStop-1] DEBUG DefaultFilterChainManager  - Creating chain [/user/edit/**] from String definition [authc,perms[user:edit]]
+19-06-28.16:43:15.325 [localhost-startStop-1] DEBUG DefaultFilterChainManager  - Attempting to apply path [/user/edit/**] to filter [authc] with config [null]
+19-06-28.16:43:15.325 [localhost-startStop-1] DEBUG DefaultFilterChainManager  - Attempting to apply path [/user/edit/**] to filter [perms] with config [user:edit]
+19-06-28.16:43:15.325 [localhost-startStop-1] DEBUG DefaultFilterChainManager  - Creating chain [/login] from String definition [anon]
+19-06-28.16:43:15.325 [localhost-startStop-1] DEBUG DefaultFilterChainManager  - Attempting to apply path [/login] to filter [anon] with config [null]
+19-06-28.16:43:15.325 [localhost-startStop-1] DEBUG DefaultFilterChainManager  - Creating chain [/**] from String definition [anon]
+19-06-28.16:43:15.325 [localhost-startStop-1] DEBUG DefaultFilterChainManager  - Attempting to apply path [/**] to filter [anon] with config [null]
+19-06-28.16:43:15.366 [localhost-startStop-1] DEBUG ShiroFilterFactoryBean  - Found filter chain candidate filter 'requestContextFilter'
+19-06-28.16:43:15.419 [localhost-startStop-1] DEBUG ShiroFilterFactoryBean  - Found filter chain candidate filter 'hiddenHttpMethodFilter'
+19-06-28.16:43:15.484 [localhost-startStop-1] DEBUG ShiroFilterFactoryBean  - Found filter chain candidate filter 'httpPutFormContentFilter'
+19-06-28.16:43:15.600 [localhost-startStop-1] DEBUG ShiroFilterFactoryBean  - Found filter chain candidate filter 'characterEncodingFilter'
+19-06-28.16:43:15.640 [localhost-startStop-1] INFO  ServletRegistrationBean  - Servlet dispatcherServlet mapped to [/]
+19-06-28.16:43:15.664 [localhost-startStop-1] INFO  FilterRegistrationBean  - Mapping filter: 'characterEncodingFilter' to: [/*]
+19-06-28.16:43:15.665 [localhost-startStop-1] INFO  FilterRegistrationBean  - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+19-06-28.16:43:15.666 [localhost-startStop-1] INFO  FilterRegistrationBean  - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+19-06-28.16:43:15.668 [localhost-startStop-1] INFO  FilterRegistrationBean  - Mapping filter: 'requestContextFilter' to: [/*]
+19-06-28.16:43:15.670 [localhost-startStop-1] INFO  FilterRegistrationBean  - Mapping filter: 'shiroFilter' to: [/*]
+19-06-28.16:43:16.455 [restartedMain   ] DEBUG TraversableResolvers    - Cannot find javax.persistence.Persistence on classpath. Assuming non JPA 2 environment. All properties will per default be traversable.
+19-06-28.16:43:16.455 [restartedMain   ] DEBUG ResourceBundleMessageInterpolator  - Loaded expression factory via original TCCL
+19-06-28.16:43:16.488 [restartedMain   ] DEBUG TraversableResolvers    - Cannot find javax.persistence.Persistence on classpath. Assuming non JPA 2 environment. All properties will per default be traversable.
+19-06-28.16:43:16.489 [restartedMain   ] DEBUG ConfigurationImpl       - Setting custom MessageInterpolator of type org.springframework.validation.beanvalidation.LocaleContextMessageInterpolator
+19-06-28.16:43:16.489 [restartedMain   ] DEBUG ConfigurationImpl       - Setting custom ConstraintValidatorFactory of type org.springframework.validation.beanvalidation.SpringConstraintValidatorFactory
+19-06-28.16:43:16.490 [restartedMain   ] DEBUG ConfigurationImpl       - Setting custom ParameterNameProvider of type org.springframework.validation.beanvalidation.LocalValidatorFactoryBean$1
+19-06-28.16:43:16.492 [restartedMain   ] DEBUG ValidationXmlParser     - Trying to load META-INF/validation.xml for XML based Validator configuration.
+19-06-28.16:43:16.492 [restartedMain   ] DEBUG ResourceLoaderHelper    - Trying to load META-INF/validation.xml via user class loader
+19-06-28.16:43:16.492 [restartedMain   ] DEBUG ResourceLoaderHelper    - Trying to load META-INF/validation.xml via TCCL
+19-06-28.16:43:16.493 [restartedMain   ] DEBUG ResourceLoaderHelper    - Trying to load META-INF/validation.xml via Hibernate Validator's class loader
+19-06-28.16:43:16.493 [restartedMain   ] DEBUG ValidationXmlParser     - No META-INF/validation.xml found. Using annotation based configuration only.
+19-06-28.16:43:16.501 [restartedMain   ] DEBUG ValidatorFactoryImpl    - HV000234: Using org.springframework.validation.beanvalidation.LocaleContextMessageInterpolator as ValidatorFactory-scoped message interpolator.
+19-06-28.16:43:16.501 [restartedMain   ] DEBUG ValidatorFactoryImpl    - HV000234: Using org.hibernate.validator.internal.engine.resolver.TraverseAllTraversableResolver as ValidatorFactory-scoped traversable resolver.
+19-06-28.16:43:16.501 [restartedMain   ] DEBUG ValidatorFactoryImpl    - HV000234: Using org.hibernate.validator.internal.util.ExecutableParameterNameProvider as ValidatorFactory-scoped parameter name provider.
+19-06-28.16:43:16.502 [restartedMain   ] DEBUG ValidatorFactoryImpl    - HV000234: Using org.hibernate.validator.internal.engine.DefaultClockProvider as ValidatorFactory-scoped clock provider.
+19-06-28.16:43:16.502 [restartedMain   ] DEBUG ValidatorFactoryImpl    - HV000234: Using org.hibernate.validator.internal.engine.scripting.DefaultScriptEvaluatorFactory as ValidatorFactory-scoped script evaluator factory.
+19-06-28.16:43:17.329 [restartedMain   ] INFO  RequestMappingHandlerAdapter  - Looking for @ControllerAdvice: org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@2fc95cd6: startup date [Fri Jun 28 16:43:05 CST 2019]; root of context hierarchy
+19-06-28.16:43:17.508 [restartedMain   ] INFO  RequestMappingHandlerMapping  - Mapped "{[/aop],methods=[POST]}" onto public void com.bsworld.springboot.start.aop.AopController.run()
+19-06-28.16:43:17.513 [restartedMain   ] INFO  RequestMappingHandlerMapping  - Mapped "{[/logout],methods=[GET]}" onto public java.lang.String com.bsworld.springboot.start.shiro.ShiroController.logout(org.springframework.web.servlet.mvc.support.RedirectAttributes)
+19-06-28.16:43:17.514 [restartedMain   ] INFO  RequestMappingHandlerMapping  - Mapped "{[/login],methods=[POST]}" onto public java.lang.String com.bsworld.springboot.start.shiro.ShiroController.login(com.bsworld.springboot.start.dao.entity.TUser)
+19-06-28.16:43:17.514 [restartedMain   ] INFO  RequestMappingHandlerMapping  - Mapped "{[/403]}" onto public java.lang.String com.bsworld.springboot.start.shiro.ShiroController.unauthorizedRole()
+19-06-28.16:43:17.514 [restartedMain   ] INFO  RequestMappingHandlerMapping  - Mapped "{[/user/edit/{userid}]}" onto public java.lang.String com.bsworld.springboot.start.shiro.ShiroController.getUserList(int)
+19-06-28.16:43:17.517 [restartedMain   ] INFO  RequestMappingHandlerMapping  - Mapped "{[/mysql/test],methods=[POST]}" onto public void com.bsworld.springboot.start.web.MySqlController.test(com.bsworld.springboot.start.web.MySqlTestBean)
+19-06-28.16:43:17.519 [restartedMain   ] INFO  RequestMappingHandlerMapping  - Mapped "{[/mysql/json],methods=[POST]}" onto public void com.bsworld.springboot.start.web.MySqlController.test(java.util.HashMap)
+19-06-28.16:43:17.522 [restartedMain   ] INFO  RequestMappingHandlerMapping  - Mapped "{[/rate/insert],methods=[POST]}" onto public void com.bsworld.springboot.start.web.RateTransController.insert()
+19-06-28.16:43:17.522 [restartedMain   ] INFO  RequestMappingHandlerMapping  - Mapped "{[/rate/query],methods=[POST]}" onto public void com.bsworld.springboot.start.web.RateTransController.query()
+19-06-28.16:43:17.522 [restartedMain   ] INFO  RequestMappingHandlerMapping  - Mapped "{[/rate/threadquery],methods=[POST]}" onto public void com.bsworld.springboot.start.web.RateTransController.queryThread()
+19-06-28.16:43:17.524 [restartedMain   ] INFO  RequestMappingHandlerMapping  - Mapped "{[/user/get],methods=[POST]}" onto public void com.bsworld.springboot.start.web.UserController.run(java.util.HashMap)
+19-06-28.16:43:17.524 [restartedMain   ] INFO  RequestMappingHandlerMapping  - Mapped "{[/user/get10],methods=[POST]}" onto public void com.bsworld.springboot.start.web.UserController.insert()
+19-06-28.16:43:17.530 [restartedMain   ] INFO  RequestMappingHandlerMapping  - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+19-06-28.16:43:17.531 [restartedMain   ] INFO  RequestMappingHandlerMapping  - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+19-06-28.16:43:17.950 [restartedMain   ] INFO  SimpleUrlHandlerMapping  - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+19-06-28.16:43:17.951 [restartedMain   ] INFO  SimpleUrlHandlerMapping  - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+19-06-28.16:43:18.162 [restartedMain   ] INFO  SimpleUrlHandlerMapping  - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+19-06-28.16:43:18.770 [restartedMain   ] INFO  OptionalLiveReloadServer  - LiveReload server is running on port 35729
+19-06-28.16:43:18.816 [restartedMain   ] INFO  AnnotationMBeanExporter  - Registering beans for JMX exposure on startup
+19-06-28.16:43:18.820 [restartedMain   ] INFO  AnnotationMBeanExporter  - Bean with name 'druidDateSource' has been autodetected for JMX exposure
+19-06-28.16:43:18.829 [restartedMain   ] INFO  AnnotationMBeanExporter  - Located MBean 'druidDateSource': registering with JMX server as MBean [com.alibaba.druid.pool:name=druidDateSource,type=DruidDataSource]
+19-06-28.16:43:18.846 [restartedMain   ] INFO  Http11NioProtocol       - Starting ProtocolHandler ["http-nio-8080"]
+19-06-28.16:43:18.878 [restartedMain   ] INFO  NioSelectorPool         - Using a shared selector for servlet write/read
+19-06-28.16:43:18.915 [restartedMain   ] INFO  TomcatWebServer         - Tomcat started on port(s): 8080 (http) with context path ''
+19-06-28.16:43:18.928 [restartedMain   ] INFO  SpringbootApplication   - Started SpringbootApplication in 15.938 seconds (JVM running for 21.943)
+19-06-28.16:44:01.306 [Thread-44       ] INFO  AnnotationConfigServletWebServerApplicationContext  - Closing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@2fc95cd6: startup date [Fri Jun 28 16:43:05 CST 2019]; root of context hierarchy
+19-06-28.16:44:01.311 [Thread-44       ] INFO  AnnotationMBeanExporter  - Unregistering JMX-exposed beans on shutdown
+19-06-28.16:44:01.312 [Thread-44       ] INFO  AnnotationMBeanExporter  - Unregistering JMX-exposed beans
+19-06-28.16:44:01.313 [Thread-44       ] DEBUG LifecycleBeanPostProcessor  - Destroying bean [securityManager]...
+19-06-28.16:44:01.327 [Thread-44       ] DEBUG LifecycleBeanPostProcessor  - Destroying bean [getEhCacheManager]...
+19-06-28.16:44:08.963 [restartedMain   ] INFO  SpringbootApplication   - Starting SpringbootApplication on localhost with PID 2869 (/Users/uxin/IdeaProjects/Final/springboot/target/classes started by uxin in /Users/uxin/IdeaProjects/Final)
+19-06-28.16:44:08.969 [restartedMain   ] DEBUG SpringbootApplication   - Running with Spring Boot v2.0.3.RELEASE, Spring v5.0.7.RELEASE
+19-06-28.16:44:08.971 [restartedMain   ] INFO  SpringbootApplication   - The following profiles are active: mysql
+19-06-28.16:44:08.978 [background-preinit] DEBUG ResourceBundleMessageInterpolator  - Loaded expression factory via original TCCL
+19-06-28.16:44:09.000 [background-preinit] DEBUG ValidatorFactoryImpl    - HV000234: Using org.hibernate.validator.messageinterpolation.ResourceBundleMessageInterpolator as ValidatorFactory-scoped message interpolator.
+19-06-28.16:44:09.001 [background-preinit] DEBUG ValidatorFactoryImpl    - HV000234: Using org.hibernate.validator.internal.engine.resolver.TraverseAllTraversableResolver as ValidatorFactory-scoped traversable resolver.
+19-06-28.16:44:09.001 [background-preinit] DEBUG ValidatorFactoryImpl    - HV000234: Using org.hibernate.validator.internal.util.ExecutableParameterNameProvider as ValidatorFactory-scoped parameter name provider.
+19-06-28.16:44:09.001 [background-preinit] DEBUG ValidatorFactoryImpl    - HV000234: Using org.hibernate.validator.internal.engine.DefaultClockProvider as ValidatorFactory-scoped clock provider.
+19-06-28.16:44:09.004 [background-preinit] DEBUG ValidatorFactoryImpl    - HV000234: Using org.hibernate.validator.internal.engine.scripting.DefaultScriptEvaluatorFactory as ValidatorFactory-scoped script evaluator factory.
+19-06-28.16:44:09.135 [restartedMain   ] INFO  AnnotationConfigServletWebServerApplicationContext  - Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@6fb34dd2: startup date [Fri Jun 28 16:44:09 CST 2019]; root of context hierarchy
+19-06-28.16:44:11.431 [restartedMain   ] DEBUG ClassPathMapperScanner  - Identified candidate component class: file [/Users/uxin/IdeaProjects/Final/springboot/target/classes/com/bsworld/springboot/start/dao/mapper/TPermissionMapper.class]
+19-06-28.16:44:11.431 [restartedMain   ] DEBUG ClassPathMapperScanner  - Identified candidate component class: file [/Users/uxin/IdeaProjects/Final/springboot/target/classes/com/bsworld/springboot/start/dao/mapper/TRateTransformMapper.class]
+19-06-28.16:44:11.432 [restartedMain   ] DEBUG ClassPathMapperScanner  - Identified candidate component class: file [/Users/uxin/IdeaProjects/Final/springboot/target/classes/com/bsworld/springboot/start/dao/mapper/TRoleMapper.class]
+19-06-28.16:44:11.432 [restartedMain   ] DEBUG ClassPathMapperScanner  - Identified candidate component class: file [/Users/uxin/IdeaProjects/Final/springboot/target/classes/com/bsworld/springboot/start/dao/mapper/TUserMapper.class]
+19-06-28.16:44:11.432 [restartedMain   ] DEBUG ClassPathMapperScanner  - Identified candidate component class: file [/Users/uxin/IdeaProjects/Final/springboot/target/classes/com/bsworld/springboot/start/dao/mapper/TUserRoleMapper.class]
+19-06-28.16:44:11.433 [restartedMain   ] DEBUG ClassPathMapperScanner  - Creating MapperFactoryBean with name 'TPermissionMapper' and 'com.bsworld.springboot.start.dao.mapper.TPermissionMapper' mapperInterface
+19-06-28.16:44:11.435 [restartedMain   ] DEBUG ClassPathMapperScanner  - Creating MapperFactoryBean with name 'TRateTransformMapper' and 'com.bsworld.springboot.start.dao.mapper.TRateTransformMapper' mapperInterface
+19-06-28.16:44:11.435 [restartedMain   ] DEBUG ClassPathMapperScanner  - Creating MapperFactoryBean with name 'TRoleMapper' and 'com.bsworld.springboot.start.dao.mapper.TRoleMapper' mapperInterface
+19-06-28.16:44:11.435 [restartedMain   ] DEBUG ClassPathMapperScanner  - Creating MapperFactoryBean with name 'TUserMapper' and 'com.bsworld.springboot.start.dao.mapper.TUserMapper' mapperInterface
+19-06-28.16:44:11.435 [restartedMain   ] DEBUG ClassPathMapperScanner  - Creating MapperFactoryBean with name 'TUserRoleMapper' and 'com.bsworld.springboot.start.dao.mapper.TUserRoleMapper' mapperInterface
+19-06-28.16:44:12.270 [restartedMain   ] INFO  PostProcessorRegistrationDelegate$BeanPostProcessorChecker  - Bean 'shiroConfig' of type [com.bsworld.springboot.start.config.shiro.ShiroConfig$$EnhancerBySpringCGLIB$$d6f4e6da] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+19-06-28.16:44:12.352 [restartedMain   ] DEBUG LifecycleBeanPostProcessor  - Initializing bean [getEhCacheManager]...
+19-06-28.16:44:12.353 [restartedMain   ] DEBUG EhCacheManager          - cacheManager property not set.  Constructing CacheManager instance... 
+19-06-28.16:44:12.359 [restartedMain   ] DEBUG ResourceUtils           - Opening resource from class path [ehcache-shiro.xml]
+19-06-28.16:44:12.376 [restartedMain   ] DEBUG ConfigurationFactory    - Configuring ehcache from InputStream
+19-06-28.16:44:12.417 [restartedMain   ] DEBUG PropertyUtil            - propertiesString is null.
+19-06-28.16:44:12.459 [restartedMain   ] DEBUG CacheManager            - No disk store path defined. Skipping disk store path conflict test.
+19-06-28.16:44:12.460 [restartedMain   ] DEBUG ConfigurationHelper     - No CacheManagerEventListenerFactory class specified. Skipping...
+19-06-28.16:44:12.468 [restartedMain   ] DEBUG Cache                   - No BootstrapCacheLoaderFactory class specified. Skipping...
+19-06-28.16:44:12.468 [restartedMain   ] DEBUG Cache                   - CacheWriter factory not configured. Skipping...
+19-06-28.16:44:12.469 [restartedMain   ] DEBUG ConfigurationHelper     - No CacheExceptionHandlerFactory class specified. Skipping...
+19-06-28.16:44:12.474 [restartedMain   ] DEBUG EhCacheManager          - implicit cacheManager created successfully.
+19-06-28.16:44:12.475 [restartedMain   ] INFO  PostProcessorRegistrationDelegate$BeanPostProcessorChecker  - Bean 'getEhCacheManager' of type [org.apache.shiro.cache.ehcache.EhCacheManager] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+19-06-28.16:44:12.532 [restartedMain   ] DEBUG AuthorizingRealm        - No authorizationCache instance set.  Checking for a cacheManager...
+19-06-28.16:44:12.533 [restartedMain   ] DEBUG AuthorizingRealm        - CacheManager [org.apache.shiro.cache.ehcache.EhCacheManager@68e0fc82] has been configured.  Building authorization cache named [myRelam.authorizationCache]
+19-06-28.16:44:12.538 [restartedMain   ] INFO  EhCacheManager          - Cache with name 'myRelam.authorizationCache' does not yet exist.  Creating now.
+19-06-28.16:44:12.648 [restartedMain   ] DEBUG MemoryStore             - Initialized net.sf.ehcache.store.NotifyingMemoryStore for myRelam.authorizationCache
+19-06-28.16:44:12.653 [restartedMain   ] DEBUG Cache                   - Initialised cache: myRelam.authorizationCache
+19-06-28.16:44:12.654 [restartedMain   ] DEBUG ConfigurationHelper     - CacheDecoratorFactory not configured for defaultCache. Skipping for 'myRelam.authorizationCache'.
+19-06-28.16:44:12.654 [restartedMain   ] INFO  EhCacheManager          - Added EhCache named [myRelam.authorizationCache]
+19-06-28.16:44:12.790 [restartedMain   ] INFO  PostProcessorRegistrationDelegate$BeanPostProcessorChecker  - Bean 'mysqlConfig' of type [com.bsworld.springboot.start.config.mysql.MysqlConfig$$EnhancerBySpringCGLIB$$dbcf8c3c] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+19-06-28.16:44:12.858 [restartedMain   ] INFO  PostProcessorRegistrationDelegate$BeanPostProcessorChecker  - Bean 'org.springframework.boot.context.properties.ConversionServiceDeducer$Factory' of type [org.springframework.boot.context.properties.ConversionServiceDeducer$Factory] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+19-06-28.16:44:12.914 [restartedMain   ] INFO  PostProcessorRegistrationDelegate$BeanPostProcessorChecker  - Bean 'druidDateSource' of type [com.alibaba.druid.pool.DruidDataSource] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+19-06-28.16:44:12.919 [restartedMain   ] DEBUG LogFactory              - Logging initialized using 'class org.apache.ibatis.logging.commons.JakartaCommonsLoggingImpl' adapter.
+19-06-28.16:44:13.115 [restartedMain   ] DEBUG SqlSessionFactoryBean   - Parsed configuration file: 'class path resource [META-INF/mybatis/mybatis-config.xml]'
+19-06-28.16:44:13.208 [restartedMain   ] DEBUG SqlSessionFactoryBean   - Parsed mapper file: 'file [/Users/uxin/IdeaProjects/Final/springboot/target/classes/META-INF/mybatis/mapper/TPermissionMapper.xml]'
+19-06-28.16:44:13.240 [restartedMain   ] DEBUG SqlSessionFactoryBean   - Parsed mapper file: 'file [/Users/uxin/IdeaProjects/Final/springboot/target/classes/META-INF/mybatis/mapper/TRateTransformMapper.xml]'
+19-06-28.16:44:13.259 [restartedMain   ] DEBUG SqlSessionFactoryBean   - Parsed mapper file: 'file [/Users/uxin/IdeaProjects/Final/springboot/target/classes/META-INF/mybatis/mapper/TRoleMapper.xml]'
+19-06-28.16:44:13.278 [restartedMain   ] DEBUG SqlSessionFactoryBean   - Parsed mapper file: 'file [/Users/uxin/IdeaProjects/Final/springboot/target/classes/META-INF/mybatis/mapper/TUserMapper.xml]'
+19-06-28.16:44:13.293 [restartedMain   ] DEBUG SqlSessionFactoryBean   - Parsed mapper file: 'file [/Users/uxin/IdeaProjects/Final/springboot/target/classes/META-INF/mybatis/mapper/TUserRoleMapper.xml]'
+19-06-28.16:44:13.317 [restartedMain   ] DEBUG SqlSessionFactoryBean   - Parsed mapper file: 'file [/Users/uxin/IdeaProjects/Final/springboot/target/classes/META-INF/mybatis/mapper/UserMapper.xml]'
+19-06-28.16:44:13.336 [restartedMain   ] INFO  PostProcessorRegistrationDelegate$BeanPostProcessorChecker  - Bean 'sqlSessionFactory' of type [org.apache.ibatis.session.defaults.DefaultSqlSessionFactory] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+19-06-28.16:44:13.363 [restartedMain   ] INFO  PostProcessorRegistrationDelegate$BeanPostProcessorChecker  - Bean 'TUserMapper' of type [org.mybatis.spring.mapper.MapperFactoryBean] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+19-06-28.16:44:13.367 [restartedMain   ] INFO  PostProcessorRegistrationDelegate$BeanPostProcessorChecker  - Bean 'TUserMapper' of type [com.sun.proxy.$Proxy63] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+19-06-28.16:44:13.369 [restartedMain   ] INFO  PostProcessorRegistrationDelegate$BeanPostProcessorChecker  - Bean 'TUserServiceImpl' of type [com.bsworld.springboot.start.service.impl.TUserServiceImpl] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+19-06-28.16:44:13.377 [restartedMain   ] INFO  PostProcessorRegistrationDelegate$BeanPostProcessorChecker  - Bean 'TUserRoleMapper' of type [org.mybatis.spring.mapper.MapperFactoryBean] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+19-06-28.16:44:13.378 [restartedMain   ] INFO  PostProcessorRegistrationDelegate$BeanPostProcessorChecker  - Bean 'TUserRoleMapper' of type [com.sun.proxy.$Proxy65] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+19-06-28.16:44:13.378 [restartedMain   ] INFO  PostProcessorRegistrationDelegate$BeanPostProcessorChecker  - Bean 'TUserRoleServiceImpl' of type [com.bsworld.springboot.start.service.impl.TUserRoleServiceImpl] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+19-06-28.16:44:13.395 [restartedMain   ] INFO  PostProcessorRegistrationDelegate$BeanPostProcessorChecker  - Bean 'TRoleMapper' of type [org.mybatis.spring.mapper.MapperFactoryBean] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+19-06-28.16:44:13.396 [restartedMain   ] INFO  PostProcessorRegistrationDelegate$BeanPostProcessorChecker  - Bean 'TRoleMapper' of type [com.sun.proxy.$Proxy66] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+19-06-28.16:44:13.397 [restartedMain   ] INFO  PostProcessorRegistrationDelegate$BeanPostProcessorChecker  - Bean 'TRoleServiceImpl' of type [com.bsworld.springboot.start.service.impl.TRoleServiceImpl] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+19-06-28.16:44:13.403 [restartedMain   ] INFO  PostProcessorRegistrationDelegate$BeanPostProcessorChecker  - Bean 'TPermissionMapper' of type [org.mybatis.spring.mapper.MapperFactoryBean] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+19-06-28.16:44:13.405 [restartedMain   ] INFO  PostProcessorRegistrationDelegate$BeanPostProcessorChecker  - Bean 'TPermissionMapper' of type [com.sun.proxy.$Proxy67] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+19-06-28.16:44:13.406 [restartedMain   ] INFO  PostProcessorRegistrationDelegate$BeanPostProcessorChecker  - Bean 'TPermissionServiceImpl' of type [com.bsworld.springboot.start.service.impl.TPermissionServiceImpl] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+19-06-28.16:44:13.406 [restartedMain   ] DEBUG LifecycleBeanPostProcessor  - Initializing bean [myShiroRealm]...
+19-06-28.16:44:13.406 [restartedMain   ] INFO  PostProcessorRegistrationDelegate$BeanPostProcessorChecker  - Bean 'myShiroRealm' of type [com.bsworld.springboot.start.shiro.MyShiroRealm] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+19-06-28.16:44:13.411 [restartedMain   ] DEBUG AuthorizingRealm        - No authorizationCache instance set.  Checking for a cacheManager...
+19-06-28.16:44:13.412 [restartedMain   ] DEBUG AuthorizingRealm        - CacheManager [org.apache.shiro.cache.ehcache.EhCacheManager@68e0fc82] has been configured.  Building authorization cache named [myRelam2.authorizationCache]
+19-06-28.16:44:13.413 [restartedMain   ] INFO  EhCacheManager          - Cache with name 'myRelam2.authorizationCache' does not yet exist.  Creating now.
+19-06-28.16:44:13.415 [restartedMain   ] DEBUG MemoryStore             - Initialized net.sf.ehcache.store.NotifyingMemoryStore for myRelam2.authorizationCache
+19-06-28.16:44:13.416 [restartedMain   ] DEBUG Cache                   - Initialised cache: myRelam2.authorizationCache
+19-06-28.16:44:13.416 [restartedMain   ] DEBUG ConfigurationHelper     - CacheDecoratorFactory not configured for defaultCache. Skipping for 'myRelam2.authorizationCache'.
+19-06-28.16:44:13.416 [restartedMain   ] INFO  EhCacheManager          - Added EhCache named [myRelam2.authorizationCache]
+19-06-28.16:44:13.433 [restartedMain   ] DEBUG LifecycleBeanPostProcessor  - Initializing bean [myShiroRealm2]...
+19-06-28.16:44:13.433 [restartedMain   ] INFO  PostProcessorRegistrationDelegate$BeanPostProcessorChecker  - Bean 'myShiroRealm2' of type [com.bsworld.springboot.start.shiro.MyShiroRealm2] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+19-06-28.16:44:13.753 [restartedMain   ] INFO  PostProcessorRegistrationDelegate$BeanPostProcessorChecker  - Bean 'securityManager' of type [org.apache.shiro.web.mgt.DefaultWebSecurityManager] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+19-06-28.16:44:13.807 [restartedMain   ] INFO  PostProcessorRegistrationDelegate$BeanPostProcessorChecker  - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$1764826a] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+19-06-28.16:44:13.827 [restartedMain   ] INFO  PostProcessorRegistrationDelegate$BeanPostProcessorChecker  - Bean 'getAuthorizationAttributeSourceAdvisor' of type [org.apache.shiro.spring.security.interceptor.AuthorizationAttributeSourceAdvisor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+19-06-28.16:44:14.507 [restartedMain   ] INFO  TomcatWebServer         - Tomcat initialized with port(s): 8080 (http)
+19-06-28.16:44:14.528 [restartedMain   ] INFO  Http11NioProtocol       - Initializing ProtocolHandler ["http-nio-8080"]
+19-06-28.16:44:14.540 [restartedMain   ] INFO  StandardService         - Starting service [Tomcat]
+19-06-28.16:44:14.541 [restartedMain   ] INFO  StandardEngine          - Starting Servlet Engine: Apache Tomcat/8.5.31
+19-06-28.16:44:14.546 [localhost-startStop-1] INFO  AprLifecycleListener    - The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [/Users/uxin/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:.]
+19-06-28.16:44:14.634 [localhost-startStop-1] INFO  [/]                     - Initializing Spring embedded WebApplicationContext
+19-06-28.16:44:14.634 [localhost-startStop-1] INFO  ContextLoader           - Root WebApplicationContext: initialization completed in 5500 ms
+19-06-28.16:44:14.832 [localhost-startStop-1] DEBUG DefaultFilterChainManager  - Creating chain [/user] from String definition [authc]
+19-06-28.16:44:14.832 [localhost-startStop-1] DEBUG DefaultFilterChainManager  - Attempting to apply path [/user] to filter [authc] with config [null]
+19-06-28.16:44:14.834 [localhost-startStop-1] DEBUG DefaultFilterChainManager  - Creating chain [/user/edit/**] from String definition [authc,perms[user:edit]]
+19-06-28.16:44:14.834 [localhost-startStop-1] DEBUG DefaultFilterChainManager  - Attempting to apply path [/user/edit/**] to filter [authc] with config [null]
+19-06-28.16:44:14.834 [localhost-startStop-1] DEBUG DefaultFilterChainManager  - Attempting to apply path [/user/edit/**] to filter [perms] with config [user:edit]
+19-06-28.16:44:14.834 [localhost-startStop-1] DEBUG DefaultFilterChainManager  - Creating chain [/login] from String definition [anon]
+19-06-28.16:44:14.834 [localhost-startStop-1] DEBUG DefaultFilterChainManager  - Attempting to apply path [/login] to filter [anon] with config [null]
+19-06-28.16:44:14.835 [localhost-startStop-1] DEBUG DefaultFilterChainManager  - Creating chain [/**] from String definition [anon]
+19-06-28.16:44:14.835 [localhost-startStop-1] DEBUG DefaultFilterChainManager  - Attempting to apply path [/**] to filter [anon] with config [null]
+19-06-28.16:44:14.855 [localhost-startStop-1] DEBUG ShiroFilterFactoryBean  - Found filter chain candidate filter 'requestContextFilter'
+19-06-28.16:44:14.878 [localhost-startStop-1] DEBUG ShiroFilterFactoryBean  - Found filter chain candidate filter 'hiddenHttpMethodFilter'
+19-06-28.16:44:14.894 [localhost-startStop-1] DEBUG ShiroFilterFactoryBean  - Found filter chain candidate filter 'httpPutFormContentFilter'
+19-06-28.16:44:14.909 [localhost-startStop-1] DEBUG ShiroFilterFactoryBean  - Found filter chain candidate filter 'characterEncodingFilter'
+19-06-28.16:44:14.922 [localhost-startStop-1] INFO  ServletRegistrationBean  - Servlet dispatcherServlet mapped to [/]
+19-06-28.16:44:14.928 [localhost-startStop-1] INFO  FilterRegistrationBean  - Mapping filter: 'characterEncodingFilter' to: [/*]
+19-06-28.16:44:14.929 [localhost-startStop-1] INFO  FilterRegistrationBean  - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+19-06-28.16:44:14.929 [localhost-startStop-1] INFO  FilterRegistrationBean  - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+19-06-28.16:44:14.929 [localhost-startStop-1] INFO  FilterRegistrationBean  - Mapping filter: 'requestContextFilter' to: [/*]
+19-06-28.16:44:14.929 [localhost-startStop-1] INFO  FilterRegistrationBean  - Mapping filter: 'shiroFilter' to: [/*]
+19-06-28.16:44:15.363 [restartedMain   ] DEBUG TraversableResolvers    - Cannot find javax.persistence.Persistence on classpath. Assuming non JPA 2 environment. All properties will per default be traversable.
+19-06-28.16:44:15.363 [restartedMain   ] DEBUG ResourceBundleMessageInterpolator  - Loaded expression factory via original TCCL
+19-06-28.16:44:15.374 [restartedMain   ] DEBUG TraversableResolvers    - Cannot find javax.persistence.Persistence on classpath. Assuming non JPA 2 environment. All properties will per default be traversable.
+19-06-28.16:44:15.375 [restartedMain   ] DEBUG ConfigurationImpl       - Setting custom MessageInterpolator of type org.springframework.validation.beanvalidation.LocaleContextMessageInterpolator
+19-06-28.16:44:15.376 [restartedMain   ] DEBUG ConfigurationImpl       - Setting custom ConstraintValidatorFactory of type org.springframework.validation.beanvalidation.SpringConstraintValidatorFactory
+19-06-28.16:44:15.377 [restartedMain   ] DEBUG ConfigurationImpl       - Setting custom ParameterNameProvider of type org.springframework.validation.beanvalidation.LocalValidatorFactoryBean$1
+19-06-28.16:44:15.378 [restartedMain   ] DEBUG ValidationXmlParser     - Trying to load META-INF/validation.xml for XML based Validator configuration.
+19-06-28.16:44:15.378 [restartedMain   ] DEBUG ResourceLoaderHelper    - Trying to load META-INF/validation.xml via user class loader
+19-06-28.16:44:15.378 [restartedMain   ] DEBUG ResourceLoaderHelper    - Trying to load META-INF/validation.xml via TCCL
+19-06-28.16:44:15.379 [restartedMain   ] DEBUG ResourceLoaderHelper    - Trying to load META-INF/validation.xml via Hibernate Validator's class loader
+19-06-28.16:44:15.379 [restartedMain   ] DEBUG ValidationXmlParser     - No META-INF/validation.xml found. Using annotation based configuration only.
+19-06-28.16:44:15.385 [restartedMain   ] DEBUG ValidatorFactoryImpl    - HV000234: Using org.springframework.validation.beanvalidation.LocaleContextMessageInterpolator as ValidatorFactory-scoped message interpolator.
+19-06-28.16:44:15.385 [restartedMain   ] DEBUG ValidatorFactoryImpl    - HV000234: Using org.hibernate.validator.internal.engine.resolver.TraverseAllTraversableResolver as ValidatorFactory-scoped traversable resolver.
+19-06-28.16:44:15.385 [restartedMain   ] DEBUG ValidatorFactoryImpl    - HV000234: Using org.hibernate.validator.internal.util.ExecutableParameterNameProvider as ValidatorFactory-scoped parameter name provider.
+19-06-28.16:44:15.385 [restartedMain   ] DEBUG ValidatorFactoryImpl    - HV000234: Using org.hibernate.validator.internal.engine.DefaultClockProvider as ValidatorFactory-scoped clock provider.
+19-06-28.16:44:15.386 [restartedMain   ] DEBUG ValidatorFactoryImpl    - HV000234: Using org.hibernate.validator.internal.engine.scripting.DefaultScriptEvaluatorFactory as ValidatorFactory-scoped script evaluator factory.
+19-06-28.16:44:15.898 [restartedMain   ] INFO  RequestMappingHandlerAdapter  - Looking for @ControllerAdvice: org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@6fb34dd2: startup date [Fri Jun 28 16:44:09 CST 2019]; root of context hierarchy
+19-06-28.16:44:15.981 [restartedMain   ] INFO  RequestMappingHandlerMapping  - Mapped "{[/aop],methods=[POST]}" onto public void com.bsworld.springboot.start.aop.AopController.run()
+19-06-28.16:44:15.985 [restartedMain   ] INFO  RequestMappingHandlerMapping  - Mapped "{[/logout],methods=[GET]}" onto public java.lang.String com.bsworld.springboot.start.shiro.ShiroController.logout(org.springframework.web.servlet.mvc.support.RedirectAttributes)
+19-06-28.16:44:15.985 [restartedMain   ] INFO  RequestMappingHandlerMapping  - Mapped "{[/login],methods=[POST]}" onto public java.lang.String com.bsworld.springboot.start.shiro.ShiroController.login(com.bsworld.springboot.start.dao.entity.TUser)
+19-06-28.16:44:15.986 [restartedMain   ] INFO  RequestMappingHandlerMapping  - Mapped "{[/403]}" onto public java.lang.String com.bsworld.springboot.start.shiro.ShiroController.unauthorizedRole()
+19-06-28.16:44:15.986 [restartedMain   ] INFO  RequestMappingHandlerMapping  - Mapped "{[/user/edit/{userid}]}" onto public java.lang.String com.bsworld.springboot.start.shiro.ShiroController.getUserList(int)
+19-06-28.16:44:15.988 [restartedMain   ] INFO  RequestMappingHandlerMapping  - Mapped "{[/mysql/test],methods=[POST]}" onto public void com.bsworld.springboot.start.web.MySqlController.test(com.bsworld.springboot.start.web.MySqlTestBean)
+19-06-28.16:44:15.989 [restartedMain   ] INFO  RequestMappingHandlerMapping  - Mapped "{[/mysql/json],methods=[POST]}" onto public void com.bsworld.springboot.start.web.MySqlController.test(java.util.HashMap)
+19-06-28.16:44:15.992 [restartedMain   ] INFO  RequestMappingHandlerMapping  - Mapped "{[/rate/insert],methods=[POST]}" onto public void com.bsworld.springboot.start.web.RateTransController.insert()
+19-06-28.16:44:15.992 [restartedMain   ] INFO  RequestMappingHandlerMapping  - Mapped "{[/rate/query],methods=[POST]}" onto public void com.bsworld.springboot.start.web.RateTransController.query()
+19-06-28.16:44:15.993 [restartedMain   ] INFO  RequestMappingHandlerMapping  - Mapped "{[/rate/threadquery],methods=[POST]}" onto public void com.bsworld.springboot.start.web.RateTransController.queryThread()
+19-06-28.16:44:15.994 [restartedMain   ] INFO  RequestMappingHandlerMapping  - Mapped "{[/user/get],methods=[POST]}" onto public void com.bsworld.springboot.start.web.UserController.run(java.util.HashMap)
+19-06-28.16:44:15.995 [restartedMain   ] INFO  RequestMappingHandlerMapping  - Mapped "{[/user/get10],methods=[POST]}" onto public void com.bsworld.springboot.start.web.UserController.insert()
+19-06-28.16:44:15.998 [restartedMain   ] INFO  RequestMappingHandlerMapping  - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+19-06-28.16:44:15.999 [restartedMain   ] INFO  RequestMappingHandlerMapping  - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+19-06-28.16:44:16.071 [restartedMain   ] INFO  SimpleUrlHandlerMapping  - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+19-06-28.16:44:16.071 [restartedMain   ] INFO  SimpleUrlHandlerMapping  - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+19-06-28.16:44:16.233 [restartedMain   ] INFO  SimpleUrlHandlerMapping  - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+19-06-28.16:44:16.547 [restartedMain   ] INFO  OptionalLiveReloadServer  - LiveReload server is running on port 35729
+19-06-28.16:44:16.587 [restartedMain   ] INFO  AnnotationMBeanExporter  - Registering beans for JMX exposure on startup
+19-06-28.16:44:16.589 [restartedMain   ] INFO  AnnotationMBeanExporter  - Bean with name 'druidDateSource' has been autodetected for JMX exposure
+19-06-28.16:44:16.597 [restartedMain   ] INFO  AnnotationMBeanExporter  - Located MBean 'druidDateSource': registering with JMX server as MBean [com.alibaba.druid.pool:name=druidDateSource,type=DruidDataSource]
+19-06-28.16:44:16.612 [restartedMain   ] INFO  Http11NioProtocol       - Starting ProtocolHandler ["http-nio-8080"]
+19-06-28.16:44:16.638 [restartedMain   ] INFO  NioSelectorPool         - Using a shared selector for servlet write/read
+19-06-28.16:44:16.659 [restartedMain   ] INFO  TomcatWebServer         - Tomcat started on port(s): 8080 (http) with context path ''
+19-06-28.16:44:16.666 [restartedMain   ] INFO  SpringbootApplication   - Started SpringbootApplication in 8.743 seconds (JVM running for 12.477)
+19-06-28.16:46:39.987 [Thread-29       ] INFO  AnnotationConfigServletWebServerApplicationContext  - Closing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@6fb34dd2: startup date [Fri Jun 28 16:44:09 CST 2019]; root of context hierarchy
+19-06-28.16:46:39.992 [Thread-29       ] INFO  AnnotationMBeanExporter  - Unregistering JMX-exposed beans on shutdown
+19-06-28.16:46:39.993 [Thread-29       ] INFO  AnnotationMBeanExporter  - Unregistering JMX-exposed beans
+19-06-28.16:46:39.995 [Thread-29       ] DEBUG LifecycleBeanPostProcessor  - Destroying bean [securityManager]...
+19-06-28.16:46:40.006 [Thread-29       ] DEBUG LifecycleBeanPostProcessor  - Destroying bean [getEhCacheManager]...
+19-06-28.16:46:48.255 [restartedMain   ] INFO  SpringbootApplication   - Starting SpringbootApplication on localhost with PID 2873 (/Users/uxin/IdeaProjects/Final/springboot/target/classes started by uxin in /Users/uxin/IdeaProjects/Final)
+19-06-28.16:46:48.260 [restartedMain   ] DEBUG SpringbootApplication   - Running with Spring Boot v2.0.3.RELEASE, Spring v5.0.7.RELEASE
+19-06-28.16:46:48.263 [restartedMain   ] INFO  SpringbootApplication   - The following profiles are active: mysql
+19-06-28.16:46:48.282 [background-preinit] DEBUG ResourceBundleMessageInterpolator  - Loaded expression factory via original TCCL
+19-06-28.16:46:48.313 [background-preinit] DEBUG ValidatorFactoryImpl    - HV000234: Using org.hibernate.validator.messageinterpolation.ResourceBundleMessageInterpolator as ValidatorFactory-scoped message interpolator.
+19-06-28.16:46:48.313 [background-preinit] DEBUG ValidatorFactoryImpl    - HV000234: Using org.hibernate.validator.internal.engine.resolver.TraverseAllTraversableResolver as ValidatorFactory-scoped traversable resolver.
+19-06-28.16:46:48.313 [background-preinit] DEBUG ValidatorFactoryImpl    - HV000234: Using org.hibernate.validator.internal.util.ExecutableParameterNameProvider as ValidatorFactory-scoped parameter name provider.
+19-06-28.16:46:48.314 [background-preinit] DEBUG ValidatorFactoryImpl    - HV000234: Using org.hibernate.validator.internal.engine.DefaultClockProvider as ValidatorFactory-scoped clock provider.
+19-06-28.16:46:48.314 [background-preinit] DEBUG ValidatorFactoryImpl    - HV000234: Using org.hibernate.validator.internal.engine.scripting.DefaultScriptEvaluatorFactory as ValidatorFactory-scoped script evaluator factory.
+19-06-28.16:46:48.565 [restartedMain   ] INFO  AnnotationConfigServletWebServerApplicationContext  - Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@3649f102: startup date [Fri Jun 28 16:46:48 CST 2019]; root of context hierarchy
+19-06-28.16:46:51.308 [restartedMain   ] DEBUG ClassPathMapperScanner  - Identified candidate component class: file [/Users/uxin/IdeaProjects/Final/springboot/target/classes/com/bsworld/springboot/start/dao/mapper/TPermissionMapper.class]
+19-06-28.16:46:51.309 [restartedMain   ] DEBUG ClassPathMapperScanner  - Identified candidate component class: file [/Users/uxin/IdeaProjects/Final/springboot/target/classes/com/bsworld/springboot/start/dao/mapper/TRateTransformMapper.class]
+19-06-28.16:46:51.309 [restartedMain   ] DEBUG ClassPathMapperScanner  - Identified candidate component class: file [/Users/uxin/IdeaProjects/Final/springboot/target/classes/com/bsworld/springboot/start/dao/mapper/TRoleMapper.class]
+19-06-28.16:46:51.310 [restartedMain   ] DEBUG ClassPathMapperScanner  - Identified candidate component class: file [/Users/uxin/IdeaProjects/Final/springboot/target/classes/com/bsworld/springboot/start/dao/mapper/TUserMapper.class]
+19-06-28.16:46:51.310 [restartedMain   ] DEBUG ClassPathMapperScanner  - Identified candidate component class: file [/Users/uxin/IdeaProjects/Final/springboot/target/classes/com/bsworld/springboot/start/dao/mapper/TUserRoleMapper.class]
+19-06-28.16:46:51.313 [restartedMain   ] DEBUG ClassPathMapperScanner  - Creating MapperFactoryBean with name 'TPermissionMapper' and 'com.bsworld.springboot.start.dao.mapper.TPermissionMapper' mapperInterface
+19-06-28.16:46:51.321 [restartedMain   ] DEBUG ClassPathMapperScanner  - Creating MapperFactoryBean with name 'TRateTransformMapper' and 'com.bsworld.springboot.start.dao.mapper.TRateTransformMapper' mapperInterface
+19-06-28.16:46:51.322 [restartedMain   ] DEBUG ClassPathMapperScanner  - Creating MapperFactoryBean with name 'TRoleMapper' and 'com.bsworld.springboot.start.dao.mapper.TRoleMapper' mapperInterface
+19-06-28.16:46:51.322 [restartedMain   ] DEBUG ClassPathMapperScanner  - Creating MapperFactoryBean with name 'TUserMapper' and 'com.bsworld.springboot.start.dao.mapper.TUserMapper' mapperInterface
+19-06-28.16:46:51.323 [restartedMain   ] DEBUG ClassPathMapperScanner  - Creating MapperFactoryBean with name 'TUserRoleMapper' and 'com.bsworld.springboot.start.dao.mapper.TUserRoleMapper' mapperInterface
+19-06-28.16:46:52.265 [restartedMain   ] INFO  PostProcessorRegistrationDelegate$BeanPostProcessorChecker  - Bean 'shiroConfig' of type [com.bsworld.springboot.start.config.shiro.ShiroConfig$$EnhancerBySpringCGLIB$$e7284465] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+19-06-28.16:46:52.358 [restartedMain   ] DEBUG LifecycleBeanPostProcessor  - Initializing bean [getEhCacheManager]...
+19-06-28.16:46:52.358 [restartedMain   ] DEBUG EhCacheManager          - cacheManager property not set.  Constructing CacheManager instance... 
+19-06-28.16:46:52.360 [restartedMain   ] DEBUG ResourceUtils           - Opening resource from class path [ehcache-shiro.xml]
+19-06-28.16:46:52.370 [restartedMain   ] DEBUG ConfigurationFactory    - Configuring ehcache from InputStream
+19-06-28.16:46:52.417 [restartedMain   ] DEBUG PropertyUtil            - propertiesString is null.
+19-06-28.16:46:52.427 [restartedMain   ] DEBUG CacheManager            - No disk store path defined. Skipping disk store path conflict test.
+19-06-28.16:46:52.427 [restartedMain   ] DEBUG ConfigurationHelper     - No CacheManagerEventListenerFactory class specified. Skipping...
+19-06-28.16:46:52.438 [restartedMain   ] DEBUG Cache                   - No BootstrapCacheLoaderFactory class specified. Skipping...
+19-06-28.16:46:52.438 [restartedMain   ] DEBUG Cache                   - CacheWriter factory not configured. Skipping...
+19-06-28.16:46:52.440 [restartedMain   ] DEBUG ConfigurationHelper     - No CacheExceptionHandlerFactory class specified. Skipping...
+19-06-28.16:46:52.446 [restartedMain   ] DEBUG EhCacheManager          - implicit cacheManager created successfully.
+19-06-28.16:46:52.447 [restartedMain   ] INFO  PostProcessorRegistrationDelegate$BeanPostProcessorChecker  - Bean 'getEhCacheManager' of type [org.apache.shiro.cache.ehcache.EhCacheManager] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+19-06-28.16:46:52.455 [restartedMain   ] DEBUG AuthorizingRealm        - No authorizationCache instance set.  Checking for a cacheManager...
+19-06-28.16:46:52.455 [restartedMain   ] DEBUG AuthorizingRealm        - CacheManager [org.apache.shiro.cache.ehcache.EhCacheManager@6e4a38d1] has been configured.  Building authorization cache named [myRelam.authorizationCache]
+19-06-28.16:46:52.455 [restartedMain   ] INFO  EhCacheManager          - Cache with name 'myRelam.authorizationCache' does not yet exist.  Creating now.
+19-06-28.16:46:52.510 [restartedMain   ] DEBUG MemoryStore             - Initialized net.sf.ehcache.store.NotifyingMemoryStore for myRelam.authorizationCache
+19-06-28.16:46:52.517 [restartedMain   ] DEBUG Cache                   - Initialised cache: myRelam.authorizationCache
+19-06-28.16:46:52.518 [restartedMain   ] DEBUG ConfigurationHelper     - CacheDecoratorFactory not configured for defaultCache. Skipping for 'myRelam.authorizationCache'.
+19-06-28.16:46:52.518 [restartedMain   ] INFO  EhCacheManager          - Added EhCache named [myRelam.authorizationCache]
+19-06-28.16:46:52.573 [restartedMain   ] INFO  PostProcessorRegistrationDelegate$BeanPostProcessorChecker  - Bean 'mysqlConfig' of type [com.bsworld.springboot.start.config.mysql.MysqlConfig$$EnhancerBySpringCGLIB$$ec02e9c7] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+19-06-28.16:46:52.666 [restartedMain   ] INFO  PostProcessorRegistrationDelegate$BeanPostProcessorChecker  - Bean 'org.springframework.boot.context.properties.ConversionServiceDeducer$Factory' of type [org.springframework.boot.context.properties.ConversionServiceDeducer$Factory] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+19-06-28.16:46:52.836 [restartedMain   ] INFO  PostProcessorRegistrationDelegate$BeanPostProcessorChecker  - Bean 'druidDateSource' of type [com.alibaba.druid.pool.DruidDataSource] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+19-06-28.16:46:52.846 [restartedMain   ] DEBUG LogFactory              - Logging initialized using 'class org.apache.ibatis.logging.commons.JakartaCommonsLoggingImpl' adapter.
+19-06-28.16:46:53.019 [restartedMain   ] DEBUG SqlSessionFactoryBean   - Parsed configuration file: 'class path resource [META-INF/mybatis/mybatis-config.xml]'
+19-06-28.16:46:53.131 [restartedMain   ] DEBUG SqlSessionFactoryBean   - Parsed mapper file: 'file [/Users/uxin/IdeaProjects/Final/springboot/target/classes/META-INF/mybatis/mapper/TPermissionMapper.xml]'
+19-06-28.16:46:53.166 [restartedMain   ] DEBUG SqlSessionFactoryBean   - Parsed mapper file: 'file [/Users/uxin/IdeaProjects/Final/springboot/target/classes/META-INF/mybatis/mapper/TRateTransformMapper.xml]'
+19-06-28.16:46:53.185 [restartedMain   ] DEBUG SqlSessionFactoryBean   - Parsed mapper file: 'file [/Users/uxin/IdeaProjects/Final/springboot/target/classes/META-INF/mybatis/mapper/TRoleMapper.xml]'
+19-06-28.16:46:53.204 [restartedMain   ] DEBUG SqlSessionFactoryBean   - Parsed mapper file: 'file [/Users/uxin/IdeaProjects/Final/springboot/target/classes/META-INF/mybatis/mapper/TUserMapper.xml]'
+19-06-28.16:46:53.217 [restartedMain   ] DEBUG SqlSessionFactoryBean   - Parsed mapper file: 'file [/Users/uxin/IdeaProjects/Final/springboot/target/classes/META-INF/mybatis/mapper/TUserRoleMapper.xml]'
+19-06-28.16:46:53.233 [restartedMain   ] DEBUG SqlSessionFactoryBean   - Parsed mapper file: 'file [/Users/uxin/IdeaProjects/Final/springboot/target/classes/META-INF/mybatis/mapper/UserMapper.xml]'
+19-06-28.16:46:53.237 [restartedMain   ] INFO  PostProcessorRegistrationDelegate$BeanPostProcessorChecker  - Bean 'sqlSessionFactory' of type [org.apache.ibatis.session.defaults.DefaultSqlSessionFactory] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+19-06-28.16:46:53.241 [restartedMain   ] INFO  PostProcessorRegistrationDelegate$BeanPostProcessorChecker  - Bean 'TUserMapper' of type [org.mybatis.spring.mapper.MapperFactoryBean] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+19-06-28.16:46:53.243 [restartedMain   ] INFO  PostProcessorRegistrationDelegate$BeanPostProcessorChecker  - Bean 'TUserMapper' of type [com.sun.proxy.$Proxy63] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+19-06-28.16:46:53.244 [restartedMain   ] INFO  PostProcessorRegistrationDelegate$BeanPostProcessorChecker  - Bean 'TUserServiceImpl' of type [com.bsworld.springboot.start.service.impl.TUserServiceImpl] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+19-06-28.16:46:53.249 [restartedMain   ] INFO  PostProcessorRegistrationDelegate$BeanPostProcessorChecker  - Bean 'TUserRoleMapper' of type [org.mybatis.spring.mapper.MapperFactoryBean] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+19-06-28.16:46:53.250 [restartedMain   ] INFO  PostProcessorRegistrationDelegate$BeanPostProcessorChecker  - Bean 'TUserRoleMapper' of type [com.sun.proxy.$Proxy65] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+19-06-28.16:46:53.250 [restartedMain   ] INFO  PostProcessorRegistrationDelegate$BeanPostProcessorChecker  - Bean 'TUserRoleServiceImpl' of type [com.bsworld.springboot.start.service.impl.TUserRoleServiceImpl] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+19-06-28.16:46:53.254 [restartedMain   ] INFO  PostProcessorRegistrationDelegate$BeanPostProcessorChecker  - Bean 'TRoleMapper' of type [org.mybatis.spring.mapper.MapperFactoryBean] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+19-06-28.16:46:53.255 [restartedMain   ] INFO  PostProcessorRegistrationDelegate$BeanPostProcessorChecker  - Bean 'TRoleMapper' of type [com.sun.proxy.$Proxy66] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+19-06-28.16:46:53.255 [restartedMain   ] INFO  PostProcessorRegistrationDelegate$BeanPostProcessorChecker  - Bean 'TRoleServiceImpl' of type [com.bsworld.springboot.start.service.impl.TRoleServiceImpl] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+19-06-28.16:46:53.259 [restartedMain   ] INFO  PostProcessorRegistrationDelegate$BeanPostProcessorChecker  - Bean 'TPermissionMapper' of type [org.mybatis.spring.mapper.MapperFactoryBean] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+19-06-28.16:46:53.260 [restartedMain   ] INFO  PostProcessorRegistrationDelegate$BeanPostProcessorChecker  - Bean 'TPermissionMapper' of type [com.sun.proxy.$Proxy67] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+19-06-28.16:46:53.261 [restartedMain   ] INFO  PostProcessorRegistrationDelegate$BeanPostProcessorChecker  - Bean 'TPermissionServiceImpl' of type [com.bsworld.springboot.start.service.impl.TPermissionServiceImpl] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+19-06-28.16:46:53.261 [restartedMain   ] DEBUG LifecycleBeanPostProcessor  - Initializing bean [myShiroRealm]...
+19-06-28.16:46:53.261 [restartedMain   ] INFO  PostProcessorRegistrationDelegate$BeanPostProcessorChecker  - Bean 'myShiroRealm' of type [com.bsworld.springboot.start.shiro.MyShiroRealm] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+19-06-28.16:46:53.263 [restartedMain   ] DEBUG AuthorizingRealm        - No authorizationCache instance set.  Checking for a cacheManager...
+19-06-28.16:46:53.263 [restartedMain   ] DEBUG AuthorizingRealm        - CacheManager [org.apache.shiro.cache.ehcache.EhCacheManager@6e4a38d1] has been configured.  Building authorization cache named [myRelam2.authorizationCache]
+19-06-28.16:46:53.263 [restartedMain   ] INFO  EhCacheManager          - Cache with name 'myRelam2.authorizationCache' does not yet exist.  Creating now.
+19-06-28.16:46:53.264 [restartedMain   ] DEBUG MemoryStore             - Initialized net.sf.ehcache.store.NotifyingMemoryStore for myRelam2.authorizationCache
+19-06-28.16:46:53.264 [restartedMain   ] DEBUG Cache                   - Initialised cache: myRelam2.authorizationCache
+19-06-28.16:46:53.264 [restartedMain   ] DEBUG ConfigurationHelper     - CacheDecoratorFactory not configured for defaultCache. Skipping for 'myRelam2.authorizationCache'.
+19-06-28.16:46:53.264 [restartedMain   ] INFO  EhCacheManager          - Added EhCache named [myRelam2.authorizationCache]
+19-06-28.16:46:53.272 [restartedMain   ] DEBUG LifecycleBeanPostProcessor  - Initializing bean [myShiroRealm2]...
+19-06-28.16:46:53.272 [restartedMain   ] INFO  PostProcessorRegistrationDelegate$BeanPostProcessorChecker  - Bean 'myShiroRealm2' of type [com.bsworld.springboot.start.shiro.MyShiroRealm2] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+19-06-28.16:46:53.603 [restartedMain   ] INFO  PostProcessorRegistrationDelegate$BeanPostProcessorChecker  - Bean 'securityManager' of type [org.apache.shiro.web.mgt.DefaultWebSecurityManager] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+19-06-28.16:46:53.680 [restartedMain   ] INFO  PostProcessorRegistrationDelegate$BeanPostProcessorChecker  - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$2797dff5] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+19-06-28.16:46:53.705 [restartedMain   ] INFO  PostProcessorRegistrationDelegate$BeanPostProcessorChecker  - Bean 'getAuthorizationAttributeSourceAdvisor' of type [org.apache.shiro.spring.security.interceptor.AuthorizationAttributeSourceAdvisor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+19-06-28.16:46:54.288 [restartedMain   ] INFO  TomcatWebServer         - Tomcat initialized with port(s): 8080 (http)
+19-06-28.16:46:54.307 [restartedMain   ] INFO  Http11NioProtocol       - Initializing ProtocolHandler ["http-nio-8080"]
+19-06-28.16:46:54.317 [restartedMain   ] INFO  StandardService         - Starting service [Tomcat]
+19-06-28.16:46:54.318 [restartedMain   ] INFO  StandardEngine          - Starting Servlet Engine: Apache Tomcat/8.5.31
+19-06-28.16:46:54.323 [localhost-startStop-1] INFO  AprLifecycleListener    - The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [/Users/uxin/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:.]
+19-06-28.16:46:54.410 [localhost-startStop-1] INFO  [/]                     - Initializing Spring embedded WebApplicationContext
+19-06-28.16:46:54.410 [localhost-startStop-1] INFO  ContextLoader           - Root WebApplicationContext: initialization completed in 5845 ms
+19-06-28.16:46:54.581 [localhost-startStop-1] DEBUG DefaultFilterChainManager  - Creating chain [/user] from String definition [authc]
+19-06-28.16:46:54.581 [localhost-startStop-1] DEBUG DefaultFilterChainManager  - Attempting to apply path [/user] to filter [authc] with config [null]
+19-06-28.16:46:54.583 [localhost-startStop-1] DEBUG DefaultFilterChainManager  - Creating chain [/user/edit/**] from String definition [authc,perms[user:edit]]
+19-06-28.16:46:54.583 [localhost-startStop-1] DEBUG DefaultFilterChainManager  - Attempting to apply path [/user/edit/**] to filter [authc] with config [null]
+19-06-28.16:46:54.583 [localhost-startStop-1] DEBUG DefaultFilterChainManager  - Attempting to apply path [/user/edit/**] to filter [perms] with config [user:edit]
+19-06-28.16:46:54.583 [localhost-startStop-1] DEBUG DefaultFilterChainManager  - Creating chain [/login] from String definition [anon]
+19-06-28.16:46:54.584 [localhost-startStop-1] DEBUG DefaultFilterChainManager  - Attempting to apply path [/login] to filter [anon] with config [null]
+19-06-28.16:46:54.584 [localhost-startStop-1] DEBUG DefaultFilterChainManager  - Creating chain [/**] from String definition [anon]
+19-06-28.16:46:54.584 [localhost-startStop-1] DEBUG DefaultFilterChainManager  - Attempting to apply path [/**] to filter [anon] with config [null]
+19-06-28.16:46:54.614 [localhost-startStop-1] DEBUG ShiroFilterFactoryBean  - Found filter chain candidate filter 'requestContextFilter'
+19-06-28.16:46:54.640 [localhost-startStop-1] DEBUG ShiroFilterFactoryBean  - Found filter chain candidate filter 'hiddenHttpMethodFilter'
+19-06-28.16:46:54.662 [localhost-startStop-1] DEBUG ShiroFilterFactoryBean  - Found filter chain candidate filter 'httpPutFormContentFilter'
+19-06-28.16:46:54.677 [localhost-startStop-1] DEBUG ShiroFilterFactoryBean  - Found filter chain candidate filter 'characterEncodingFilter'
+19-06-28.16:46:54.691 [localhost-startStop-1] INFO  ServletRegistrationBean  - Servlet dispatcherServlet mapped to [/]
+19-06-28.16:46:54.697 [localhost-startStop-1] INFO  FilterRegistrationBean  - Mapping filter: 'characterEncodingFilter' to: [/*]
+19-06-28.16:46:54.697 [localhost-startStop-1] INFO  FilterRegistrationBean  - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+19-06-28.16:46:54.697 [localhost-startStop-1] INFO  FilterRegistrationBean  - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+19-06-28.16:46:54.697 [localhost-startStop-1] INFO  FilterRegistrationBean  - Mapping filter: 'requestContextFilter' to: [/*]
+19-06-28.16:46:54.697 [localhost-startStop-1] INFO  FilterRegistrationBean  - Mapping filter: 'shiroFilter' to: [/*]
+19-06-28.16:46:55.116 [restartedMain   ] DEBUG TraversableResolvers    - Cannot find javax.persistence.Persistence on classpath. Assuming non JPA 2 environment. All properties will per default be traversable.
+19-06-28.16:46:55.116 [restartedMain   ] DEBUG ResourceBundleMessageInterpolator  - Loaded expression factory via original TCCL
+19-06-28.16:46:55.126 [restartedMain   ] DEBUG TraversableResolvers    - Cannot find javax.persistence.Persistence on classpath. Assuming non JPA 2 environment. All properties will per default be traversable.
+19-06-28.16:46:55.127 [restartedMain   ] DEBUG ConfigurationImpl       - Setting custom MessageInterpolator of type org.springframework.validation.beanvalidation.LocaleContextMessageInterpolator
+19-06-28.16:46:55.128 [restartedMain   ] DEBUG ConfigurationImpl       - Setting custom ConstraintValidatorFactory of type org.springframework.validation.beanvalidation.SpringConstraintValidatorFactory
+19-06-28.16:46:55.128 [restartedMain   ] DEBUG ConfigurationImpl       - Setting custom ParameterNameProvider of type org.springframework.validation.beanvalidation.LocalValidatorFactoryBean$1
+19-06-28.16:46:55.130 [restartedMain   ] DEBUG ValidationXmlParser     - Trying to load META-INF/validation.xml for XML based Validator configuration.
+19-06-28.16:46:55.130 [restartedMain   ] DEBUG ResourceLoaderHelper    - Trying to load META-INF/validation.xml via user class loader
+19-06-28.16:46:55.130 [restartedMain   ] DEBUG ResourceLoaderHelper    - Trying to load META-INF/validation.xml via TCCL
+19-06-28.16:46:55.130 [restartedMain   ] DEBUG ResourceLoaderHelper    - Trying to load META-INF/validation.xml via Hibernate Validator's class loader
+19-06-28.16:46:55.131 [restartedMain   ] DEBUG ValidationXmlParser     - No META-INF/validation.xml found. Using annotation based configuration only.
+19-06-28.16:46:55.136 [restartedMain   ] DEBUG ValidatorFactoryImpl    - HV000234: Using org.springframework.validation.beanvalidation.LocaleContextMessageInterpolator as ValidatorFactory-scoped message interpolator.
+19-06-28.16:46:55.136 [restartedMain   ] DEBUG ValidatorFactoryImpl    - HV000234: Using org.hibernate.validator.internal.engine.resolver.TraverseAllTraversableResolver as ValidatorFactory-scoped traversable resolver.
+19-06-28.16:46:55.136 [restartedMain   ] DEBUG ValidatorFactoryImpl    - HV000234: Using org.hibernate.validator.internal.util.ExecutableParameterNameProvider as ValidatorFactory-scoped parameter name provider.
+19-06-28.16:46:55.136 [restartedMain   ] DEBUG ValidatorFactoryImpl    - HV000234: Using org.hibernate.validator.internal.engine.DefaultClockProvider as ValidatorFactory-scoped clock provider.
+19-06-28.16:46:55.136 [restartedMain   ] DEBUG ValidatorFactoryImpl    - HV000234: Using org.hibernate.validator.internal.engine.scripting.DefaultScriptEvaluatorFactory as ValidatorFactory-scoped script evaluator factory.
+19-06-28.16:46:55.552 [restartedMain   ] INFO  RequestMappingHandlerAdapter  - Looking for @ControllerAdvice: org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@3649f102: startup date [Fri Jun 28 16:46:48 CST 2019]; root of context hierarchy
+19-06-28.16:46:55.639 [restartedMain   ] INFO  RequestMappingHandlerMapping  - Mapped "{[/aop],methods=[POST]}" onto public void com.bsworld.springboot.start.aop.AopController.run()
+19-06-28.16:46:55.643 [restartedMain   ] INFO  RequestMappingHandlerMapping  - Mapped "{[/logout],methods=[GET]}" onto public java.lang.String com.bsworld.springboot.start.shiro.ShiroController.logout(org.springframework.web.servlet.mvc.support.RedirectAttributes)
+19-06-28.16:46:55.644 [restartedMain   ] INFO  RequestMappingHandlerMapping  - Mapped "{[/login],methods=[POST]}" onto public java.lang.String com.bsworld.springboot.start.shiro.ShiroController.login(com.bsworld.springboot.start.dao.entity.TUser)
+19-06-28.16:46:55.644 [restartedMain   ] INFO  RequestMappingHandlerMapping  - Mapped "{[/403]}" onto public java.lang.String com.bsworld.springboot.start.shiro.ShiroController.unauthorizedRole()
+19-06-28.16:46:55.645 [restartedMain   ] INFO  RequestMappingHandlerMapping  - Mapped "{[/user/edit/{userid}]}" onto public java.lang.String com.bsworld.springboot.start.shiro.ShiroController.getUserList(int)
+19-06-28.16:46:55.647 [restartedMain   ] INFO  RequestMappingHandlerMapping  - Mapped "{[/mysql/test],methods=[POST]}" onto public void com.bsworld.springboot.start.web.MySqlController.test(com.bsworld.springboot.start.web.MySqlTestBean)
+19-06-28.16:46:55.647 [restartedMain   ] INFO  RequestMappingHandlerMapping  - Mapped "{[/mysql/json],methods=[POST]}" onto public void com.bsworld.springboot.start.web.MySqlController.test(java.util.HashMap)
+19-06-28.16:46:55.649 [restartedMain   ] INFO  RequestMappingHandlerMapping  - Mapped "{[/rate/insert],methods=[POST]}" onto public void com.bsworld.springboot.start.web.RateTransController.insert()
+19-06-28.16:46:55.650 [restartedMain   ] INFO  RequestMappingHandlerMapping  - Mapped "{[/rate/query],methods=[POST]}" onto public void com.bsworld.springboot.start.web.RateTransController.query()
+19-06-28.16:46:55.650 [restartedMain   ] INFO  RequestMappingHandlerMapping  - Mapped "{[/rate/threadquery],methods=[POST]}" onto public void com.bsworld.springboot.start.web.RateTransController.queryThread()
+19-06-28.16:46:55.652 [restartedMain   ] INFO  RequestMappingHandlerMapping  - Mapped "{[/user/get],methods=[POST]}" onto public void com.bsworld.springboot.start.web.UserController.run(java.util.HashMap)
+19-06-28.16:46:55.653 [restartedMain   ] INFO  RequestMappingHandlerMapping  - Mapped "{[/user/get10],methods=[POST]}" onto public void com.bsworld.springboot.start.web.UserController.insert()
+19-06-28.16:46:55.658 [restartedMain   ] INFO  RequestMappingHandlerMapping  - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+19-06-28.16:46:55.659 [restartedMain   ] INFO  RequestMappingHandlerMapping  - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+19-06-28.16:46:55.737 [restartedMain   ] INFO  SimpleUrlHandlerMapping  - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+19-06-28.16:46:55.737 [restartedMain   ] INFO  SimpleUrlHandlerMapping  - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+19-06-28.16:46:55.923 [restartedMain   ] INFO  SimpleUrlHandlerMapping  - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+19-06-28.16:46:56.219 [restartedMain   ] INFO  OptionalLiveReloadServer  - LiveReload server is running on port 35729
+19-06-28.16:46:56.261 [restartedMain   ] INFO  AnnotationMBeanExporter  - Registering beans for JMX exposure on startup
+19-06-28.16:46:56.262 [restartedMain   ] INFO  AnnotationMBeanExporter  - Bean with name 'druidDateSource' has been autodetected for JMX exposure
+19-06-28.16:46:56.269 [restartedMain   ] INFO  AnnotationMBeanExporter  - Located MBean 'druidDateSource': registering with JMX server as MBean [com.alibaba.druid.pool:name=druidDateSource,type=DruidDataSource]
+19-06-28.16:46:56.284 [restartedMain   ] INFO  Http11NioProtocol       - Starting ProtocolHandler ["http-nio-8080"]
+19-06-28.16:46:56.310 [restartedMain   ] INFO  NioSelectorPool         - Using a shared selector for servlet write/read
+19-06-28.16:46:56.331 [restartedMain   ] INFO  TomcatWebServer         - Tomcat started on port(s): 8080 (http) with context path ''
+19-06-28.16:46:56.338 [restartedMain   ] INFO  SpringbootApplication   - Started SpringbootApplication in 9.319 seconds (JVM running for 13.409)
+19-06-28.16:50:37.892 [Thread-31       ] INFO  AnnotationConfigServletWebServerApplicationContext  - Closing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@3649f102: startup date [Fri Jun 28 16:46:48 CST 2019]; root of context hierarchy
+19-06-28.16:50:37.911 [Thread-31       ] INFO  AnnotationMBeanExporter  - Unregistering JMX-exposed beans on shutdown
+19-06-28.16:50:37.913 [Thread-31       ] INFO  AnnotationMBeanExporter  - Unregistering JMX-exposed beans
+19-06-28.16:50:37.915 [Thread-31       ] DEBUG LifecycleBeanPostProcessor  - Destroying bean [securityManager]...
+19-06-28.16:50:37.924 [Thread-31       ] DEBUG LifecycleBeanPostProcessor  - Destroying bean [getEhCacheManager]...
