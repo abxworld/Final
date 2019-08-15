@@ -8,8 +8,8 @@ package com.bsworld.springboot.DataAlgo.model;
  */
 public class TwoNumberAdd {
     public static void main(String[] args) {
-        int target = 99;
-        int[] arr = {1, 7, 8,6,33,45,37,66};
+        int target = 9;
+        int[] arr = {2,7,11,15};
         int num1 = 0;
         int num2 = 0;
         for (int i = 0; i < arr.length; i++) {
