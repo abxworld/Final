@@ -27,6 +27,12 @@
     <dependencies>
 
         <dependency>
+            <groupId>org.apache.zookeeper</groupId>
+            <artifactId>zookeeper</artifactId>
+            <version>3.4.6</version>
+        </dependency>
+
+        <dependency>
             <groupId>com.github.jai-imageio</groupId>
             <artifactId>jai-imageio-core</artifactId>
             <version>1.4.0</version>
@@ -144,7 +150,7 @@
             <groupId>org.apache.poi</groupId>
             <artifactId>poi-ooxml</artifactId>
             <version>3.17</version>
-           <!-- <scope>test</scope>-->
+            <!-- <scope>test</scope>-->
         </dependency>
         <dependency>
             <groupId>org.apache.commons</groupId>
@@ -167,6 +173,25 @@
             <groupId>joda-time</groupId>
             <artifactId>joda-time</artifactId>
             <version>2.9.9</version>
+            <scope>test</scope>
+        </dependency>
+        <dependency>
+            <groupId>org.codehaus.groovy</groupId>
+            <artifactId>groovy-all</artifactId>
+            <version>2.4.12</version>
+        </dependency>
+
+        <dependency>
+            <groupId>junit</groupId>
+            <artifactId>junit</artifactId>
+            <version>4.12</version>
+            <scope>test</scope>
+        </dependency>
+
+        <dependency>
+            <groupId>org.spockframework</groupId>
+            <artifactId>spock-core</artifactId>
+            <version>1.1-groovy-2.4</version>
             <scope>test</scope>
         </dependency>
     </dependencies>
