@@ -7,5 +7,14 @@ package com.bsworld.springboot.groovy
  * description: 
  */
 class Test1 {
+    static void main(String[] args) {
+        def range = 0..10
+//        println(range)
+        def result = add(10, 100)
+        println(result)
+    }
 
+    static  add(int a, int b) {
+        return a + b
+    }
 }

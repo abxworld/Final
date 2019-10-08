@@ -1,15 +1,8 @@
 package com.bsworld.springboot.concurrency;
 
-import com.bsworld.springboot.start.circle.A;
 import com.google.common.util.concurrent.RateLimiter;
-import net.sf.ehcache.util.NamedThreadFactory;
-import org.apache.ibatis.jdbc.Null;
 import org.junit.Test;
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
 
-import java.util.concurrent.ArrayBlockingQueue;
-import java.util.concurrent.CountDownLatch;
 import java.util.concurrent.LinkedBlockingDeque;
 import java.util.concurrent.ThreadPoolExecutor;
 import java.util.concurrent.TimeUnit;
@@ -29,9 +22,9 @@ public class RateLimitTest {
         RateLimiter rateLimiter = RateLimiter.create(1);
         executor.execute(() -> {
             double result = rateLimiter.acquire(30);
-            System.out.println("thread name:"+Thread.currentThread().getName() + "now time" + System.currentTimeMillis() + "result:" + result + " successCount:" + atomicInteger.getAndAdd(1));
+            System.out.println("thread name:" + Thread.currentThread().getName() + "now time" + System.currentTimeMillis() + "result:" + result + " successCount:" + atomicInteger.getAndAdd(1));
         });
-        for (int i =0; i<9; i++ ) {
+        for (int i = 0; i < 9; i++) {
             handle(rateLimiter, executor);
         }
     }
@@ -47,7 +40,7 @@ public class RateLimitTest {
     public static void handle(RateLimiter rateLimiter, ThreadPoolExecutor executor) {
         executor.execute(() -> {
             double result = rateLimiter.acquire(1);
-            System.out.println("thread name:"+Thread.currentThread().getName() + "now time" + System.currentTimeMillis() + "result:" + result + " successCount:" + atomicInteger.getAndAdd(1));
+            System.out.println("thread name:" + Thread.currentThread().getName() + "now time" + System.currentTimeMillis() + "result:" + result + " successCount:" + atomicInteger.getAndAdd(1));
         });
     }
 }
