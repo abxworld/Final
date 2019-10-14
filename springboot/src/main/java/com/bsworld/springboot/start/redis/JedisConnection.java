@@ -13,7 +13,7 @@ import redis.clients.jedis.JedisPool;
  */
 @Component
 public class JedisConnection implements InitializingBean {
-    private static final String HOST = "47.95.117.211";
+    private static final String HOST = "106.13.46.179";
     private static final int PORT = 6379;
     private static JedisPool jedisPool;
     @Override

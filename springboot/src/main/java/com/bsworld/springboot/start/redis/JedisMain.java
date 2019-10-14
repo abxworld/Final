@@ -1,9 +1,10 @@
 package com.bsworld.springboot.start.redis;
 
-import com.google.common.collect.Lists;
+import com.google.common.collect.Maps;
 import redis.clients.jedis.Jedis;
-import redis.clients.jedis.JedisCluster;
 
+import java.util.HashMap;
+import java.util.List;
 import java.io.IOException;
 import java.util.LinkedList;
 import java.util.List;
@@ -15,9 +16,8 @@ import java.util.List;
  * description:
  */
 public class JedisMain {
-    public static void main(String[] args) throws IOException {
+    public static void main(String[] args) {
         Jedis jedis = JedisConnection.getJedis();
-        System.in.read();
        String[] keys = new String[1000];
         for (int i = 0; i < 1000; i++) {
             if (i <= 5) {
@@ -34,5 +34,12 @@ public class JedisMain {
 //            newVal = Integer.valueOf(s);
 //            oldVal = newVal;
         }
+        String key = "testZAddKey";
+        HashMap<String, Double> hashMap = Maps.newHashMap();
+        hashMap.put("1", new Double(100));
+        hashMap.put("2", new Double(200));
+        hashMap.put("3", new Double(300));
+        hashMap.put("4", new Double(400));
+        jedis.zadd(key, hashMap);
     }
 }

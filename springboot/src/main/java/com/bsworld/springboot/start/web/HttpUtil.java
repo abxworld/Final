@@ -90,6 +90,9 @@ public class HttpUtil {
             conn.setRequestProperty("Content-Type", mimeType);
             conn.setRequestProperty("Connection", "Keep-Alive");
             conn.setRequestProperty("User-Agent", "Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1;SV1)");
+            conn.setRequestProperty("_c", "1");
+            conn.setRequestProperty("x-auth-token","f90a9e83-dfc5-4c9b-9dda-0a88c40f72af");
+            conn.setRequestProperty("ua","vc=400");
             // 发送POST请求必须设置如下两行
             conn.setDoOutput(true);
             conn.setDoInput(true);
