@@ -6,5 +6,5 @@ package com.bsworld.springboot.basic;
  * create: 2019-05-27 12:35
  * description:
  */
-public class MyException {
+public class MyException extends RuntimeException{
 }

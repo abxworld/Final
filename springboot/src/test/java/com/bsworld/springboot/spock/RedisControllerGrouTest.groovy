@@ -1,7 +1,8 @@
 package com.bsworld.springboot.spock
 
-
+import com.bsworld.springboot.basic.MyBean
 import com.bsworld.springboot.start.redis.JedisConnection
+import com.bsworld.springboot.start.redis.JedisMock
 import com.bsworld.springboot.start.web.RedisController
 import com.google.common.collect.Maps
 import org.apache.zookeeper.ZooKeeper
@@ -44,10 +45,17 @@ class RedisControllerGrouTest extends Specification {
     def "test mock call"() {
         //["call one","call two", "call three","call four"]
         given:
+        JedisMock jedisMock = Mock(JedisMock)
+        redisController.jedisMock = jedisMock
+        MyBean myBean = new MyBean("hello",100l)
+        MyBean myBean1 = new MyBean("hello",100l)
+        jedisMock.invoke(map) >> "ok"
         when:
-        redisController.invoke()
+
+        def invoke = redisController.invoke(map1)
+        System.out.println(invoke);
         then:
-        6 * zooKeeper.toString() >> "hello"
+       invoke.equals("ok")
 
     }
 

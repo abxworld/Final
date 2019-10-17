@@ -1,11 +1,11 @@
 package com.bsworld.springboot.start.web;
 
 import com.alibaba.fastjson.JSON;
+import com.bsworld.springboot.start.redis.JedisMock;
 import com.bsworld.springboot.start.util.Logger;
 import com.bsworld.springboot.start.util.LoggerFactory;
 import org.apache.zookeeper.KeeperException;
 import org.apache.zookeeper.ZooKeeper;
-import org.apache.zookeeper.data.Stat;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
@@ -33,6 +33,9 @@ public class RedisController {
     @Autowired
     public ZooKeeper zooKeeper;
 
+    @Autowired
+    public JedisMock jedisMock;
+
     @PostMapping("/set")
     @ResponseBody
     public String set(@RequestBody Map<String, String> keyValues) throws KeeperException, InterruptedException {
@@ -59,11 +62,8 @@ public class RedisController {
     }
 
 
-    public void invoke() {
-        for (int i = 0; i < 5; i++) {
-            String result = zooKeeper.toString();
-            System.out.println("output:" + result);
-        }
+    public String invoke(Map<Integer, String> map) {
+        return jedisMock.invoke(map);
     }
 
     public boolean hello() {
