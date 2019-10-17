@@ -4,7 +4,6 @@ import com.bsworld.springboot.basic.MyBean
 import com.bsworld.springboot.start.redis.JedisConnection
 import com.bsworld.springboot.start.redis.JedisMock
 import com.bsworld.springboot.start.web.RedisController
-import com.google.common.collect.Maps
 import org.apache.zookeeper.ZooKeeper
 import redis.clients.jedis.Jedis
 import spock.lang.Specification
