@@ -12,4 +12,7 @@
         <module>springboot</module>
         <module>dubbo</module>
     </modules>
+    <build>
+        <finalName>springboot</finalName>
+    </build>
 </project>
