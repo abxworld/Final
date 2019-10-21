@@ -2,74 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="702cb348-d282-4bd5-9274-867dc73d37ad" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/logs/APP_IS_UNDEFINED_detail.log.20190911" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/logs/APP_IS_UNDEFINED_detail.log.20191005" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/springboot/logs/APP_IS_UNDEFINED_access.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/springboot/logs/APP_IS_UNDEFINED_detail.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/springboot/logs/APP_IS_UNDEFINED_detail.log.20191006" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/springboot/src/main/java/com/bsworld/springboot/start/redis/JedisMock.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/springboot/src/main/java/com/bsworld/springboot/start/web/RedisController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/springboot/src/test/java/com/bsworld/springboot/spock/MysqlControllerTest.groovy" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/springboot/src/test/java/com/bsworld/springboot/spock/RedisControllerGrouTest.groovy" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/springboot/src/test/java/com/bsworld/springboot/threadPool/ThreadExceptionTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/start.sh" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/APP_IS_UNDEFINED_detail.log" beforeDir="false" afterPath="$PROJECT_DIR$/logs/APP_IS_UNDEFINED_detail.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/springboot/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/springboot/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/springboot/src/main/java/com/bsworld/springboot/start/SpringbootApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/springboot/src/main/java/com/bsworld/springboot/start/SpringbootApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/springboot/src/main/java/com/bsworld/springboot/start/config/shiro/MShiroFilterFactoryBean.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/springboot/src/main/java/com/bsworld/springboot/start/config/shiro/ShiroConfig.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/springboot/src/main/java/com/bsworld/springboot/start/rabbitmq/basic/Constant.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/springboot/src/main/java/com/bsworld/springboot/start/rabbitmq/basic/ExchangeType.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/springboot/src/main/java/com/bsworld/springboot/start/rabbitmq/basic/RabbitMqFactory.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/springboot/src/main/java/com/bsworld/springboot/start/rabbitmq/confirm/confirmCallBack/ConfirmConstant.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/springboot/src/main/java/com/bsworld/springboot/start/rabbitmq/confirm/confirmCallBack/ConfirmConsumer.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/springboot/src/main/java/com/bsworld/springboot/start/rabbitmq/confirm/confirmCallBack/ConfirmProvider.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/springboot/src/main/java/com/bsworld/springboot/start/rabbitmq/confirm/confirmWait/ConfirmConstant.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/springboot/src/main/java/com/bsworld/springboot/start/rabbitmq/confirm/confirmWait/ConfirmConsumer.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/springboot/src/main/java/com/bsworld/springboot/start/rabbitmq/confirm/confirmWait/ConfirmProvider.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/springboot/src/main/java/com/bsworld/springboot/start/rabbitmq/deadMsg/DConstant.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/springboot/src/main/java/com/bsworld/springboot/start/rabbitmq/deadMsg/DMsgConsumer.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/springboot/src/main/java/com/bsworld/springboot/start/rabbitmq/deadMsg/DMsgProvider.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/springboot/src/main/java/com/bsworld/springboot/start/rabbitmq/direct/defaultDirect/DefaultConstant.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/springboot/src/main/java/com/bsworld/springboot/start/rabbitmq/direct/defaultDirect/DefaultConsumer.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/springboot/src/main/java/com/bsworld/springboot/start/rabbitmq/direct/defaultDirect/DefaultProvider.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/springboot/src/main/java/com/bsworld/springboot/start/rabbitmq/direct/direct0/Constant.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/springboot/src/main/java/com/bsworld/springboot/start/rabbitmq/direct/direct0/RabbitConsumer0.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/springboot/src/main/java/com/bsworld/springboot/start/rabbitmq/direct/direct0/RabbitConsumer1.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/springboot/src/main/java/com/bsworld/springboot/start/rabbitmq/direct/direct0/RabbitProvider.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/springboot/src/main/java/com/bsworld/springboot/start/rabbitmq/direct/direct1/Constant1.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/springboot/src/main/java/com/bsworld/springboot/start/rabbitmq/direct/direct1/ConsumeDir1.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/springboot/src/main/java/com/bsworld/springboot/start/rabbitmq/direct/direct1/ProviderDir1.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/springboot/src/main/java/com/bsworld/springboot/start/rabbitmq/direct/direct2/Constant2.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/springboot/src/main/java/com/bsworld/springboot/start/rabbitmq/direct/direct2/ConsumerDir2.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/springboot/src/main/java/com/bsworld/springboot/start/rabbitmq/direct/direct2/ProviderDir2.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/springboot/src/main/java/com/bsworld/springboot/start/rabbitmq/durable/DuConstant.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/springboot/src/main/java/com/bsworld/springboot/start/rabbitmq/durable/DuProvider.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/springboot/src/main/java/com/bsworld/springboot/start/rabbitmq/fanout/ConstantFanout.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/springboot/src/main/java/com/bsworld/springboot/start/rabbitmq/fanout/FanConsumer.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/springboot/src/main/java/com/bsworld/springboot/start/rabbitmq/fanout/FanProvider.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/springboot/src/main/java/com/bsworld/springboot/start/rabbitmq/rpc/RpcConstant.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/springboot/src/main/java/com/bsworld/springboot/start/rabbitmq/rpc/RpcConsumer.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/springboot/src/main/java/com/bsworld/springboot/start/rabbitmq/rpc/RpcProvider.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/springboot/src/main/java/com/bsworld/springboot/start/rabbitmq/topic/TopicConstant.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/springboot/src/main/java/com/bsworld/springboot/start/rabbitmq/topic/TopicConsumer0.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/springboot/src/main/java/com/bsworld/springboot/start/rabbitmq/topic/TopicProvider0.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/springboot/src/main/java/com/bsworld/springboot/start/redis/JedisConnection.java" beforeDir="false" afterPath="$PROJECT_DIR$/springboot/src/main/java/com/bsworld/springboot/start/redis/JedisConnection.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/springboot/src/main/java/com/bsworld/springboot/start/redis/JedisMain.java" beforeDir="false" afterPath="$PROJECT_DIR$/springboot/src/main/java/com/bsworld/springboot/start/redis/JedisMain.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/springboot/src/main/java/com/bsworld/springboot/start/shiro/MyShiroRealm.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/springboot/src/main/java/com/bsworld/springboot/start/shiro/MyShiroRealm2.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/springboot/src/main/java/com/bsworld/springboot/start/shiro/ShiroController.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/springboot/src/main/java/com/bsworld/springboot/start/shiro/ShiroStart.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/springboot/src/main/resources/logback.xml" beforeDir="false" afterPath="$PROJECT_DIR$/springboot/src/main/resources/logback.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/springboot/src/test/java/com/bsworld/springboot/basic/MapTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/springboot/src/test/java/com/bsworld/springboot/basic/MapTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/springboot/src/test/java/com/bsworld/springboot/basic/MyException.java" beforeDir="false" afterPath="$PROJECT_DIR$/springboot/src/test/java/com/bsworld/springboot/basic/MyException.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/springboot/src/test/java/com/bsworld/springboot/concurrency/RateLimitTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/springboot/src/test/java/com/bsworld/springboot/concurrency/RateLimitTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/springboot/src/test/java/com/bsworld/springboot/groovy/Test1.groovy" beforeDir="false" afterPath="$PROJECT_DIR$/springboot/src/test/java/com/bsworld/springboot/groovy/Test1.groovy" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/springboot/src/test/java/com/bsworld/springboot/spock/SpockTest1.groovy" beforeDir="false" afterPath="$PROJECT_DIR$/springboot/src/test/java/com/bsworld/springboot/spock/SpockTest1.groovy" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/springboot/src/test/java/com/bsworld/springboot/start/shiro/ShiroControllerTest.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/springboot/src/test/java/com/bsworld/springboot/start/shiro/ShiroStartTest.java" beforeDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/target/" />
     <ignored path="$PROJECT_DIR$/dubbo/target/" />
@@ -129,7 +62,7 @@
           <entry key="dummy" value="8" />
           <entry key="java" value="2486" />
           <entry key="properties" value="2" />
-          <entry key="xml" value="22" />
+          <entry key="xml" value="68" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
@@ -138,7 +71,7 @@
           <entry key="JAVA" value="2486" />
           <entry key="PLAIN_TEXT" value="8" />
           <entry key="Properties" value="2" />
-          <entry key="XML" value="22" />
+          <entry key="XML" value="68" />
         </counts>
       </usages-collector>
     </session>
@@ -149,7 +82,7 @@
         <entry file="file://$PROJECT_DIR$/test.html">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="102">
-              <caret line="7" lean-forward="true" selection-start-line="6" selection-start-column="10" selection-end-line="7" />
+              <caret line="7" selection-start-line="6" selection-start-column="10" selection-end-line="7" />
               <folding>
                 <element signature="e#44#48#0" expanded="true" />
                 <element signature="e#68#72#0" expanded="true" />
@@ -159,16 +92,16 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/springboot/pom.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="89">
-              <caret line="7" column="33" lean-forward="true" selection-start-line="7" selection-start-column="33" selection-end-line="7" selection-end-column="33" />
+            <state relative-caret-position="215">
+              <caret line="176" column="26" selection-start-line="176" selection-start-column="26" selection-end-line="176" selection-end-column="26" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/springboot/src/main/resources/logback.xml">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="396">
@@ -268,12 +201,12 @@
         <option value="$PROJECT_DIR$/springboot/src/main/java/com/bsworld/springboot/start/nio/socket/nio/NioClientSocket.java" />
         <option value="$PROJECT_DIR$/springboot/src/main/java/com/bsworld/springboot/start/nio/socket/nio/NioServerSocket.java" />
         <option value="$PROJECT_DIR$/pom.xml" />
-        <option value="$PROJECT_DIR$/springboot/pom.xml" />
         <option value="$PROJECT_DIR$/springboot/src/main/java/com/bsworld/springboot/start/web/MySqlController.java" />
         <option value="$PROJECT_DIR$/springboot/src/test/java/com/bsworld/springboot/mockit/TestM.java" />
         <option value="$PROJECT_DIR$/springboot/src/main/java/com/bsworld/springboot/start/service/impl/OnlineRateGetServiceImpl.java" />
         <option value="$PROJECT_DIR$/test.html" />
         <option value="$PROJECT_DIR$/springboot/src/main/resources/logback.xml" />
+        <option value="$PROJECT_DIR$/springboot/pom.xml" />
       </list>
     </option>
   </component>
@@ -400,7 +333,7 @@
     <property name="RequestMappingsPanelWidth1" value="75" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1571568643989" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1571673041121" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="project.structure.last.edited" value="Project" />
@@ -550,7 +483,7 @@
       <workItem from="1567437162982" duration="3302000" />
       <workItem from="1571063326273" duration="695000" />
       <workItem from="1571064205707" duration="1019000" />
-      <workItem from="1571067790528" duration="3100000" />
+      <workItem from="1571067790528" duration="3278000" />
     </task>
     <servers />
   </component>
@@ -581,13 +514,13 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="39007000" />
+    <option name="totallyTimeSpent" value="39185000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1440" height="900" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" weight="0.31402004" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.31402004" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -603,7 +536,7 @@
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Spring" order="7" />
-      <window_info anchor="bottom" id="Terminal" order="8" weight="0.34096387" />
+      <window_info anchor="bottom" id="Terminal" order="8" visible="true" weight="0.34096387" />
       <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" />
       <window_info anchor="bottom" id="Java Enterprise" order="10" />
       <window_info anchor="bottom" id="Database Changes" order="11" show_stripe_button="false" />
@@ -910,19 +843,12 @@
     <entry file="file://$PROJECT_DIR$/test.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="102">
-          <caret line="7" lean-forward="true" selection-start-line="6" selection-start-column="10" selection-end-line="7" />
+          <caret line="7" selection-start-line="6" selection-start-column="10" selection-end-line="7" />
           <folding>
             <element signature="e#44#48#0" expanded="true" />
             <element signature="e#68#72#0" expanded="true" />
             <element signature="e#1821#1827#1" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/springboot/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="89">
-          <caret line="7" column="33" lean-forward="true" selection-start-line="7" selection-start-column="33" selection-end-line="7" selection-end-column="33" />
         </state>
       </provider>
     </entry>
@@ -947,6 +873,13 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="396">
           <caret line="25" column="33" selection-start-line="25" selection-start-column="25" selection-end-line="25" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/springboot/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="215">
+          <caret line="176" column="26" selection-start-line="176" selection-start-column="26" selection-end-line="176" selection-end-column="26" />
         </state>
       </provider>
     </entry>
