@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 18-12-03.14:08:32.822 [background-preinit] DEBUG ResourceBundleMessageInterpolator  - Loaded expression factory via original TCCL
 18-12-03.14:08:32.845 [background-preinit] DEBUG ValidatorFactoryImpl    - HV000234: Using org.hibernate.validator.messageinterpolation.ResourceBundleMessageInterpolator as ValidatorFactory-scoped message interpolator.
 18-12-03.14:08:32.846 [background-preinit] DEBUG ValidatorFactoryImpl    - HV000234: Using org.hibernate.validator.internal.engine.resolver.TraverseAllTraversableResolver as ValidatorFactory-scoped traversable resolver.
@@ -1180,3 +1181,6 @@ java.lang.IllegalStateException: Optional int parameter 'page' is present but ca
 18-12-03.14:19:58.248 [Thread-21       ] DEBUG LifecycleBeanPostProcessor  - Destroying bean [securityManager]...
 18-12-03.14:19:58.256 [Thread-21       ] INFO  DruidDataSource         - {dataSource-1} closed
 18-12-03.14:19:58.256 [Thread-21       ] DEBUG LifecycleBeanPostProcessor  - Destroying bean [getEhCacheManager]...
+=======
+19-10-06.19:47:24.902 [Thread-19       ] INFO  AnnotationConfigServletWebServerApplicationContext  - Closing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@1a545a8f: startup date [Sat Oct 05 22:53:07 CST 2019]; root of context hierarchy
+>>>>>>> 7f2e509b9cc77033a3f55e3194b48265b2d23477
