@@ -8,44 +8,45 @@
 <!--    http://www.qos.ch/shop/products/professionalSupport         -->
 <!--                                                                -->
 <configuration scan="true">
-  <property name="springboot" value="operate-console"/>
-  <property name="LOG_HOME" value="logs"/>
-  <appender name="CONSOLE" class="ch.qos.logback.core.ConsoleAppender">
-    <encoder>
-      <pattern>%d{yy-MM-dd.HH:mm:ss.SSS} [%-16t] %-5p %-22c{0} %X{ServiceId} - %m%n</pattern>
-    </encoder>
-  </appender>
-  <statusListener class="ch.qos.logback.core.status.OnConsoleStatusListener" />
-  <appender name="DETAIL" class="ch.qos.logback.core.rolling.RollingFileAppender" additivity="false">
-    <File>${LOG_HOME}/${APP}_detail.log</File>
-    <encoder>
-      <pattern>%d{yy-MM-dd.HH:mm:ss.SSS} [%-16t] %-5p %-22c{0} %X{ServiceId} - %m%n</pattern>
-    </encoder>
-    <rollingPolicy class="ch.qos.logback.core.rolling.TimeBasedRollingPolicy">
-      <fileNamePattern>${LOG_HOME}/${APP}_detail.log.%d{yyyyMMdd}</fileNamePattern>
-    </rollingPolicy>
-  </appender>
-  <appender name="ACCESS" class="ch.qos.logback.core.rolling.RollingFileAppender" additivity="false">
-    <File>${LOG_HOME}/${APP}_access.log</File>
-    <encoder>
-      <pattern>%d{yy-MM-dd.HH:mm:ss.SSS};%m;%X{ServiceId}%n</pattern>
-    </encoder>
-    <rollingPolicy class="ch.qos.logback.core.rolling.TimeBasedRollingPolicy">
-      <fileNamePattern>${LOG_HOME}/${APP}_access.log.%d{yyyyMMdd}</fileNamePattern>
-    </rollingPolicy>
-  </appender>
-  <logger name="ACCESS">
-    <appender-ref ref="ACCESS"/>
-  </logger>
-  <logger name="org.springframework" level="INFO"/>
-  <logger name="org.apache.httpclient.wire" level="INFO"/>
-  <logger name="org.apache.commons.httpclient" level="INFO"/>
-  <logger name="org.apache.zookeeper" level="INFO"/>
+    <property name="springboot" value="operate-console"/>
+    <property name="LOG_HOME" value="logs"/>
+    <property name="APP" value="springboot"/>
+    <appender name="CONSOLE" class="ch.qos.logback.core.ConsoleAppender">
+        <encoder>
+            <pattern>%d{yy-MM-dd.HH:mm:ss.SSS} [%-16t] %-5p %-22c{0} %X{ServiceId} - %m%n</pattern>
+        </encoder>
+    </appender>
+    <statusListener class="ch.qos.logback.core.status.OnConsoleStatusListener" />
+    <appender name="DETAIL" class="ch.qos.logback.core.rolling.RollingFileAppender" additivity="false">
+        <File>${LOG_HOME}/${APP}_detail.log</File>
+        <encoder>
+            <pattern>%d{yy-MM-dd.HH:mm:ss.SSS} [%-16t] %-5p %-22c{0} %X{ServiceId} - %m%n</pattern>
+        </encoder>
+        <rollingPolicy class="ch.qos.logback.core.rolling.TimeBasedRollingPolicy">
+            <fileNamePattern>${LOG_HOME}/${APP}_detail.log.%d{yyyyMMdd}</fileNamePattern>
+        </rollingPolicy>
+    </appender>
+    <appender name="ACCESS" class="ch.qos.logback.core.rolling.RollingFileAppender" additivity="false">
+        <File>${LOG_HOME}/${APP}_access.log</File>
+        <encoder>
+            <pattern>%d{yy-MM-dd.HH:mm:ss.SSS};%m;%X{ServiceId}%n</pattern>
+        </encoder>
+        <rollingPolicy class="ch.qos.logback.core.rolling.TimeBasedRollingPolicy">
+            <fileNamePattern>${LOG_HOME}/${APP}_access.log.%d{yyyyMMdd}</fileNamePattern>
+        </rollingPolicy>
+    </appender>
+    <logger name="ACCESS">
+        <appender-ref ref="ACCESS"/>
+    </logger>
+    <logger name="org.springframework" level="INFO"/>
+    <logger name="org.apache.httpclient.wire" level="INFO"/>
+    <logger name="org.apache.commons.httpclient" level="INFO"/>
+    <logger name="org.apache.zookeeper" level="INFO"/>
 
-  <root level="DEBUG">
-    <appender-ref ref="DETAIL"/>
-    <appender-ref ref="CONSOLE"/>
-  </root>
+    <root level="DEBUG">
+        <appender-ref ref="DETAIL"/>
+        <appender-ref ref="CONSOLE"/>
+    </root>
 </configuration>
 
         <!--

@@ -34,6 +34,11 @@ public class FileUtil {
     }
 
 
+    public static String getTestPort() {
+        return "9090";
+    }
+
+
     private static String getValue(String key) {
         InputStream os = null;
         try {
