@@ -1,5 +1,6 @@
 package com.bsworld.springboot.start.zookeeper;
 
+import com.bsworld.springboot.start.util.FileUtil;
 import org.apache.zookeeper.CreateMode;
 import org.apache.zookeeper.KeeperException;
 import org.apache.zookeeper.Watcher;
@@ -24,7 +25,8 @@ public class ZkWatch {
 
     public ZooKeeper getConnection() {
         try {
-            zk = new ZooKeeper("106.13.46.179:2181", 10, watchedEvent -> {
+            String remoteHost = FileUtil.getRemoteHost();
+            zk = new ZooKeeper(remoteHost + ":2181", 10, watchedEvent -> {
                 System.out.println("watch notice");
                 System.out.println(watchedEvent);
                 System.out.println(watchedEvent.getType());
