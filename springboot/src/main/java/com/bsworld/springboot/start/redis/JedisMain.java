@@ -17,7 +17,6 @@ import java.util.List;
  */
 public class JedisMain {
     public static void main(String[] args) {
-<<<<<<< HEAD
         Jedis jedis = JedisConnection.getJedis();
        String[] keys = new String[1000];
         for (int i = 0; i < 1000; i++) {
@@ -42,7 +41,6 @@ public class JedisMain {
         hashMap.put("3", new Double(300));
         hashMap.put("4", new Double(400));
         jedis.zadd(key, hashMap);
-=======
 //        Jedis jedis = JedisConnection.getJedis();
 //        String key = "testZAddKey";
 //        HashMap<String, Double> hashMap = Maps.newHashMap();
@@ -51,6 +49,5 @@ public class JedisMain {
 //        hashMap.put("3", new Double(300));
 //        hashMap.put("4", new Double(400));
 //        jedis.zadd(key, hashMap);
->>>>>>> 7f2e509b9cc77033a3f55e3194b48265b2d23477
     }
 }
