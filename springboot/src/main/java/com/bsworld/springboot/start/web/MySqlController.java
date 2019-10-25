@@ -88,7 +88,7 @@ public class MySqlController implements Runnable{
         System.out.println(JSON.toJSONString(jsonObject));
     }
 
-    TUser getUser() {
+    TUser  getUser() {
         TUser tUser = new TUser();
         tUser.setUsername("tom");
         return tUser;

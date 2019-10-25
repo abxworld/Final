@@ -15,7 +15,9 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import java.util.concurrent.ScheduledExecutorService;
+import java.util.concurrent.ScheduledFuture;
 import java.util.concurrent.ScheduledThreadPoolExecutor;
+import java.util.concurrent.TimeUnit;
 import java.util.concurrent.atomic.AtomicInteger;
 
 @Service
@@ -26,7 +28,15 @@ public class OnlineRateGetServiceImpl implements OnlineRateGetService, Initializ
 
     @Override
     public void afterPropertiesSet() throws Exception {
-        queryOnlineRateAndInsert();
+//        queryOnlineRateAndInsert();
+        newScheduled();
+    }
+
+    public void newScheduled() {
+        ScheduledExecutorService scheduledService = new ScheduledThreadPoolExecutor(5);
+        scheduledService.scheduleWithFixedDelay(() -> {
+            System.out.println("newScheduled(), start ,count:" + count.getAndIncrement());
+        }, 0, 3, TimeUnit.SECONDS);
     }
 
 
@@ -36,11 +46,11 @@ public class OnlineRateGetServiceImpl implements OnlineRateGetService, Initializ
             System.out.println("task start" + count.get());
             ScheduledExecutorService scheduledService = new ScheduledThreadPoolExecutor(5);
             RateQuery<String> query = new RateQuery<>();
-            //     ScheduledFuture future = scheduledService.scheduleWithFixedDelay(query, 0, 3, TimeUnit.SECONDS);
-           /* if (future != null) {
+            ScheduledFuture future = scheduledService.scheduleWithFixedDelay(query, 0, 3, TimeUnit.SECONDS);
+            if (future != null) {
                 Object o = future.get();
                 System.out.println(JSON.toJSONString(o));
-            }*/
+            }
         } catch (Throwable t) {
             // t.printStackTrace();
         }
