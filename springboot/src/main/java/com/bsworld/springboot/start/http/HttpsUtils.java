@@ -1,12 +1,14 @@
 package com.bsworld.springboot.start.http;
 
 import org.apache.http.HttpEntity;
+import org.apache.http.HttpResponse;
 import org.apache.http.HttpStatus;
 import org.apache.http.client.config.RequestConfig;
 import org.apache.http.client.entity.UrlEncodedFormEntity;
 import org.apache.http.client.methods.CloseableHttpResponse;
 import org.apache.http.client.methods.HttpGet;
 import org.apache.http.client.methods.HttpPost;
+import org.apache.http.conn.ConnectionKeepAliveStrategy;
 import org.apache.http.conn.ssl.SSLConnectionSocketFactory;
 import org.apache.http.conn.ssl.SSLContexts;
 import org.apache.http.entity.ContentType;
@@ -16,6 +18,7 @@ import org.apache.http.impl.client.HttpClients;
 import org.apache.http.message.BasicHeader;
 import org.apache.http.message.BasicNameValuePair;
 import org.apache.http.protocol.HTTP;
+import org.apache.http.protocol.HttpContext;
 import org.apache.http.util.EntityUtils;
 
 import java.io.BufferedReader;
@@ -36,14 +39,19 @@ public class HttpsUtils {
     private static int connectionRequestTimeOut = 5000;// 读取数据超时时间，毫秒
     /**
      * HttpClient对象
-//     */
+     * //
+     */
     private static CloseableHttpClient httpclient = HttpClients.
-            custom().setMaxConnPerRoute(20)
-            .setMaxConnPerRoute(20)
+            custom().setMaxConnPerRoute(50)
+            .setMaxConnPerRoute(50)
             .disableAutomaticRetries()
             .disableCookieManagement()
-            .evictExpiredConnections()
-            .evictIdleConnections(1, TimeUnit.SECONDS).build();
+            .setKeepAliveStrategy((response, context) -> {
+                return 60000 ;
+            })
+            .build();
+//            .evictExpiredConnections()
+//            .evictIdleConnections(1, TimeUnit.SECONDS).build();
   /*  private static CloseableHttpClient httpclient = HttpClients.
             custom().setMaxConnPerRoute(100).setMaxConnPerRoute(20).disableAutomaticRetries().build();*/
     /*private static CloseableHttpClient httpclient = HttpClients.
@@ -109,6 +117,9 @@ public class HttpsUtils {
     }
 
 
+
+
+
     /**
      * 根据给定的URL地址和参数字符串，以Get方法调用，如果成功返回true，如果失败返回false
      *
@@ -131,6 +142,7 @@ public class HttpsUtils {
         //使用UTF-8
         UrlEncodedFormEntity entity = new UrlEncodedFormEntity(paraList, Charset.forName("utf-8"));
         post.setEntity(entity);
+        post.addHeader("Connection","keep-alive");
         CloseableHttpResponse response = null;
         try {
             response = httpclient.execute(post);

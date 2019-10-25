@@ -32,7 +32,7 @@ public class HttpClientController {
         long end = System.currentTimeMillis();
         long sum = al.addAndGet(end - start);
         int i = ai.incrementAndGet();
-        System.out.println("平均耗时:" + sum / i);
+        System.out.println("client 平均耗时:" + sum / i + "-----sum:" + sum +"-------ai:" + i);
         System.out.println(s);
         return s;
     }

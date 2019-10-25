@@ -1,0 +1,83 @@
+19-10-24.20:03:43.334 [background-preinit] DEBUG ResourceBundleMessageInterpolator  - Loaded expression factory via original TCCL
+19-10-24.20:03:43.355 [background-preinit] DEBUG ValidatorFactoryImpl    - HV000234: Using org.hibernate.validator.messageinterpolation.ResourceBundleMessageInterpolator as ValidatorFactory-scoped message interpolator.
+19-10-24.20:03:43.358 [restartedMain   ] INFO  SpringbootApplication   - Starting SpringbootApplication on bogon with PID 49750 (/Users/apple/IdeaProjects/Final/springboot/target/classes started by apple in /Users/apple/IdeaProjects/Final)
+19-10-24.20:03:43.359 [restartedMain   ] DEBUG SpringbootApplication   - Running with Spring Boot v2.0.3.RELEASE, Spring v5.0.7.RELEASE
+19-10-24.20:03:43.359 [restartedMain   ] INFO  SpringbootApplication   - The following profiles are active: mysql
+19-10-24.20:03:43.359 [background-preinit] DEBUG ValidatorFactoryImpl    - HV000234: Using org.hibernate.validator.internal.engine.resolver.TraverseAllTraversableResolver as ValidatorFactory-scoped traversable resolver.
+19-10-24.20:03:43.360 [background-preinit] DEBUG ValidatorFactoryImpl    - HV000234: Using org.hibernate.validator.internal.util.ExecutableParameterNameProvider as ValidatorFactory-scoped parameter name provider.
+19-10-24.20:03:43.360 [background-preinit] DEBUG ValidatorFactoryImpl    - HV000234: Using org.hibernate.validator.internal.engine.DefaultClockProvider as ValidatorFactory-scoped clock provider.
+19-10-24.20:03:43.360 [background-preinit] DEBUG ValidatorFactoryImpl    - HV000234: Using org.hibernate.validator.internal.engine.scripting.DefaultScriptEvaluatorFactory as ValidatorFactory-scoped script evaluator factory.
+19-10-24.20:03:43.488 [restartedMain   ] INFO  AnnotationConfigServletWebServerApplicationContext  - Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@30281f77: startup date [Thu Oct 24 20:03:43 CST 2019]; root of context hierarchy
+19-10-24.20:03:44.493 [restartedMain   ] DEBUG ClassPathMapperScanner  - Identified candidate component class: file [/Users/apple/IdeaProjects/Final/springboot/target/classes/com/bsworld/springboot/start/dao/mapper/TPermissionMapper.class]
+19-10-24.20:03:44.493 [restartedMain   ] DEBUG ClassPathMapperScanner  - Identified candidate component class: file [/Users/apple/IdeaProjects/Final/springboot/target/classes/com/bsworld/springboot/start/dao/mapper/TRateTransformMapper.class]
+19-10-24.20:03:44.493 [restartedMain   ] DEBUG ClassPathMapperScanner  - Identified candidate component class: file [/Users/apple/IdeaProjects/Final/springboot/target/classes/com/bsworld/springboot/start/dao/mapper/TRoleMapper.class]
+19-10-24.20:03:44.493 [restartedMain   ] DEBUG ClassPathMapperScanner  - Identified candidate component class: file [/Users/apple/IdeaProjects/Final/springboot/target/classes/com/bsworld/springboot/start/dao/mapper/TUserMapper.class]
+19-10-24.20:03:44.493 [restartedMain   ] DEBUG ClassPathMapperScanner  - Identified candidate component class: file [/Users/apple/IdeaProjects/Final/springboot/target/classes/com/bsworld/springboot/start/dao/mapper/TUserRoleMapper.class]
+19-10-24.20:03:44.494 [restartedMain   ] DEBUG ClassPathMapperScanner  - Creating MapperFactoryBean with name 'TPermissionMapper' and 'com.bsworld.springboot.start.dao.mapper.TPermissionMapper' mapperInterface
+19-10-24.20:03:44.495 [restartedMain   ] DEBUG ClassPathMapperScanner  - Creating MapperFactoryBean with name 'TRateTransformMapper' and 'com.bsworld.springboot.start.dao.mapper.TRateTransformMapper' mapperInterface
+19-10-24.20:03:44.495 [restartedMain   ] DEBUG ClassPathMapperScanner  - Creating MapperFactoryBean with name 'TRoleMapper' and 'com.bsworld.springboot.start.dao.mapper.TRoleMapper' mapperInterface
+19-10-24.20:03:44.495 [restartedMain   ] DEBUG ClassPathMapperScanner  - Creating MapperFactoryBean with name 'TUserMapper' and 'com.bsworld.springboot.start.dao.mapper.TUserMapper' mapperInterface
+19-10-24.20:03:44.495 [restartedMain   ] DEBUG ClassPathMapperScanner  - Creating MapperFactoryBean with name 'TUserRoleMapper' and 'com.bsworld.springboot.start.dao.mapper.TUserRoleMapper' mapperInterface
+19-10-24.20:03:45.525 [restartedMain   ] INFO  TomcatWebServer         - Tomcat initialized with port(s): 8080 (http)
+19-10-24.20:03:45.536 [restartedMain   ] INFO  Http11NioProtocol       - Initializing ProtocolHandler ["http-nio-8080"]
+19-10-24.20:03:45.545 [restartedMain   ] INFO  StandardService         - Starting service [Tomcat]
+19-10-24.20:03:45.546 [restartedMain   ] INFO  StandardEngine          - Starting Servlet Engine: Apache Tomcat/8.5.31
+19-10-24.20:03:45.549 [localhost-startStop-1] INFO  AprLifecycleListener    - The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [/Users/apple/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:.]
+19-10-24.20:03:45.619 [localhost-startStop-1] INFO  [/]                     - Initializing Spring embedded WebApplicationContext
+19-10-24.20:03:45.619 [localhost-startStop-1] INFO  ContextLoader           - Root WebApplicationContext: initialization completed in 2132 ms
+19-10-24.20:03:45.750 [localhost-startStop-1] INFO  ServletRegistrationBean  - Servlet dispatcherServlet mapped to [/]
+19-10-24.20:03:45.755 [localhost-startStop-1] INFO  FilterRegistrationBean  - Mapping filter: 'characterEncodingFilter' to: [/*]
+19-10-24.20:03:45.757 [localhost-startStop-1] INFO  FilterRegistrationBean  - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+19-10-24.20:03:45.758 [localhost-startStop-1] INFO  FilterRegistrationBean  - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+19-10-24.20:03:45.759 [localhost-startStop-1] INFO  FilterRegistrationBean  - Mapping filter: 'requestContextFilter' to: [/*]
+19-10-24.20:03:46.034 [restartedMain   ] DEBUG LogFactory              - Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
+19-10-24.20:03:46.311 [restartedMain   ] DEBUG SqlSessionFactoryBean   - Parsed configuration file: 'class path resource [META-INF/mybatis/mybatis-config.xml]'
+19-10-24.20:03:46.568 [restartedMain   ] DEBUG SqlSessionFactoryBean   - Parsed mapper file: 'file [/Users/apple/IdeaProjects/Final/springboot/target/classes/META-INF/mybatis/mapper/TPermissionMapper.xml]'
+19-10-24.20:03:46.608 [restartedMain   ] DEBUG SqlSessionFactoryBean   - Parsed mapper file: 'file [/Users/apple/IdeaProjects/Final/springboot/target/classes/META-INF/mybatis/mapper/TRateTransformMapper.xml]'
+19-10-24.20:03:46.632 [restartedMain   ] DEBUG SqlSessionFactoryBean   - Parsed mapper file: 'file [/Users/apple/IdeaProjects/Final/springboot/target/classes/META-INF/mybatis/mapper/TRoleMapper.xml]'
+19-10-24.20:03:46.656 [restartedMain   ] DEBUG SqlSessionFactoryBean   - Parsed mapper file: 'file [/Users/apple/IdeaProjects/Final/springboot/target/classes/META-INF/mybatis/mapper/TUserMapper.xml]'
+19-10-24.20:03:46.678 [restartedMain   ] DEBUG SqlSessionFactoryBean   - Parsed mapper file: 'file [/Users/apple/IdeaProjects/Final/springboot/target/classes/META-INF/mybatis/mapper/TUserRoleMapper.xml]'
+19-10-24.20:03:46.700 [restartedMain   ] DEBUG SqlSessionFactoryBean   - Parsed mapper file: 'file [/Users/apple/IdeaProjects/Final/springboot/target/classes/META-INF/mybatis/mapper/UserMapper.xml]'
+19-10-24.20:03:47.169 [restartedMain   ] DEBUG TraversableResolvers    - Cannot find javax.persistence.Persistence on classpath. Assuming non JPA 2 environment. All properties will per default be traversable.
+19-10-24.20:03:47.170 [restartedMain   ] DEBUG ResourceBundleMessageInterpolator  - Loaded expression factory via original TCCL
+19-10-24.20:03:47.198 [restartedMain   ] DEBUG TraversableResolvers    - Cannot find javax.persistence.Persistence on classpath. Assuming non JPA 2 environment. All properties will per default be traversable.
+19-10-24.20:03:47.218 [restartedMain   ] DEBUG ConfigurationImpl       - Setting custom MessageInterpolator of type org.springframework.validation.beanvalidation.LocaleContextMessageInterpolator
+19-10-24.20:03:47.219 [restartedMain   ] DEBUG ConfigurationImpl       - Setting custom ConstraintValidatorFactory of type org.springframework.validation.beanvalidation.SpringConstraintValidatorFactory
+19-10-24.20:03:47.220 [restartedMain   ] DEBUG ConfigurationImpl       - Setting custom ParameterNameProvider of type org.springframework.validation.beanvalidation.LocalValidatorFactoryBean$1
+19-10-24.20:03:47.221 [restartedMain   ] DEBUG ValidationXmlParser     - Trying to load META-INF/validation.xml for XML based Validator configuration.
+19-10-24.20:03:47.221 [restartedMain   ] DEBUG ResourceLoaderHelper    - Trying to load META-INF/validation.xml via user class loader
+19-10-24.20:03:47.222 [restartedMain   ] DEBUG ResourceLoaderHelper    - Trying to load META-INF/validation.xml via TCCL
+19-10-24.20:03:47.222 [restartedMain   ] DEBUG ResourceLoaderHelper    - Trying to load META-INF/validation.xml via Hibernate Validator's class loader
+19-10-24.20:03:47.223 [restartedMain   ] DEBUG ValidationXmlParser     - No META-INF/validation.xml found. Using annotation based configuration only.
+19-10-24.20:03:47.246 [restartedMain   ] DEBUG ValidatorFactoryImpl    - HV000234: Using org.springframework.validation.beanvalidation.LocaleContextMessageInterpolator as ValidatorFactory-scoped message interpolator.
+19-10-24.20:03:47.246 [restartedMain   ] DEBUG ValidatorFactoryImpl    - HV000234: Using org.hibernate.validator.internal.engine.resolver.TraverseAllTraversableResolver as ValidatorFactory-scoped traversable resolver.
+19-10-24.20:03:47.247 [restartedMain   ] DEBUG ValidatorFactoryImpl    - HV000234: Using org.hibernate.validator.internal.util.ExecutableParameterNameProvider as ValidatorFactory-scoped parameter name provider.
+19-10-24.20:03:47.247 [restartedMain   ] DEBUG ValidatorFactoryImpl    - HV000234: Using org.hibernate.validator.internal.engine.DefaultClockProvider as ValidatorFactory-scoped clock provider.
+19-10-24.20:03:47.247 [restartedMain   ] DEBUG ValidatorFactoryImpl    - HV000234: Using org.hibernate.validator.internal.engine.scripting.DefaultScriptEvaluatorFactory as ValidatorFactory-scoped script evaluator factory.
+19-10-24.20:03:47.485 [restartedMain   ] INFO  SimpleUrlHandlerMapping  - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+19-10-24.20:03:48.424 [restartedMain   ] INFO  RequestMappingHandlerAdapter  - Looking for @ControllerAdvice: org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@30281f77: startup date [Thu Oct 24 20:03:43 CST 2019]; root of context hierarchy
+19-10-24.20:03:48.533 [restartedMain   ] INFO  RequestMappingHandlerMapping  - Mapped "{[/aop],methods=[POST]}" onto public void com.bsworld.springboot.start.aop.AopController.run()
+19-10-24.20:03:48.537 [restartedMain   ] INFO  RequestMappingHandlerMapping  - Mapped "{[/hc/tc],methods=[GET]}" onto public java.lang.String com.bsworld.springboot.start.http.HttpClientController.run0()
+19-10-24.20:03:48.538 [restartedMain   ] INFO  RequestMappingHandlerMapping  - Mapped "{[/hs/ts],methods=[POST]}" onto public java.lang.String com.bsworld.springboot.start.http.HttpServerController.run1() throws java.lang.InterruptedException
+19-10-24.20:03:48.542 [restartedMain   ] INFO  RequestMappingHandlerMapping  - Mapped "{[/mysql/test],methods=[POST]}" onto public void com.bsworld.springboot.start.web.MySqlController.test(com.bsworld.springboot.start.web.MySqlTestBean)
+19-10-24.20:03:48.543 [restartedMain   ] INFO  RequestMappingHandlerMapping  - Mapped "{[/mysql/json],methods=[POST]}" onto public void com.bsworld.springboot.start.web.MySqlController.test(java.util.HashMap)
+19-10-24.20:03:48.546 [restartedMain   ] INFO  RequestMappingHandlerMapping  - Mapped "{[/rate/insert],methods=[POST]}" onto public void com.bsworld.springboot.start.web.RateTransController.insert()
+19-10-24.20:03:48.547 [restartedMain   ] INFO  RequestMappingHandlerMapping  - Mapped "{[/rate/query],methods=[POST]}" onto public void com.bsworld.springboot.start.web.RateTransController.query()
+19-10-24.20:03:48.547 [restartedMain   ] INFO  RequestMappingHandlerMapping  - Mapped "{[/rate/threadquery],methods=[POST]}" onto public void com.bsworld.springboot.start.web.RateTransController.queryThread()
+19-10-24.20:03:48.549 [restartedMain   ] INFO  RequestMappingHandlerMapping  - Mapped "{[/user/get],methods=[POST]}" onto public void com.bsworld.springboot.start.web.UserController.run(java.util.HashMap)
+19-10-24.20:03:48.550 [restartedMain   ] INFO  RequestMappingHandlerMapping  - Mapped "{[/user/get10],methods=[POST]}" onto public void com.bsworld.springboot.start.web.UserController.insert()
+19-10-24.20:03:48.555 [restartedMain   ] INFO  RequestMappingHandlerMapping  - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+19-10-24.20:03:48.556 [restartedMain   ] INFO  RequestMappingHandlerMapping  - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+19-10-24.20:03:48.606 [restartedMain   ] INFO  SimpleUrlHandlerMapping  - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+19-10-24.20:03:48.606 [restartedMain   ] INFO  SimpleUrlHandlerMapping  - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+19-10-24.20:03:49.146 [restartedMain   ] INFO  OptionalLiveReloadServer  - LiveReload server is running on port 35729
+19-10-24.20:03:49.182 [restartedMain   ] INFO  AnnotationMBeanExporter  - Registering beans for JMX exposure on startup
+19-10-24.20:03:49.183 [restartedMain   ] INFO  AnnotationMBeanExporter  - Bean with name 'druidDateSource' has been autodetected for JMX exposure
+19-10-24.20:03:49.191 [restartedMain   ] INFO  AnnotationMBeanExporter  - Located MBean 'druidDateSource': registering with JMX server as MBean [com.alibaba.druid.pool:name=druidDateSource,type=DruidDataSource]
+19-10-24.20:03:49.227 [restartedMain   ] INFO  Http11NioProtocol       - Starting ProtocolHandler ["http-nio-8080"]
+19-10-24.20:03:49.270 [restartedMain   ] INFO  NioSelectorPool         - Using a shared selector for servlet write/read
+19-10-24.20:03:49.283 [restartedMain   ] INFO  TomcatWebServer         - Tomcat started on port(s): 8080 (http) with context path ''
+19-10-24.20:03:49.290 [restartedMain   ] INFO  SpringbootApplication   - Started SpringbootApplication in 6.747 seconds (JVM running for 9.78)
+19-10-24.20:05:39.964 [Thread-24       ] INFO  AnnotationConfigServletWebServerApplicationContext  - Closing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@30281f77: startup date [Thu Oct 24 20:03:43 CST 2019]; root of context hierarchy
+19-10-24.20:05:39.971 [Thread-24       ] INFO  AnnotationMBeanExporter  - Unregistering JMX-exposed beans on shutdown
+19-10-24.20:05:39.972 [Thread-24       ] INFO  AnnotationMBeanExporter  - Unregistering JMX-exposed beans
