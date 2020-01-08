@@ -1,6 +1,12 @@
 package com.bsworld.springboot.basic;
 
+import org.apache.jute.InputArchive;
+import org.apache.jute.OutputArchive;
+import org.apache.jute.Record;
 import org.springframework.stereotype.Component;
+
+import java.io.IOException;
+import java.io.Serializable;
 
 /*
 *author: xieziyang
@@ -9,9 +15,9 @@ import org.springframework.stereotype.Component;
 *description:
 */
 @Component
-public class MyBean {
-    private String username = "100";
-    private String password = "100";
+public class MyBean implements Serializable, Record {
+    private String username;
+    private String password;
     private Long age;
     public MyBean() {
     }
@@ -71,5 +77,21 @@ public class MyBean {
 
     public void setPassword(String password) {
         this.password = password;
+    }
+
+    @Override
+    public void serialize(OutputArchive outputArchive, String tag) throws IOException {
+        outputArchive.startRecord(this,tag);
+        outputArchive.writeString(username, "username");
+        outputArchive.writeLong(age, "age");
+        outputArchive.endRecord(this,tag);
+    }
+
+    @Override
+    public void deserialize(InputArchive inputArchive, String tag) throws IOException {
+        inputArchive.startRecord(tag);
+        inputArchive.readString("username");
+        inputArchive.readLong("age");
+        inputArchive.endRecord(tag);
     }
 }

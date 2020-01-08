@@ -17,8 +17,9 @@ import java.util.List;
  */
 public class JedisMain {
     public static void main(String[] args) {
-        Jedis jedis = JedisConnection.getJedis();
-       String[] keys = new String[1000];
+        Jedis jedis = null;
+//        jedis = JedisConnection.getJedis();
+        String[] keys = new String[1000];
         for (int i = 0; i < 1000; i++) {
             if (i <= 5) {
                 keys[i] = String.valueOf((i + 1000));

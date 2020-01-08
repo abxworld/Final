@@ -9,6 +9,8 @@ package com.bsworld.springboot.start.nio.socket.nio;
 import java.io.IOException;
 import java.net.InetSocketAddress;
 import java.nio.ByteBuffer;
+import java.nio.channels.SelectionKey;
+import java.nio.channels.Selector;
 import java.nio.channels.SocketChannel;
 import java.util.concurrent.TimeUnit;
 import java.util.concurrent.atomic.AtomicInteger;
@@ -20,7 +22,9 @@ public class NioClientSocket {
 
     public static void main(String[] args) throws IOException, InterruptedException {
         SocketChannel sc = SocketChannel.open();
+        Selector selector = Selector.open();
         sc.configureBlocking(false);
+        SelectionKey sk = sc.register(selector, SelectionKey.OP_CONNECT);
         sc.connect(new InetSocketAddress(LOCALHOST, PORT));
         ByteBuffer bf = ByteBuffer.allocateDirect(1024);
         if (sc.finishConnect()) {
@@ -35,11 +39,12 @@ public class NioClientSocket {
             }
         }
         bf.clear();
-        while (true) {
-            int read = sc.read(bf);
-            System.out.println(read);
-        }
+
+        sk.selector();
+
     }
+
+
 
  /*public static void main(String[] args) throws IOException {
      Socket socket = new Socket();
