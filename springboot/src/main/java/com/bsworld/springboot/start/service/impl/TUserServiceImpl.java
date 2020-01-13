@@ -6,6 +6,7 @@ package com.bsworld.springboot.start.service.impl;
 *description:
 */
 
+import com.bsworld.springboot.start.aop.Dlock.DLock;
 import com.bsworld.springboot.start.dao.entity.TUser;
 import com.bsworld.springboot.start.dao.entity.TUserExample;
 import com.bsworld.springboot.start.dao.mapper.TUserMapper;
@@ -18,7 +19,7 @@ import java.util.List;
 public class TUserServiceImpl implements TUserService {
     @Autowired
     TUserMapper tUserMapper;
-
+    @DLock(key = "'hello' + #loginName", expireTime = 100)
     @Override
     public TUser queryTUserBuLoginName(String loginName) {
         TUserExample example = new TUserExample();

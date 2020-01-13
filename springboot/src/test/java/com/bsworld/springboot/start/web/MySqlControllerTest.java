@@ -24,7 +24,7 @@ public class MySqlControllerTest {
         String type = MediaType.APPLICATION_JSON_VALUE;
         String url = "http://localhost:8080/mysql/test";
         MySqlTestBean bean = new MySqlTestBean();
-        bean.setUserName("");
+        bean.setUserName("nihao");
         HttpUtil.sendPost(url, JSON.toJSONString(bean), type);
     }
 

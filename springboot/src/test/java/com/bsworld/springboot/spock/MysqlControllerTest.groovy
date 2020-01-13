@@ -13,7 +13,7 @@ class MysqlControllerTest extends Specification{
     def setup() {
 
     }
-    def "test mysql controller"() {
+    def "test com.bsworld.springboot.start.mysql controller"() {
 
     }
 }

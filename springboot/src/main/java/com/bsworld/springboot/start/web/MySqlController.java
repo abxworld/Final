@@ -1,10 +1,12 @@
 package com.bsworld.springboot.start.web;
 
 import com.alibaba.fastjson.JSON;
+import com.bsworld.springboot.start.aop.Dlock.DLock;
 import com.bsworld.springboot.start.dao.entity.TUser;
 import com.bsworld.springboot.start.dao.entity.TUserExample;
 import com.bsworld.springboot.start.dao.mapper.TUserMapper;
-import com.mysql.cj.util.StringUtils;
+import com.bsworld.springboot.start.service.TUserService;
+import org.apache.commons.lang3.StringUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
@@ -17,7 +19,6 @@ import java.lang.reflect.InvocationTargetException;
 import java.lang.reflect.Method;
 import java.util.HashMap;
 import java.util.List;
-import java.util.Optional;
 
 /**
  * author: xieziyang
@@ -29,15 +30,19 @@ import java.util.Optional;
 
 @RequestMapping("/mysql")
 @RestController
-public class MySqlController implements Runnable{
+public class MySqlController implements Runnable {
     @Autowired
     TUserMapper userMapper;
+    @Autowired
+    TUserService tUserService;
 
     @PostMapping(value = "/test")
     @ResponseBody
+    @DLock(key = "'hello' + #bean.userName", expireTime = 100)
     public void test(MySqlTestBean bean) {
+        tUserService.queryTUserBuLoginName("hello");
         TUserMapper springBean = HotDeployUtil.getSpringBean(TUserMapper.class);
-        System.out.println("userMapper:" + userMapper + "       springBean:" + springBean + "  result:" +( springBean == userMapper));
+        System.out.println("userMapper:" + userMapper + "       springBean:" + springBean + "  result:" + (springBean == userMapper));
         System.out.println("bean:" + JSON.toJSONString(bean));
         try {
             TUser tUser = getUser();
@@ -60,7 +65,7 @@ public class MySqlController implements Runnable{
                 Object invoke = method.invoke(tUser);
                 if (invoke instanceof String) {
                     String value = (String) invoke;
-                    if (!StringUtils.isNullOrEmpty(value)) {
+                    if (StringUtils.isNotEmpty(value)) {
 
                         Method criteriaClassMethod = criteriaClass.getSuperclass().getMethod("and" + toName + "EqualTo");
                         criteriaClassMethod.invoke(criteria);
@@ -88,11 +93,13 @@ public class MySqlController implements Runnable{
         System.out.println(JSON.toJSONString(jsonObject));
     }
 
-    TUser  getUser() {
+    TUser getUser() {
         TUser tUser = new TUser();
         tUser.setUsername("tom");
         return tUser;
     }
+
+
 
 
     @Override

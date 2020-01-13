@@ -8,7 +8,7 @@
 <!--    http://www.qos.ch/shop/products/professionalSupport         -->
 <!--                                                                -->
 <configuration scan="true" debug="true">
-    <property name="LOG_HOME" value="/data/logs"/>
+    <property name="LOG_HOME" value="data/logs"/>
     <property name="APP" value="springboot"/>
     <appender name="CONSOLE" class="ch.qos.logback.core.ConsoleAppender">
         <encoder>

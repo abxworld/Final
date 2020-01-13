@@ -6,6 +6,7 @@ import org.springframework.cache.guava.GuavaCacheManager;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.context.annotation.DependsOn;
+import org.springframework.context.annotation.EnableAspectJAutoProxy;
 import org.springframework.context.annotation.Primary;
 
 import java.util.concurrent.TimeUnit;
@@ -17,21 +18,22 @@ import java.util.concurrent.TimeUnit;
 *description:
 */
 @Configuration
+@EnableAspectJAutoProxy
 public class CacheManageConfig {
 
-    @Bean(value = "cacheBuilder")
-    public CacheBuilder CacheBuilderBean() {
-        CacheBuilder<Object, Object> builder = CacheBuilder.newBuilder().expireAfterWrite(24, TimeUnit.HOURS).maximumSize(100);
-        return builder;
-    }
-
-    @DependsOn("cacheBuilder")
-    @Bean("guavaCacheManager")
-    @Primary
-    public GuavaCacheManager GuavaCacheManagerBean(CacheBuilder<Object, Object> cacheBuilder) {
-        GuavaCacheManager guavaCacheManager = new GuavaCacheManager();
-        guavaCacheManager.setCacheBuilder(cacheBuilder);
-        //guavaCacheManager.setAllowNullValues(true);
-        return guavaCacheManager;
-    }
+//    @Bean(value = "cacheBuilder")
+//    public CacheBuilder CacheBuilderBean() {
+//        CacheBuilder<Object, Object> builder = CacheBuilder.newBuilder().expireAfterWrite(24, TimeUnit.HOURS).maximumSize(100);
+//        return builder;
+//    }
+//
+//    @DependsOn("cacheBuilder")
+//    @Bean("guavaCacheManager")
+//    @Primary
+//    public GuavaCacheManager GuavaCacheManagerBean(CacheBuilder<Object, Object> cacheBuilder) {
+//        GuavaCacheManager guavaCacheManager = new GuavaCacheManager();
+//        guavaCacheManager.setCacheBuilder(cacheBuilder);
+//        //guavaCacheManager.setAllowNullValues(true);
+//        return guavaCacheManager;
+//    }
 }

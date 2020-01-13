@@ -5,21 +5,27 @@
 
 <generatorConfiguration>
 
+
+
   <context id="mysqlgenerator" targetRuntime="MyBatis3">
 
     <!--支付pay 库-->
-<!--    <jdbcConnection connectionURL="jdbc:mysql://10.10.1.13:3306/pay_new?useUnicode=true&amp;characterEncoding=utf8"
-                    driverClass="com.mysql.jdbc.Driver"
+<!--    <jdbcConnection connectionURL="jdbc:com.bsworld.springboot.start.mysql://10.10.1.13:3306/pay_new?useUnicode=true&amp;characterEncoding=utf8"
+                    driverClass="com.com.bsworld.springboot.start.mysql.jdbc.Driver"
                     userId="upay"
                     password="S76lI!xP8W"/>-->
     <!--清结算sett 库-->
-  <!--  <jdbcConnection connectionURL="jdbc:mysql://10.10.1.13:3306/sett_new?useUnicode=true&amp;characterEncoding=utf8"
-                    driverClass="com.mysql.jdbc.Driver"
+  <!--  <jdbcConnection connectionURL="jdbc:com.bsworld.springboot.start.mysql://10.10.1.13:3306/sett_new?useUnicode=true&amp;characterEncoding=utf8"
+                    driverClass="com.com.bsworld.springboot.start.mysql.jdbc.Driver"
                     userId="usett"
                     password="NyN8x3e@2"/>-->
     <!--商户后台 库-->
-    <jdbcConnection connectionURL="jdbc:mysql://47.95.117.211:3306/hello?useUnicode=true&amp;characterEncoding=utf8"
-                    driverClass="com.mysql.jdbc.Driver"
+
+<!--    <plugin type="com.bsworld.springboot.start.mysql.DynamicQueryExamplePlugin"></plugin>-->
+    <plugin type="org.mybatis.generator.plugins.FluentBuilderMethodsPlugin"></plugin>
+
+    <jdbcConnection connectionURL="jdbc:mysql://106.13.46.179:3306/doko_web?useUnicode=true&amp;characterEncoding=utf8"
+                    driverClass="com.mysql.cj.jdbc.Driver"
                     userId="root"
                     password="123456"/>
 
@@ -33,7 +39,7 @@
                          targetProject="src/main/java"
                          type="XMLMAPPER"/>
 
-    <table tableName="t_rate_transform"/>
+    <table tableName="api_address_info"/>
 
   </context>
 
