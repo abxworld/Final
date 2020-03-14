@@ -9,6 +9,7 @@ import java.io.Serializable;
  * description:
  */
 public class MySqlTestBean implements Serializable {
+    private Long uid;
     private String userName;
     private String password;
 
@@ -28,10 +29,19 @@ public class MySqlTestBean implements Serializable {
         this.password = password;
     }
 
+    public Long getUid() {
+        return uid;
+    }
+
+    public void setUid(Long uid) {
+        this.uid = uid;
+    }
+
     @Override
     public String toString() {
         return "MySqlTestBean{" +
-                "userName='" + userName + '\'' +
+                "uid=" + uid +
+                ", userName='" + userName + '\'' +
                 ", password='" + password + '\'' +
                 '}';
     }

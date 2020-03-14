@@ -93,6 +93,18 @@ public class MySqlController implements Runnable {
         System.out.println(JSON.toJSONString(jsonObject));
     }
 
+
+
+    @PostMapping(value = "request")
+    public String request(Long uid , MySqlTestBean mySqlTestBean) {
+        System.out.println("uid:" + uid);
+        System.out.println("test start, reques" + JSON.toJSONString(mySqlTestBean));
+        return "hello world";
+    }
+
+
+
+
     TUser getUser() {
         TUser tUser = new TUser();
         tUser.setUsername("tom");

@@ -35,7 +35,7 @@ public class OnlineRateGetServiceImpl implements OnlineRateGetService, Initializ
     public void newScheduled() {
         ScheduledExecutorService scheduledService = new ScheduledThreadPoolExecutor(5);
         scheduledService.scheduleWithFixedDelay(() -> {
-            System.out.println("newScheduled(), start ,count:" + count.getAndIncrement());
+//            System.out.println("newScheduled(), start ,count:" + count.getAndIncrement());
         }, 0, 3, TimeUnit.SECONDS);
     }
 
