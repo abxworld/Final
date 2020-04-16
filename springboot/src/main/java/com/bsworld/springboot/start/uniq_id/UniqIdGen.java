@@ -21,7 +21,7 @@ public class UniqIdGen {
         try {
             stringBuilder
                     .append(IpNumber.releaseIpCode())
-                    .append("-")
+//                    .append("-")
                     .append(get());
             uniqId = stringBuilder.toString();
 
@@ -89,9 +89,9 @@ public class UniqIdGen {
             default:
                 break;
         }
-        stringBuilder.append("--");
+//        stringBuilder.append("--");
         stringBuilder.append(paraStr);
-        stringBuilder.append("--");
+//        stringBuilder.append("--");
         stringBuilder.append(callBacCode);
     }
 
