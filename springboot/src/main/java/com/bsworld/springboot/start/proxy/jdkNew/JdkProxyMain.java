@@ -1,5 +1,6 @@
 package com.bsworld.springboot.start.proxy.jdkNew;
 
+import java.lang.reflect.InvocationHandler;
 import java.lang.reflect.Method;
 import java.lang.reflect.Proxy;
 
@@ -13,9 +14,33 @@ import java.lang.reflect.Proxy;
 public class JdkProxyMain {
 
     public static void main(String[] args) {
+        testRealProxyInvoke();
+        System.out.println("\n");
+        testMockProxyInvoke();
+    }
+    /**
+     *
+     * 真实通过Jdk生成的代理来进行调用
+     * 1、创建代理
+     * 2、调用
+     *
+     * */
+    public static void testRealProxyInvoke() {
         UserService proxyService = create();
-        proxyService.add("hello world");
-
+        proxyService.add("real add");
+    }
+    /**
+     *
+     * 根据生成的代理再反编译的代码来测试
+     *
+     * 1、代理已生成写死
+     * 2、调用
+     * */
+    public static void testMockProxyInvoke() {
+        UserService userService = new UserServiceImpl();
+        InvocationHandler invocationHandler = new InvocationHandlerImpl(userService);
+        UserServiceProxy mockProxy = new UserServiceProxy(invocationHandler);
+        mockProxy.add("mock add");
     }
 
     /**

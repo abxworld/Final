@@ -62,9 +62,9 @@ public class UserServiceProxy extends Proxy implements UserService {
         try {
             m1 = Class.forName("java.lang.Object").getMethod("equals", Class.forName("java.lang.Object"));
             m2 = Class.forName("java.lang.Object").getMethod("toString");
-            m4 = Class.forName("proxy.UserService").getMethod("select");
+            m4 = Class.forName("com.bsworld.springboot.start.proxy.jdkNew.UserService").getMethod("add", String.class);
             m0 = Class.forName("java.lang.Object").getMethod("hashCode");
-            m3 = Class.forName("proxy.UserService").getMethod("update");
+            m3 = Class.forName("com.bsworld.springboot.start.proxy.jdkNew.UserService").getMethod("update", Long.class);
         } catch (NoSuchMethodException var2) {
             throw new NoSuchMethodError(var2.getMessage());
         } catch (ClassNotFoundException var3) {

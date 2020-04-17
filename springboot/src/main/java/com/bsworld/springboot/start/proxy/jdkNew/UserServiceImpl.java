@@ -10,11 +10,11 @@ package com.bsworld.springboot.start.proxy.jdkNew;
 public class UserServiceImpl implements UserService {
     @Override
     public void add(String something) {
-
+        System.out.println("add(), something:" + something);
     }
 
     @Override
     public void update(Long uid) {
-
+        System.out.println("update(), uid:" + uid);
     }
 }
