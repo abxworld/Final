@@ -1,4 +1,4 @@
-package com.bsworld.springboot.start.google;
+package com.bsworld.springboot.start.google.eventBus;
 
 import com.google.common.eventbus.EventBus;
 

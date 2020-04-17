@@ -1,4 +1,4 @@
-package com.bsworld.springboot.proxy.cglib;
+package com.bsworld.springboot.start.proxy.cglib;
 
 /**
  * program: Final

@@ -1,4 +1,4 @@
-package com.bsworld.springboot.proxy.cglib.filter;
+package com.bsworld.springboot.start.proxy.cglib.filter;
 
 import org.springframework.cglib.proxy.CallbackFilter;
 

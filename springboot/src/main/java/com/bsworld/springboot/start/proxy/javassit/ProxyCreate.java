@@ -1,4 +1,4 @@
-package com.bsworld.springboot.start.proxy;
+package com.bsworld.springboot.start.proxy.javassit;
 /*
 *author: xieziyang
 *date: 2018/5/28

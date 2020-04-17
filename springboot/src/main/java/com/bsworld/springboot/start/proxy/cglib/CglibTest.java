@@ -1,8 +1,8 @@
-package com.bsworld.springboot.proxy.cglib;
+package com.bsworld.springboot.start.proxy.cglib;
 
-import com.bsworld.springboot.proxy.cglib.callback.LoginInterceptor;
-import com.bsworld.springboot.proxy.cglib.callback.LoginInterceptor2;
-import com.bsworld.springboot.proxy.cglib.filter.LoginFilter;
+import com.bsworld.springboot.start.proxy.cglib.callback.LoginInterceptor;
+import com.bsworld.springboot.start.proxy.cglib.callback.LoginInterceptor2;
+import com.bsworld.springboot.start.proxy.cglib.filter.LoginFilter;
 import org.junit.Test;
 import org.springframework.cglib.proxy.Callback;
 import org.springframework.cglib.proxy.Enhancer;

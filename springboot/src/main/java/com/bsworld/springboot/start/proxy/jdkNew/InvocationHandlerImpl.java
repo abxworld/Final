@@ -1,4 +1,4 @@
-package com.bsworld.springboot.proxy.jdk;
+package com.bsworld.springboot.start.proxy.jdkNew;
 
 import java.lang.reflect.InvocationHandler;
 import java.lang.reflect.Method;
@@ -6,11 +6,10 @@ import java.lang.reflect.Method;
 /**
  * program: Final
  * author: bsworld.xie
- * create: 2020-04-16 19:02
+ * create: 2020-04-17 15:27
  * description:
  */
 public class InvocationHandlerImpl implements InvocationHandler {
-
     Object target;
 
     public InvocationHandlerImpl(Object target) {
