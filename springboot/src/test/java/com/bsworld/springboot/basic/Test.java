@@ -1,15 +1,14 @@
 package com.bsworld.springboot.basic;
 /*
-*author: xieziyang
-*date: 2018/8/17
-*time: 12:36
-*description:
-*/
+ *author: xieziyang
+ *date: 2018/8/17
+ *time: 12:36
+ *description:
+ */
 
 import java.lang.reflect.Field;
 import java.lang.reflect.Modifier;
 import java.util.ArrayList;
-import java.util.LinkedList;
 import java.util.List;
 
 public class Test {
@@ -35,17 +34,10 @@ public class Test {
     }
 
     public static void main(String[] args) throws Exception {
-        LinkedList<String> list = new LinkedList();
-        list.add("a");
-       /* list.add("b");
-        list.add("c");
-        list.add("d");
-        list.add("e");
-        list.add("f");
-        list.add("g");*/
-     /*   for (String str : getStaticField()) {
-            System.out.println(str);
-        }*/
+
+//        String displayName = TimeZone.getDefault().getDisplayName();
+//        System.out.println(displayName);
+        Test test = new Test();
 
     }
 }
