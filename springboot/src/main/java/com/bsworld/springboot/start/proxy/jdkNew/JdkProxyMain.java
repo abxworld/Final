@@ -86,6 +86,6 @@ public class JdkProxyMain {
     public static void invokeAdd(UserService proxyService, String something) {
 
         proxyService.add(something);
-
     }
+
 }

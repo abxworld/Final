@@ -8,8 +8,11 @@ package com.bsworld.springboot.start.proxy.cglib;
  */
 public class UserService {
 
-    public void select(String uid) {
+    private String a = "hello_world";
+
+    public String select(String uid) {
         System.out.println("do select, uid:" + uid);
+        return a;
     }
 
 }

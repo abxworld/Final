@@ -1,6 +1,4 @@
-package com.bsworld.springboot.basic;
-
-import com.bsworld.springboot.start.circle.C;
+package com.bsworld.springboot.concurrency.thread.stack;
 
 import java.io.IOException;
 import java.util.concurrent.CountDownLatch;
@@ -11,11 +9,11 @@ import java.util.concurrent.CountDownLatch;
  * create: 2020-05-03 16:34
  * description:
  */
-public class T1 {
+public class LocalAssignTest {
     private volatile Object arr2 = new Object();
 
     public static void main(String[] args) throws IOException, InterruptedException {
-        T1 t = new T1();
+        LocalAssignTest t = new LocalAssignTest();
         long counts = 100000000;
         for (int i = 0; i < 10; i++) {
             System.out.println("circle start---" + i);
@@ -28,13 +26,13 @@ public class T1 {
     }
 
 
-    private void invoke(T1 t, long counts, CountDownLatch circleCdl) {
+    private void invoke(LocalAssignTest t, long counts, CountDownLatch circleCdl) {
         CountDownLatch cdl = new CountDownLatch(3);
         t.noneAssign(cdl, counts, circleCdl);
         t.memberAssign(cdl,counts,  circleCdl);
         t.localAssign(cdl, counts, circleCdl);
     }
-    private void invokeTravel(T1 t, long counts, CountDownLatch circleCdl) {
+    private void invokeTravel(LocalAssignTest t, long counts, CountDownLatch circleCdl) {
         CountDownLatch cdl = new CountDownLatch(3);
         t.localAssign(cdl, counts, circleCdl);
         t.memberAssign(cdl,counts, circleCdl);

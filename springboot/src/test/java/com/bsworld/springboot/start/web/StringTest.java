@@ -7,12 +7,15 @@ package com.bsworld.springboot.start.web;
 */
 
 import com.alibaba.fastjson.JSON;
+import com.google.common.collect.Lists;
 import com.google.common.collect.Maps;
 import com.google.common.collect.Ordering;
+import org.apache.commons.lang3.StringUtils;
 import org.junit.Test;
 
 import java.io.*;
 import java.time.LocalDate;
+import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Date;
 import java.util.HashMap;
@@ -211,6 +214,40 @@ public class StringTest {
             if (currMaxStep >= A.length-1) return true;
         }
         return currMaxStep >= A.length-1;
+    }
+
+    @Test
+    public void testYanMa(){
+        String nickName = "";
+        String userPin = "1234789";
+        String s = "\'\'";
+        if (StringUtils.isEmpty(nickName) || s.equals(nickName)) {
+            int length = userPin.length();
+            if (length >= 8) {
+                StringBuilder sb = new StringBuilder();
+                String first = userPin.substring(0, 4);
+                sb.append(first);
+                String second = "****";
+                sb.append(second);
+                String third = userPin.substring(length -4, length);
+                sb.append(third);
+                nickName = sb.toString();
+            } else {
+                nickName = userPin.substring(0, length - 2) + "****";
+            }
+        }
+        System.out.println(nickName);
+    }
+
+    @Test
+    public void testNull() {
+        List<String> list = Lists.newArrayList(null, null, null);
+        for (String cpOrderStr : list) {
+            if (cpOrderStr == null || cpOrderStr.length() == 0) {
+                continue;
+            }
+        }
+
     }
 
 

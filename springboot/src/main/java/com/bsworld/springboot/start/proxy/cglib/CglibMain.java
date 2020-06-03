@@ -40,6 +40,7 @@ public class CglibMain {
         enhancer.setCallbacks(new Callback[]{new LoginInterceptor(), new LoginInterceptor2(), NoOp.INSTANCE});
         enhancer.setCallbackFilter(new LoginFilter());
         UserService userService = (UserService) enhancer.create();
-        userService.select("10000");
+        String select = userService.select("10000");
+        System.out.println(select);
     }
 }
