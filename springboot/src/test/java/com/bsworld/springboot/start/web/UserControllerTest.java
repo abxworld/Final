@@ -18,7 +18,7 @@ public class UserControllerTest {
     @Test
     public void rh(){
         String type = MediaType.APPLICATION_JSON_VALUE;
-        String url = "http://localhost:8080/user/get";
+        String url = "http://127.0.0.1:8080/user/get";
         Map hashMap = Maps.newHashMap();
         hashMap.put("page", 0);
         HttpUtil.sendPost(url, JSON.toJSONString(hashMap), type);
